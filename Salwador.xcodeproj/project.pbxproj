@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
+		89AE83892989066F00683743 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
+		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
+		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
+		89AE83992989067100683743 /* SalwadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83982989067100683743 /* SalwadorTests.swift */; };
+		89AE83A32989067100683743 /* SalwadorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A22989067100683743 /* SalwadorUITests.swift */; };
+		89AE83A52989067100683743 /* SalwadorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		89AE83952989067100683743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AE837B2989066F00683743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89AE83822989066F00683743;
+			remoteInfo = Salwador;
+		};
+		89AE839F2989067100683743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 89AE837B2989066F00683743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 89AE83822989066F00683743;
+			remoteInfo = Salwador;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AE83862989066F00683743 /* SalwadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorApp.swift; sourceTree = "<group>"; };
+		89AE83882989066F00683743 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		89AE838A2989067100683743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
+		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89AE83942989067100683743 /* SalwadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalwadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AE83982989067100683743 /* SalwadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorTests.swift; sourceTree = "<group>"; };
+		89AE839E2989067100683743 /* SalwadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalwadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		89AE83A22989067100683743 /* SalwadorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITests.swift; sourceTree = "<group>"; };
+		89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		89AE83802989066F00683743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AE83912989067100683743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AE839B2989067100683743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		89AE837A2989066F00683743 = {
+			isa = PBXGroup;
+			children = (
+				89AE83852989066F00683743 /* Salwador */,
+				89AE83972989067100683743 /* SalwadorTests */,
+				89AE83A12989067100683743 /* SalwadorUITests */,
+				89AE83842989066F00683743 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		89AE83842989066F00683743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				89AE83832989066F00683743 /* Salwador.app */,
+				89AE83942989067100683743 /* SalwadorTests.xctest */,
+				89AE839E2989067100683743 /* SalwadorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		89AE83852989066F00683743 /* Salwador */ = {
+			isa = PBXGroup;
+			children = (
+				89AE83862989066F00683743 /* SalwadorApp.swift */,
+				89AE83882989066F00683743 /* ContentView.swift */,
+				89AE838A2989067100683743 /* Assets.xcassets */,
+				89AE838C2989067100683743 /* Salwador.entitlements */,
+				89AE838D2989067100683743 /* Preview Content */,
+			);
+			path = Salwador;
+			sourceTree = "<group>";
+		};
+		89AE838D2989067100683743 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				89AE838E2989067100683743 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		89AE83972989067100683743 /* SalwadorTests */ = {
+			isa = PBXGroup;
+			children = (
+				89AE83982989067100683743 /* SalwadorTests.swift */,
+			);
+			path = SalwadorTests;
+			sourceTree = "<group>";
+		};
+		89AE83A12989067100683743 /* SalwadorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				89AE83A22989067100683743 /* SalwadorUITests.swift */,
+				89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */,
+			);
+			path = SalwadorUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89AE83822989066F00683743 /* Salwador */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89AE83A82989067100683743 /* Build configuration list for PBXNativeTarget "Salwador" */;
+			buildPhases = (
+				89AE837F2989066F00683743 /* Sources */,
+				89AE83802989066F00683743 /* Frameworks */,
+				89AE83812989066F00683743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Salwador;
+			productName = Salwador;
+			productReference = 89AE83832989066F00683743 /* Salwador.app */;
+			productType = "com.apple.product-type.application";
+		};
+		89AE83932989067100683743 /* SalwadorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89AE83AB2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorTests" */;
+			buildPhases = (
+				89AE83902989067100683743 /* Sources */,
+				89AE83912989067100683743 /* Frameworks */,
+				89AE83922989067100683743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89AE83962989067100683743 /* PBXTargetDependency */,
+			);
+			name = SalwadorTests;
+			productName = SalwadorTests;
+			productReference = 89AE83942989067100683743 /* SalwadorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		89AE839D2989067100683743 /* SalwadorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89AE83AE2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorUITests" */;
+			buildPhases = (
+				89AE839A2989067100683743 /* Sources */,
+				89AE839B2989067100683743 /* Frameworks */,
+				89AE839C2989067100683743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				89AE83A02989067100683743 /* PBXTargetDependency */,
+			);
+			name = SalwadorUITests;
+			productName = SalwadorUITests;
+			productReference = 89AE839E2989067100683743 /* SalwadorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		89AE837B2989066F00683743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					89AE83822989066F00683743 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+					89AE83932989067100683743 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 89AE83822989066F00683743;
+					};
+					89AE839D2989067100683743 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 89AE83822989066F00683743;
+					};
+				};
+			};
+			buildConfigurationList = 89AE837E2989066F00683743 /* Build configuration list for PBXProject "Salwador" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 89AE837A2989066F00683743;
+			productRefGroup = 89AE83842989066F00683743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89AE83822989066F00683743 /* Salwador */,
+				89AE83932989067100683743 /* SalwadorTests */,
+				89AE839D2989067100683743 /* SalwadorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		89AE83812989066F00683743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
+				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AE83922989067100683743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AE839C2989067100683743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		89AE837F2989066F00683743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AE83892989066F00683743 /* ContentView.swift in Sources */,
+				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AE83902989067100683743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AE83992989067100683743 /* SalwadorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89AE839A2989067100683743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89AE83A52989067100683743 /* SalwadorUITestsLaunchTests.swift in Sources */,
+				89AE83A32989067100683743 /* SalwadorUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		89AE83962989067100683743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89AE83822989066F00683743 /* Salwador */;
+			targetProxy = 89AE83952989067100683743 /* PBXContainerItemProxy */;
+		};
+		89AE83A02989067100683743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 89AE83822989066F00683743 /* Salwador */;
+			targetProxy = 89AE839F2989067100683743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		89AE83A62989067100683743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		89AE83A72989067100683743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		89AE83A92989067100683743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Salwador/Salwador.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.Salwador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		89AE83AA2989067100683743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Salwador/Salwador.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.Salwador;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		89AE83AC2989067100683743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
+			};
+			name = Debug;
+		};
+		89AE83AD2989067100683743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
+			};
+			name = Release;
+		};
+		89AE83AF2989067100683743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Salwador;
+			};
+			name = Debug;
+		};
+		89AE83B02989067100683743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MACOSX_DEPLOYMENT_TARGET = 12.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Salwador;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		89AE837E2989066F00683743 /* Build configuration list for PBXProject "Salwador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AE83A62989067100683743 /* Debug */,
+				89AE83A72989067100683743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89AE83A82989067100683743 /* Build configuration list for PBXNativeTarget "Salwador" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AE83A92989067100683743 /* Debug */,
+				89AE83AA2989067100683743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89AE83AB2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AE83AC2989067100683743 /* Debug */,
+				89AE83AD2989067100683743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89AE83AE2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89AE83AF2989067100683743 /* Debug */,
+				89AE83B02989067100683743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 89AE837B2989066F00683743 /* Project object */;
+}
