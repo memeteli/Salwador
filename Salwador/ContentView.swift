@@ -14,25 +14,26 @@ struct ContentView: View {
           @State private var text: String = ""
           @State private var savedText: String = ""
           @State private var descriptionText: String = "Your promp will be shown here"
-
+          @State private var imagePath:String = "salvador-man"
+                    
           var body: some View {
               ZStack{
                         Color(red: 0.0, green: 0.4666666666666667, blue: 0.7137254901960784)
-                                                      .ignoresSafeArea()
-    VStack() {
+         
+    VStack(spacing: 10) {
               appNameView
-           editorViewDescription
+              editorViewDescriptionView
               textEditorView
-              submitButton
-              submittedTextDescription
+              submitButtonView
+              submittedTextDescriptionView
               submittedText
+              imageView
     }
                     
               }
         .padding()
     }
 }
-
 
 
 struct ContentView_Previews: PreviewProvider {
@@ -45,32 +46,36 @@ struct ContentView_Previews: PreviewProvider {
 private extension ContentView {
           var appNameView: some View {
                     Text("Salvador")
+                               .foregroundColor(Color(red: 0.792156862745098, green: 0.9411764705882353, blue: 0.9725490196078431))
                               .font(.title)
                               .fontWeight(.bold)
                               .padding(.bottom, 30)
                     
           }
+                    
           var textEditorView: some View {
                     TextEditor(text: $text)
                               .background(Color(.red))
                               .font(.title2)
-                              .frame(height: 250)
+                              .frame(height: 125)
                               .border(Color(.black), width: 1)
                               .padding(10)
+                              .cornerRadius(10)
                                              .onTapGesture {}
           }
           
-          var editorViewDescription: some View {
+          var editorViewDescriptionView: some View {
                     Text("Please enter your promp in the editor")
+                              .foregroundColor(Color(red: 0.792156862745098, green: 0.9411764705882353, blue: 0.9725490196078431))
                               .font(.title2)
           }
           
-          var submitButton: some View {
+          var submitButtonView: some View {
                     Button("Submit") {
                               print("the user has submitted", $text)
                               savePromp()
                     }
-                    .frame(width: 120)
+                    .frame(width: 150, height: 50)
                       .foregroundColor(.white)
                       .background(Color(red: 0.0, green: 0.5882352941176471, blue: 0.7803921568627451))
                       .cornerRadius(10)
@@ -81,16 +86,24 @@ private extension ContentView {
                     Text(savedText)
           }
           
-          var submittedTextDescription: some View {
+          var submittedTextDescriptionView: some View {
                     Text(descriptionText)
                               .font(.title3)
                               .foregroundColor(Color(red: 0.6784313725490196, green: 0.9098039215686274, blue: 0.9568627450980393))
                               .multilineTextAlignment(.leading)
           }
+                    
+                    var imageView: some View {
+                                        Image(imagePath)
+                                        .resizable()
+                                        .scaledToFit()
+                                        .frame(width: 400, height: 200)
+                    }
           
           private func savePromp() {
                savedText = text
-                    descriptionText = "You have entered following prompt: "
+               descriptionText = "You have entered following prompt: "
+               //TODO: here we need to replace the imagepath with URL
            }
 }
 
