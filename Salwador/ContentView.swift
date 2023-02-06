@@ -54,14 +54,20 @@ private extension ContentView {
           }
                     
           var textEditorView: some View {
-                    TextEditor(text: $text)
-                              .background(Color(.red))
-                              .font(.title2)
-                              .frame(height: 125)
-                              .border(Color(.black), width: 1)
-                              .padding(10)
-                              .cornerRadius(10)
-                              .onTapGesture {}
+                              ZStack{
+                                                  TextEditor(text: $text)
+                                   .background(Color(.red))
+                                                            .font(.title2)
+                                                            .frame(minWidth: 320, idealWidth: 500, maxWidth: .infinity, minHeight: 100, idealHeight: 200, maxHeight: .infinity)
+                                                                     .scaledToFit()
+                                                            .border(Color(.black), width: 1)
+                                                            .padding(10)
+                                                            .cornerRadius(10)
+                                                            .onTapGesture {}
+                              }
+                              .background(Rectangle()
+                                        .foregroundColor(Color(hue: 0.564, saturation: 0.583, brightness: 0.63))
+                                        .shadow(radius: 15))
           }
           
           var editorViewDescriptionView: some View {
@@ -94,11 +100,14 @@ private extension ContentView {
           }
                     
                     var imageView: some View {
+
                                         Image(imagePath)
                                         .resizable()
+                                        .foregroundColor(Color.red)
                                         .scaledToFit()
                                         .frame(width: 400, height: 200)
                     }
+                                        
           
           private func savePromp() {
                savedText = text
