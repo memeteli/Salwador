@@ -7,16 +7,37 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
+              ZStack{
+                        Color(.black)
+                   
+                                  .ignoresSafeArea()
+                        VStack {
+                                  Button("Tap on me") {
+                                
+                                            print("hello world")
+                                  }
+                                  Image("salvador-man").resizable()
+                                            .cornerRadius(15)
+                                            .aspectRatio(contentMode: .fit)
+                                  Text("Salvador iOS App")
+                                            .font(.title)
+                                            .fontWeight(.bold)
+                                  
+                        }
+              }
+
+        
         .padding()
     }
+}
+
+func validate () {
+          print("text fiedld");
 }
 
 struct ContentView_Previews: PreviewProvider {

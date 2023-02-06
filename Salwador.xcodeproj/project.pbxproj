@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		89A1DB4B29910E5B00815768 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
 		89AE83892989066F00683743 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
@@ -36,7 +37,7 @@
 /* Begin PBXFileReference section */
 		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE83862989066F00683743 /* SalwadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorApp.swift; sourceTree = "<group>"; };
-		89AE83882989066F00683743 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		89AE83882989066F00683743 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 10; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 10; usesTabs = 0; };
 		89AE838A2989067100683743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -268,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A1DB4B29910E5B00815768 /* ContentView.swift in Sources */,
 				89AE83992989067100683743 /* SalwadorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,6 +419,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -453,6 +456,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
