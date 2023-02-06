@@ -61,7 +61,7 @@ private extension ContentView {
                               .border(Color(.black), width: 1)
                               .padding(10)
                               .cornerRadius(10)
-                                             .onTapGesture {}
+                              .onTapGesture {}
           }
           
           var editorViewDescriptionView: some View {
