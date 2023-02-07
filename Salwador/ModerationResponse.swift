@@ -17,7 +17,7 @@ struct ModerationResponse: Codable {
             let sexualMinors: Bool
             let violence: Bool
             let violenceGraphic: Bool
-            
+
             private enum CodingKeys: String, CodingKey {
                 case hate
                 case hateThreatening = "hate/threatening"
@@ -28,7 +28,7 @@ struct ModerationResponse: Codable {
                 case violenceGraphic = "violence/graphic"
             }
         }
-        
+
         struct CategoryScore: Codable {
             let hate: Double
             let hateThreatening: Double
@@ -37,7 +37,7 @@ struct ModerationResponse: Codable {
             let sexualMinors: Double
             let violence: Double
             let violenceGraphic: Double
-            
+
             private enum CodingKeys: String, CodingKey {
                 case hate
                 case hateThreatening = "hate/threatening"
@@ -48,23 +48,23 @@ struct ModerationResponse: Codable {
                 case violenceGraphic = "violence/graphic"
             }
         }
-        
+
         let categories: Category
         let categoryScores: CategoryScore
         let flagged: Bool
-        
+
         private enum CodingKeys: String, CodingKey {
             case categories
             case categoryScores = "category_scores"
             case flagged
         }
     }
-    
+
     let id: String
     let model: String
     let results: [ModerationResult]
-    
+
     var hasIssues: Bool {
-        return results.map(\.flagged).contains(true)
+        results.map(\.flagged).contains(true)
     }
 }

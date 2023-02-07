@@ -42,7 +42,6 @@
 		892D5F0629916680002D0248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		892D5F0729924C54002D0248 /* ImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
 		892D5F0929924F40002D0248 /* ModerationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModerationResponse.swift; sourceTree = "<group>"; };
-		892D5F0D299261CD002D0248 /* DevEnt.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = DevEnt.geojson; sourceTree = "<group>"; };
 		892D5F0E299269F4002D0248 /* ImageGenerationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerationResponse.swift; sourceTree = "<group>"; };
 		8987198D29929A3100678E85 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,7 +107,6 @@
 			children = (
 				892D5F0629916680002D0248 /* Info.plist */,
 				89AE83862989066F00683743 /* SalwadorApp.swift */,
-				892D5F0D299261CD002D0248 /* DevEnt.geojson */,
 				8987198D29929A3100678E85 /* Credentials.swift */,
 				89AE83882989066F00683743 /* ContentView.swift */,
 				892D5F0929924F40002D0248 /* ModerationResponse.swift */,
@@ -156,6 +154,7 @@
 				89AE837F2989066F00683743 /* Sources */,
 				89AE83802989066F00683743 /* Frameworks */,
 				89AE83812989066F00683743 /* Resources */,
+				899D23AF2992AAE500494C9A /* SwiftFormat */,
 			);
 			buildRules = (
 			);
@@ -270,6 +269,27 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		899D23AF2992AAE500494C9A /* SwiftFormat */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftFormat;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftformat >/dev/null; then\nswiftformat .\nelse \necho \"Warning: SwiftFormat is not installed\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		89AE837F2989066F00683743 /* Sources */ = {

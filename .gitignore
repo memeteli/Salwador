@@ -91,3 +91,5 @@ iOSInjectionProject/
 
 # Personal Data
 ./Salwador/DevEnt.geojson
+.swiftformat
+.swiftlint.yml 
