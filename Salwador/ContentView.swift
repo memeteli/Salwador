@@ -6,8 +6,16 @@
 //
 
 import SwiftUI
+import UIKit
 
+struct Book: Decodable {
 
+    // MARK: - Properties
+
+    let title: String
+    let author: String
+
+}
 
 struct ContentView: View {
 
@@ -55,9 +63,10 @@ private extension ContentView {
                     
           var textEditorView: some View {
                               ZStack{
-                                                  TextEditor(text: $text)
+                                                  TextEditor(
+                                                            text: $text)
                                    .background(Color(.red))
-                                                            .font(.title2)
+                    .font(.title2)
                                                             .frame(minWidth: 320, idealWidth: 500, maxWidth: .infinity, minHeight: 100, idealHeight: 200, maxHeight: .infinity)
                                                                      .scaledToFit()
                                                             .border(Color(.black), width: 1)
@@ -113,6 +122,18 @@ private extension ContentView {
                savedText = text
                descriptionText = "You have entered following prompt: "
                //TODO: here we need to replace the imagepath with URL
+                              sendRxequest(prompText: text)
            }
+                    
+                    private func sendRxequest(prompText: String) {
+                                        let url = URL(string: "https://www.stackoverflow.com")!
+
+                                        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+                                            guard let data = data else { return }
+                                            print("1111111", String(data: data, encoding: .utf8)!)
+                                        }
+
+                                        task.resume()
+                    }
 }
 
