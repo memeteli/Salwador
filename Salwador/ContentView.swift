@@ -56,7 +56,7 @@ private extension ContentView {
                                                             Text("Your AI Image Generator")
                                                                                 .foregroundColor(.white)
                                                                                 .font(.footnote)
-                                                                                .padding(.top, 0.5)
+                                                                                .padding(.top, 1.0)
                               }
 
                   
@@ -100,19 +100,19 @@ private extension ContentView {
                     var imageView: some View {
                                         VStack {
                                                             if let image {
-                                                                                Image(uiImage: image)
-                                                                                                    .resizable()
-                                                                                                    .foregroundColor(Color.red)
-                                                                                                    .scaledToFit()
-                                                                                                    .frame(width: 400, height: 200)
+                                                                                if isLoading == false {
+                                                                                                    Image(uiImage: image)
+                                                                                                                        .resizable()
+                                                                                                                        .foregroundColor(Color.red)
+                                                                                                                        .scaledToFit()
+                                                                                                                        .frame(width: 400, height: 200)
+                                                                                }
+                                                                                if isLoading {
+                                                             loadingView
+                                                                                }
                                                             } else {
                                                                                 if isLoading {
-                                                                                                    ProgressView()
-                                                                                                                                        .foregroundColor(.white)
-                                                                                                                    Text("Your image is generating...")
-                                                                                                                                        .font(.title3)
-                                                                                                                                        .foregroundColor(Color(red: 0.6784313725490196, green: 0.9098039215686274, blue: 0.9568627450980393))
-                                                                                                                                        .multilineTextAlignment(.leading)
+                                                             loadingView
                                                                                 }
                                                             }
                                                          
@@ -122,7 +122,17 @@ private extension ContentView {
                                         
           
 
-                    
+                    var loadingView: some View {
+                                        VStack {
+                                                            
+                                                            ProgressView()
+                                                            
+                                                                                .foregroundColor(.white)
+                                                            Text("Your image is generating...")
+.font(.title3)
+.foregroundColor(Color(red: 0.6784313725490196, green: 0.9098039215686274, blue: 0.9568627450980393))
+                                        }
+                    }
                     private func sendRequest(prompText: String) {
                                         Task {
                                                             do {
