@@ -19,7 +19,7 @@ struct Book: Decodable {
 
 struct ContentView: View {
 
-          @State private var text: String = ""
+          @State private var prompText: String = ""
           @State private var savedText: String = ""
           @State private var descriptionText: String = "Your promp will be shown here"
           @State private var imagePath:String = "salvador-man"
@@ -64,7 +64,7 @@ private extension ContentView {
           var textEditorView: some View {
                               ZStack{
                                                   TextEditor(
-                                                            text: $text)
+                                                            text: $prompText)
                                    .background(Color(.red))
                     .font(.title2)
                                                             .frame(minWidth: 320, idealWidth: 500, maxWidth: .infinity, minHeight: 100, idealHeight: 200, maxHeight: .infinity)
@@ -87,7 +87,7 @@ private extension ContentView {
           
           var submitButtonView: some View {
                     Button("Submit") {
-                              print("the user has submitted", $text)
+                              print("the user has submitted", $prompText)
                               savePromp()
                     }
                     .frame(width: 150, height: 50)
@@ -119,21 +119,14 @@ private extension ContentView {
                                         
           
           private func savePromp() {
-               savedText = text
+               savedText = prompText
                descriptionText = "You have entered following prompt: "
                //TODO: here we need to replace the imagepath with URL
-                              sendRxequest(prompText: text)
+                              sendRxequest(prompText: prompText)
            }
                     
                     private func sendRxequest(prompText: String) {
-                                        let url = URL(string: "https://www.stackoverflow.com")!
-
-                                        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-                                            guard let data = data else { return }
-                                            print("1111111", String(data: data, encoding: .utf8)!)
-                                        }
-
-                                        task.resume()
+                          
                     }
 }
 

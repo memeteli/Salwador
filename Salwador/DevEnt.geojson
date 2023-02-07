@@ -1,0 +1,5 @@
+{
+"apikey" : "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",
+"moderationURL": "https://api.openai.com/v1/moderations",
+"imageGeneratorURL" : "",
+}
