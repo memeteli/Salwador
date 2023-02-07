@@ -11,9 +11,9 @@ import UIKit
 struct ContentView: View {
 
           @State private var prompText: String = ""
-          @State private var savedText: String = ""
-          @State private var descriptionText: String = "Your promp will be shown here"
+          @State private var buttonText: String = "Ready?"
           @State private var imagePath:String = "salvador-man"
+                    
                     @State private var image: UIImage? = nil
                     @State private var isLoading: Bool = false
                     
@@ -23,12 +23,12 @@ struct ContentView: View {
          
     VStack(spacing: 10) {
               appNameView
-              editorViewDescriptionView
+                        Spacer()
               textEditorView
               submitButtonView
-              submittedTextDescriptionView
-              submittedText
+                        Spacer()
               imageView
+                        Spacer()
     }
                     
               }
@@ -46,11 +46,20 @@ struct ContentView_Previews: PreviewProvider {
 
 private extension ContentView {
           var appNameView: some View {
-                    Text("Salvador")
-                               .foregroundColor(Color(red: 0.792156862745098, green: 0.9411764705882353, blue: 0.9725490196078431))
-                              .font(.title)
-                              .fontWeight(.bold)
-                              .padding(.bottom, 30)
+                              VStack {
+                                                  Text("Salvador")
+                                                             .foregroundColor(Color(red: 0.792156862745098, green: 0.9411764705882353, blue: 0.9725490196078431))
+                                                            .font(.title)
+                                                            .fontWeight(.bold)
+                                                            .padding(.top, 30)
+
+                                                            Text("Your AI Image Generator")
+                                                                                .foregroundColor(.white)
+                                                                                .font(.footnote)
+                                                                                .padding(.top, 0.5)
+                              }
+
+                  
                     
           }
                     
@@ -72,16 +81,11 @@ private extension ContentView {
                                         .shadow(radius: 15))
           }
           
-          var editorViewDescriptionView: some View {
-                    Text("Please enter your promp in the editor")
-                              .foregroundColor(Color(red: 0.792156862745098, green: 0.9411764705882353, blue: 0.9725490196078431))
-                              .font(.title2)
-          }
-          
+
           var submitButtonView: some View {
-                    Button("Submit") {
+                    Button(buttonText) {
+                                        buttonText = "Wait..."
                                         isLoading = true
-                                        savePromp()
                                         sendRequest(prompText: prompText)
 
                     }
@@ -91,17 +95,7 @@ private extension ContentView {
                       .cornerRadius(10)
                       .padding(10)
           }
-          
-          var submittedText: some View {
-                    Text(savedText)
-          }
-          
-          var submittedTextDescriptionView: some View {
-                    Text(descriptionText)
-                              .font(.title3)
-                              .foregroundColor(Color(red: 0.6784313725490196, green: 0.9098039215686274, blue: 0.9568627450980393))
-                              .multilineTextAlignment(.leading)
-          }
+
                     
                     var imageView: some View {
                                         VStack {
@@ -112,25 +106,22 @@ private extension ContentView {
                                                                                                     .scaledToFit()
                                                                                                     .frame(width: 400, height: 200)
                                                             } else {
-                                                                                Image(imagePath)
-                                                                                                    .resizable()
-                                                                                                    .foregroundColor(Color.red)
-                                                                                                    .scaledToFit()
-                                                                                                    .frame(width: 400, height: 200)
+                                                                                if isLoading {
+                                                                                                    ProgressView()
+                                                                                                                                        .foregroundColor(.white)
+                                                                                                                    Text("Your image is generating...")
+                                                                                                                                        .font(.title3)
+                                                                                                                                        .foregroundColor(Color(red: 0.6784313725490196, green: 0.9098039215686274, blue: 0.9568627450980393))
+                                                                                                                                        .multilineTextAlignment(.leading)
+                                                                                }
                                                             }
-                                                            
-                                                            if isLoading {
-                                                                     ProgressView()
-                                                            }
+                                                         
                                         }
                             
                     }
                                         
           
-          private func savePromp() {
-               savedText = prompText
-               descriptionText = "You have entered following prompt: "
-           }
+
                     
                     private func sendRequest(prompText: String) {
                                         Task {
@@ -141,10 +132,14 @@ private extension ContentView {
                                                                                                     let (data, _) = try await URLSession.shared.data(from: url)
                                                            image = UIImage(data: data)
                                                                 isLoading = false
+                                                                                                    buttonText = "Regenerate"
                                                                                 }
                                                             }
                                                             catch {
                                                                                 print(error)
+                                                                                isLoading = false
+                                                                                buttonText = "Regenerate"
+
                                                                                 
                                                             }
                                         }

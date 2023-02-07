@@ -14,33 +14,33 @@ class ImageGenerator {
     private init () {
         
     }
-//
-//    func isPrompValid (_ prompt: String, apiKey: String) async throws -> Bool {
-//        guard let url = URL(string: "https://api.openai.com/v1/moderations") else {
-//            return false;
-//        }
-//
-//        let params:[String: Any] = [
-//            "input" : prompt
-//        ]
-//        let data: Data = try JSONSerialization.data(withJSONObject: params)
-//
-//        var request = URLRequest(url: url)
-//        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-//        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
-//        request.httpMethod = "POST"
-//        request.httpBody = data
-//
-//        let (response, _) = try await URLSession.shared.data(for: request)
-//        let result = try JSONDecoder().decode(ModerationResponse.self, from: response)
-//
-//        return result.hasIssues == false
-//    }
+
+    func isPrompValid (_ prompt: String, apiKey: String) async throws -> Bool {
+        guard let url = URL(string: "https://api.openai.com/v1/moderations") else {
+            return false;
+        }
+
+        let params:[String: Any] = [
+            "input" : prompt
+        ]
+        let data: Data = try JSONSerialization.data(withJSONObject: params)
+
+        var request = URLRequest(url: url)
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("Bearer \(apiKey)", forHTTPHeaderField: "Authorization")
+        request.httpMethod = "POST"
+        request.httpBody = data
+
+        let (response, _) = try await URLSession.shared.data(for: request)
+        let result = try JSONDecoder().decode(ModerationResponse.self, from: response)
+
+        return result.hasIssues == false
+    }
 
     func generateImage(withPrompt prompt: String, apiKey: String) async throws -> ImageGenerationResponse {
-//        guard try await isPrompValid(prompt, apiKey: apiKey) else {
-//            throw ImageError.inValidPrompt
-//        }
+        guard try await isPrompValid(prompt, apiKey: apiKey) else {
+            throw ImageError.inValidPrompt
+        }
         
         guard let url = URL(string: "https://api.openai.com/v1/images/generations") else {
             throw ImageError.badURL
