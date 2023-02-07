@@ -8,23 +8,16 @@
 import SwiftUI
 import UIKit
 
-struct Book: Decodable {
-
-    // MARK: - Properties
-
-    let title: String
-    let author: String
-
-}
-
 struct ContentView: View {
 
           @State private var prompText: String = ""
           @State private var savedText: String = ""
           @State private var descriptionText: String = "Your promp will be shown here"
           @State private var imagePath:String = "salvador-man"
+                    @State private var image: UIImage? = nil
+                    @State private var isLoading: Bool = false
                     
-          var body: some View {
+                    var body: some View {
               ZStack{
                         Color(red: 0.0, green: 0.4666666666666667, blue: 0.7137254901960784)
          
@@ -87,8 +80,10 @@ private extension ContentView {
           
           var submitButtonView: some View {
                     Button("Submit") {
-                              print("the user has submitted", $prompText)
-                              savePromp()
+                                        isLoading = true
+                                        savePromp()
+                                        sendRequest(prompText: prompText)
+
                     }
                     .frame(width: 150, height: 50)
                       .foregroundColor(.white)
@@ -109,24 +104,50 @@ private extension ContentView {
           }
                     
                     var imageView: some View {
-
-                                        Image(imagePath)
-                                        .resizable()
-                                        .foregroundColor(Color.red)
-                                        .scaledToFit()
-                                        .frame(width: 400, height: 200)
+                                        VStack {
+                                                            if let image {
+                                                                                Image(uiImage: image)
+                                                                                                    .resizable()
+                                                                                                    .foregroundColor(Color.red)
+                                                                                                    .scaledToFit()
+                                                                                                    .frame(width: 400, height: 200)
+                                                            } else {
+                                                                                Image(imagePath)
+                                                                                                    .resizable()
+                                                                                                    .foregroundColor(Color.red)
+                                                                                                    .scaledToFit()
+                                                                                                    .frame(width: 400, height: 200)
+                                                            }
+                                                            
+                                                            if isLoading {
+                                                                     ProgressView()
+                                                            }
+                                        }
+                            
                     }
                                         
           
           private func savePromp() {
                savedText = prompText
                descriptionText = "You have entered following prompt: "
-               //TODO: here we need to replace the imagepath with URL
-                              sendRxequest(prompText: prompText)
            }
                     
-                    private func sendRxequest(prompText: String) {
-                          
+                    private func sendRequest(prompText: String) {
+                                        Task {
+                                                            do {
+                                                                                let response = try await ImageGenerator.shared.generateImage(withPrompt: prompText, apiKey: "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")
+                                                                                
+                                                                                if let url = response.data.map(\.url).first {
+                                                                                                    let (data, _) = try await URLSession.shared.data(from: url)
+                                                           image = UIImage(data: data)
+                                                                isLoading = false
+                                                                                }
+                                                            }
+                                                            catch {
+                                                                                print(error)
+                                                                                
+                                                            }
+                                        }
                     }
 }
 
