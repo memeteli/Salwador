@@ -90,6 +90,6 @@ fastlane/test_output
 iOSInjectionProject/
 
 # Personal Data
-./Salwador/DevEnt.geojson
 .swiftformat
 .swiftlint.yml 
+./Utils/Credentials.swift
