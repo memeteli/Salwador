@@ -12,7 +12,6 @@ struct ContentView: View {
     @State private var prompText: String = ""
     @State private var buttonText: String = "Ready?"
     @State private var imagePath: String = "salvador-man"
-
     @State private var image: UIImage? = nil
     @State private var isLoading: Bool = false
 
@@ -20,7 +19,7 @@ struct ContentView: View {
         ZStack {
             Color(red: 0.0, green: 0.4666666666666667, blue: 0.7137254901960784)
 
-            VStack(spacing: 10) {
+            VStack {
                 appNameView
                 Spacer()
                 textEditorView
@@ -44,15 +43,19 @@ private extension ContentView {
     var appNameView: some View {
         VStack {
             Text("Salvador")
-                .foregroundColor(Color(red: 0.792156862745098, green: 0.9411764705882353, blue: 0.9725490196078431))
+                .foregroundColor(Color(.white))
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, 30)
 
+            Image("salvador-icon")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 200, height: 100)
+
             Text("Your AI Image Generator")
                 .foregroundColor(.white)
                 .font(.footnote)
-                .padding(.top, 1.0)
         }
     }
 
@@ -95,7 +98,7 @@ private extension ContentView {
                         .resizable()
                         .foregroundColor(Color.red)
                         .scaledToFit()
-                        .frame(width: 400, height: 200)
+                        .frame(width: 440, height: 320)
                 }
                 if isLoading {
                     loadingView
@@ -115,14 +118,14 @@ private extension ContentView {
                 .foregroundColor(.white)
             Text("Your image is generating...")
                 .font(.title3)
-                .foregroundColor(Color(red: 0.6784313725490196, green: 0.9098039215686274, blue: 0.9568627450980393))
+                .foregroundColor(Color(.white))
         }
     }
 
     private func sendRequest(prompText: String) {
         Task {
             do {
-                let response = try await ImageGenerator.shared.generateImage(withPrompt: prompText, apiKey: "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")
+                let response = try await ImageGenerator.shared.generateImage(withPrompt: prompText, apiKey: Credentials.apiKey)
 
                 if let url = response.data.map(\.url).first {
                     let (data, _) = try await URLSession.shared.data(from: url)
