@@ -114,6 +114,7 @@ private extension ContentView {
     var loadingView: some View {
         VStack {
             ProgressView()
+                .background(Color(.white))
 
                 .foregroundColor(.white)
             Text("Your image is generating...")
