@@ -18,19 +18,17 @@ struct ContentView: View {
     @State private var errorMsg: String = ""
 
     var body: some View {
-        ZStack {
-            VStack {
-                appNameView
-                Spacer()
-                textEditorView
-                submitButtonView
-                    .padding(10)
-                Spacer()
-                imageView
-                Spacer()
-            }
+        VStack {
+            appNameView
+            Spacer()
+            textEditorView
+            submitButtonView
+            Spacer()
+            imageView
+            Spacer()
         }
-        .background(Color("BackgroundColor"))
+        .padding()
+        .background(Color(red: 0.0, green: 0.4666666666666667, blue: 0.7137254901960784))
     }
 }
 
