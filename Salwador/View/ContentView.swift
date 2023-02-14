@@ -16,20 +16,17 @@ struct ContentView: View {
     @State private var isLoading: Bool = false
 
     var body: some View {
-        ZStack {
-            Color(red: 0.0, green: 0.4666666666666667, blue: 0.7137254901960784)
-
-            VStack {
-                appNameView
-                Spacer()
-                textEditorView
-                submitButtonView
-                Spacer()
-                imageView
-                Spacer()
-            }
+        VStack {
+            appNameView
+            Spacer()
+            textEditorView
+            submitButtonView
+            Spacer()
+            imageView
+            Spacer()
         }
         .padding()
+        .background(Color(red: 0.0, green: 0.4666666666666667, blue: 0.7137254901960784))
     }
 }
 
