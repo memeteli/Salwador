@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */,
-				89CDB3402992B40A001E72A5 /* Modal */,
+				89CDB3402992B40A001E72A5 /* Model */,
 				89CDB3422992B42F001E72A5 /* View */,
 				89CDB3412992B421001E72A5 /* Controller */,
 				89AE838A2989067100683743 /* Assets.xcassets */,
@@ -143,12 +143,12 @@
 			path = SalwadorUITests;
 			sourceTree = "<group>";
 		};
-		89CDB3402992B40A001E72A5 /* Modal */ = {
+		89CDB3402992B40A001E72A5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				892D5F0E299269F4002D0248 /* ImageGenerationResponse.swift */,
 			);
-			path = Modal;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		89CDB3412992B421001E72A5 /* Controller */ = {
