@@ -92,4 +92,3 @@ iOSInjectionProject/
 # Personal Data
 .swiftformat
 .swiftlint.yml 
-./Utils/Credentials.swift
