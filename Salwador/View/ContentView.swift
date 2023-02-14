@@ -93,7 +93,7 @@ private extension ContentView {
     var imageView: some View {
         VStack {
             if let image {
-                if isLoading == false {
+                if !isLoading {
                     Image(uiImage: image)
                         .resizable()
                         .foregroundColor(Color.red)
