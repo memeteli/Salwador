@@ -14,6 +14,8 @@ struct ContentView: View {
     @State private var imagePath: String = "salvador-man"
     @State private var image: UIImage? = nil
     @State private var isLoading: Bool = false
+    @State private var hasError: Bool = false
+    @State private var errorMsg: String = ""
 
     var body: some View {
         ZStack {
@@ -94,13 +96,19 @@ private extension ContentView {
             if let image {
                 if isLoading {
                     loadingView
-                } else {
+                }
+                if !isLoading, hasError {
+                    Text("Error occured, please try again")
+                }
+
+                if !isLoading, !hasError {
                     Image(uiImage: image)
                         .resizable()
                         .foregroundColor(Color.red)
                         .scaledToFit()
                         .frame(width: 440, height: 320)
                 }
+
             } else {
                 if isLoading {
                     loadingView
@@ -127,12 +135,18 @@ private extension ContentView {
 
                 if let url = response.data.map(\.url).first {
                     let (data, _) = try await URLSession.shared.data(from: url)
+
+                    if data.isEmpty {
+                        hasError = true
+                        errorMsg = "No data was fetched, please retry again!"
+                    }
                     image = UIImage(data: data)
                     isLoading = false
                     buttonText = "Regenerate"
                 }
             } catch {
-                print(error)
+                hasError = true
+                errorMsg = error.localizedDescription
                 isLoading = false
                 buttonText = "Regenerate"
             }

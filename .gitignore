@@ -5,6 +5,9 @@
 ## User settings
 xcuserdata/
 
+# Development file
+Salwador/Utils/Credentials.swift
+
 ## compatibility with Xcode 8 and earlier (ignoring not required starting Xcode 9)
 *.xcscmblueprint
 *.xccheckout
@@ -91,7 +94,4 @@ iOSInjectionProject/
 
 # Personal Data
 .swiftformat
-.swiftlint.yml 
-
-# Development file
-Salwador/Utils/Credentials.swift
+.swiftlint.yml
