@@ -70,7 +70,6 @@ private extension ContentView {
                 .border(Color(.black), width: 1)
                 .padding(10)
                 .cornerRadius(10)
-                .onTapGesture {}
         }
         .background(Rectangle()
             .foregroundColor(Color(hue: 0.564, saturation: 0.583, brightness: 0.63))
@@ -93,15 +92,14 @@ private extension ContentView {
     var imageView: some View {
         VStack {
             if let image {
-                if !isLoading {
+                if isLoading {
+                    loadingView
+                } else {
                     Image(uiImage: image)
                         .resizable()
                         .foregroundColor(Color.red)
                         .scaledToFit()
                         .frame(width: 440, height: 320)
-                }
-                if isLoading {
-                    loadingView
                 }
             } else {
                 if isLoading {
