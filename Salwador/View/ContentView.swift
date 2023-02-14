@@ -115,7 +115,6 @@ private extension ContentView {
         VStack {
             ProgressView()
                 .background(Color(.white))
-
                 .foregroundColor(.white)
             Text("Your image is generating...")
                 .font(.title3)
