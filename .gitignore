@@ -92,3 +92,6 @@ iOSInjectionProject/
 # Personal Data
 .swiftformat
 .swiftlint.yml 
+
+# Development file
+Salwador/Utils/Credentials.swift
