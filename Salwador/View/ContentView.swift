@@ -26,6 +26,7 @@ struct ContentView: View {
                 Spacer()
                 textEditorView
                 submitButtonView
+                      .padding(10)
                 Spacer()
                 imageView
                 Spacer()
@@ -88,7 +89,6 @@ private extension ContentView {
         .foregroundColor(.white)
         .background(Color(red: 0.0, green: 0.5882352941176471, blue: 0.7803921568627451))
         .cornerRadius(10)
-        .padding(10)
     }
 
     var imageView: some View {
@@ -140,6 +140,7 @@ private extension ContentView {
                         hasError = true
                         errorMsg = "No data was fetched, please retry again!"
                     }
+                                    
                     image = UIImage(data: data)
                     isLoading = false
                     buttonText = "Regenerate"
