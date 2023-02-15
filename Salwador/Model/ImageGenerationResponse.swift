@@ -2,8 +2,8 @@
 
 import Foundation
 
-struct ImageGenerationResponse: Encodable {
-    struct ImageResponse: Encodable {
+struct ImageGenerationResponse: Codable {
+    struct ImageResponse: Codable {
         let url: URL
     }
 
