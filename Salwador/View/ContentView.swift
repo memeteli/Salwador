@@ -19,8 +19,6 @@ struct ContentView: View {
 
     var body: some View {
         ZStack {
-            Color(red: 0.0, green: 0.4666666666666667, blue: 0.7137254901960784)
-
             VStack {
                 appNameView
                 Spacer()
@@ -32,7 +30,7 @@ struct ContentView: View {
                 Spacer()
             }
         }
-        .padding()
+        .background(ColorPalette.mainBgColor)
     }
 }
 
@@ -46,7 +44,7 @@ private extension ContentView {
     var appNameView: some View {
         VStack {
             Text("Salvador")
-                .foregroundColor(Color(.white))
+                .foregroundColor(ColorPalette.grayColor)
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, 30)
@@ -57,7 +55,7 @@ private extension ContentView {
                 .frame(width: 200, height: 100)
 
             Text("Your AI Image Generator")
-                .foregroundColor(.white)
+                .foregroundColor(ColorPalette.grayColor)
                 .font(.footnote)
         }
     }
@@ -66,7 +64,6 @@ private extension ContentView {
         ZStack {
             TextEditor(
                 text: $prompText)
-                .background(Color(.red))
                 .font(.title2)
                 .frame(minWidth: 320, idealWidth: 500, maxWidth: .infinity, minHeight: 100, idealHeight: 200, maxHeight: .infinity)
                 .scaledToFit()
@@ -74,9 +71,7 @@ private extension ContentView {
                 .padding(10)
                 .cornerRadius(10)
         }
-        .background(Rectangle()
-            .foregroundColor(Color(hue: 0.564, saturation: 0.583, brightness: 0.63))
-            .shadow(radius: 15))
+        .background(ColorPalette.grayDarkColor)
     }
 
     var submitButtonView: some View {
@@ -86,8 +81,8 @@ private extension ContentView {
             sendRequest(prompText: prompText)
         }
         .frame(width: 150, height: 50)
-        .foregroundColor(.white)
-        .background(Color(red: 0.0, green: 0.5882352941176471, blue: 0.7803921568627451))
+        .foregroundColor(ColorPalette.grayColor)
+        .background(ColorPalette.mainOrangeColor)
         .cornerRadius(10)
     }
 
@@ -95,9 +90,12 @@ private extension ContentView {
         VStack {
             if hasError {
                 HStack {
-                    Image(systemName: "")
+                    Image(systemName: "bell")
+                                                        .foregroundColor(.red)
+                                                        .scaledToFit()
+                                                        .frame(width: 48, height: 48)
                     Text(errorMsg)
-                        .foregroundColor(.white)
+                        .foregroundColor(ColorPalette.grayColor)
                 }
             } else if let image {
                 if isLoading {
@@ -123,11 +121,11 @@ private extension ContentView {
     var loadingView: some View {
         VStack {
             ProgressView()
-                .background(Color(.white))
-                .foregroundColor(.white)
+                .background(ColorPalette.grayColor)
+                .foregroundColor(ColorPalette.grayColor)
             Text("Your image is generating...")
                 .font(.title3)
-                .foregroundColor(Color(.white))
+                .foregroundColor(ColorPalette.grayColor)
         }
     }
 
