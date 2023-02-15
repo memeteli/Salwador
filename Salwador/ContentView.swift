@@ -91,9 +91,9 @@ private extension ContentView {
             if hasError {
                 HStack {
                     Image(systemName: "bell")
-                                                        .foregroundColor(.red)
-                                                        .scaledToFit()
-                                                        .frame(width: 48, height: 48)
+                        .foregroundColor(.red)
+                        .scaledToFit()
+                        .frame(width: 48, height: 48)
                     Text(errorMsg)
                         .foregroundColor(ColorPalette.grayColor)
                 }
