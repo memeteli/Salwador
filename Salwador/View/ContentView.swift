@@ -26,7 +26,7 @@ struct ContentView: View {
                 Spacer()
                 textEditorView
                 submitButtonView
-                      .padding(10)
+                    .padding(10)
                 Spacer()
                 imageView
                 Spacer()
@@ -93,15 +93,18 @@ private extension ContentView {
 
     var imageView: some View {
         VStack {
-            if let image {
+            if hasError {
+                HStack {
+                    Image(systemName: "")
+                    Text(errorMsg)
+                        .foregroundColor(.white)
+                }
+            } else if let image {
                 if isLoading {
                     loadingView
                 }
-                if !isLoading, hasError {
-                    Text("Error occured, please try again")
-                }
 
-                if !isLoading, !hasError {
+                if !isLoading {
                     Image(uiImage: image)
                         .resizable()
                         .foregroundColor(Color.red)
@@ -140,7 +143,7 @@ private extension ContentView {
                         hasError = true
                         errorMsg = "No data was fetched, please retry again!"
                     }
-                                    
+
                     image = UIImage(data: data)
                     isLoading = false
                     buttonText = "Regenerate"
