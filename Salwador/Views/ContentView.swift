@@ -30,7 +30,7 @@ struct ContentView: View {
                 Spacer()
             }
         }
-        .background(Color("Colors/Background"))
+        .background(Color("BackgroundColor"))
     }
 }
 
@@ -44,7 +44,7 @@ private extension ContentView {
     var appNameView: some View {
         VStack {
             Text("Salvador")
-                .foregroundColor(ColorPalette.grayColor)
+                .foregroundColor(Color("TextColor"))
                 .font(.title)
                 .fontWeight(.bold)
                 .padding(.top, 30)
@@ -55,7 +55,7 @@ private extension ContentView {
                 .frame(width: 200, height: 100)
 
             Text("Your AI Image Generator")
-                .foregroundColor(ColorPalette.grayColor)
+                .foregroundColor(Color("TextColor"))
                 .font(.footnote)
         }
     }
@@ -71,7 +71,7 @@ private extension ContentView {
                 .padding(10)
                 .cornerRadius(10)
         }
-        .background(ColorPalette.grayDarkColor)
+        .background(Color("BackgroundColor"))
     }
 
     var submitButtonView: some View {
@@ -81,8 +81,8 @@ private extension ContentView {
             sendRequest(prompText: prompText)
         }
         .frame(width: 150, height: 50)
-        .foregroundColor(ColorPalette.grayColor)
-        .background(ColorPalette.mainOrangeColor)
+        .foregroundColor(Color("TextColor"))
+        .background(Color("OrangeColor"))
         .cornerRadius(10)
     }
 
@@ -95,7 +95,7 @@ private extension ContentView {
                         .scaledToFit()
                         .frame(width: 48, height: 48)
                     Text(errorMsg)
-                        .foregroundColor(ColorPalette.grayColor)
+                        .foregroundColor(Color("TextColor"))
                 }
             } else if let image {
                 if isLoading {
@@ -105,7 +105,6 @@ private extension ContentView {
                 if !isLoading {
                     Image(uiImage: image)
                         .resizable()
-                        .foregroundColor(Color.red)
                         .scaledToFit()
                         .frame(width: 440, height: 320)
                 }
@@ -121,11 +120,11 @@ private extension ContentView {
     var loadingView: some View {
         VStack {
             ProgressView()
-                .background(ColorPalette.grayColor)
-                .foregroundColor(ColorPalette.grayColor)
+                .background(Color("TextColor"))
+                .foregroundColor(Color("TextColor"))
             Text("Your image is generating...")
                 .font(.title3)
-                .foregroundColor(ColorPalette.grayColor)
+                .foregroundColor(Color("TextColor"))
         }
     }
 

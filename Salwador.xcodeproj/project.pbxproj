@@ -17,7 +17,6 @@
 		89AE83992989067100683743 /* SalwadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83982989067100683743 /* SalwadorTests.swift */; };
 		89AE83A32989067100683743 /* SalwadorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A22989067100683743 /* SalwadorUITests.swift */; };
 		89AE83A52989067100683743 /* SalwadorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */; };
-		89B9C60A299CF247006D2121 /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B9C609299CF247006D2121 /* ColorPalette.swift */; };
 		89B9C61E299D4051006D2121 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* ImageGenerator.swift */; };
 		89B9C61F299D4054006D2121 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* ImageGenerator.swift */; };
 		89B9C628299D40A6006D2121 /* ImageGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */; };
@@ -76,7 +75,6 @@
 		89AE839E2989067100683743 /* SalwadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalwadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE83A22989067100683743 /* SalwadorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITests.swift; sourceTree = "<group>"; };
 		89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		89B9C609299CF247006D2121 /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		89B9C615299D3F51006D2121 /* ImageGenerator.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGenerator.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B9C625299D40A6006D2121 /* ImageGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorTests.swift; sourceTree = "<group>"; };
@@ -239,7 +237,6 @@
 			isa = PBXGroup;
 			children = (
 				8987198D29929A3100678E85 /* Credentials.swift */,
-				89B9C609299CF247006D2121 /* ColorPalette.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -462,7 +459,6 @@
 				892D5F0829924C54002D0248 /* ImageGenerator.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
 				892D5F0F299269F4002D0248 /* ImageGenerationResponse.swift in Sources */,
-				89B9C60A299CF247006D2121 /* ColorPalette.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
