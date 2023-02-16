@@ -30,7 +30,7 @@ struct ContentView: View {
                 Spacer()
             }
         }
-        .background(ColorPalette.mainBgColor)
+        .background(Color("Colors/Background"))
     }
 }
 
