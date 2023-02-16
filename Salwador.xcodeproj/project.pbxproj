@@ -158,7 +158,6 @@
 		8996F4C0299E292C00E38E5C /* Configs */ = {
 			isa = PBXGroup;
 			children = (
-				892D5F0629916680002D0248 /* Info.plist */,
 			);
 			path = Configs;
 			sourceTree = "<group>";
@@ -190,6 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				89AE838C2989067100683743 /* Salwador.entitlements */,
+				892D5F0629916680002D0248 /* Info.plist */,
 				8996F4BE299E208800E38E5C /* Views */,
 				8996F4BD299E207500E38E5C /*  Models */,
 				8996F4BC299E206400E38E5C /* ViewModels */,
