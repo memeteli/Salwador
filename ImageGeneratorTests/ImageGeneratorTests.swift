@@ -1,13 +1,13 @@
 //
-//  SalwadorTests.swift
-//  SalwadorTests
+//  ImageGeneratorTests.swift
+//  ImageGeneratorTests
 //
-//  Created by Ailiniyazi Maimaiti on 31.01.23.
+//  Created by Ailiniyazi Maimaiti on 15.02.23.
 //
 
 import XCTest
 
-final class SalwadorTests: XCTestCase {
+final class ImageGeneratorTests: XCTestCase {
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }

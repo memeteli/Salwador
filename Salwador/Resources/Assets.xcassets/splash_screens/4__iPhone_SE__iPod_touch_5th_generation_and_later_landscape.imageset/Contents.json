@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "4__iPhone_SE__iPod_touch_5th_generation_and_later_landscape.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

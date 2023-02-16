@@ -8,7 +8,6 @@
 import XCTest
 
 final class SalwadorUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }
