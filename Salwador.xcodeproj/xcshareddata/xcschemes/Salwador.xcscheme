@@ -50,6 +50,28 @@
                ReferencedContainer = "container:Salwador.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "89B9C614299D3F51006D2121"
+               BuildableName = "ImageGenerator.xctest"
+               BlueprintName = "ImageGenerator"
+               ReferencedContainer = "container:Salwador.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "89B9C624299D40A6006D2121"
+               BuildableName = "ImageGeneratorTests.xctest"
+               BlueprintName = "ImageGeneratorTests"
+               ReferencedContainer = "container:Salwador.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
