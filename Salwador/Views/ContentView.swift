@@ -10,12 +10,7 @@ import UIKit
 
 struct ContentView: View {
     @State private var prompText: String = ""
-    @State private var buttonText: String = "Ready?"
-    @State private var imagePath: String = "salvador-man"
-    @State private var image: UIImage? = nil
-    @State private var isLoading: Bool = false
-    @State private var hasError: Bool = false
-    @State private var errorMsg: String = ""
+    @ObservedObject var iGViewModel = IGViewModel()
 
     var body: some View {
         ZStack {
@@ -75,10 +70,10 @@ private extension ContentView {
     }
 
     var submitButtonView: some View {
-        Button(buttonText) {
-            buttonText = "Wait..."
-            isLoading = true
-            sendRequest(prompText: prompText)
+        Button(iGViewModel.buttonText) {
+            iGViewModel.buttonText = "Wait..."
+            iGViewModel.isLoading = true
+            iGViewModel.sendRequest(prompText: prompText)
         }
         .frame(width: 150, height: 50)
         .foregroundColor(Color("TextColor"))
@@ -88,29 +83,29 @@ private extension ContentView {
 
     var imageView: some View {
         VStack {
-            if hasError {
+            if iGViewModel.hasError {
                 HStack {
                     Image(systemName: "bell")
                         .foregroundColor(.red)
                         .scaledToFit()
                         .frame(width: 48, height: 48)
-                    Text(errorMsg)
+                    Text(iGViewModel.errorMsg)
                         .foregroundColor(Color("TextColor"))
                 }
-            } else if let image {
-                if isLoading {
+            } else if let identifier = iGViewModel.image {
+                if iGViewModel.isLoading {
                     loadingView
                 }
 
-                if !isLoading {
-                    Image(uiImage: image)
+                if !iGViewModel.isLoading {
+                    Image(uiImage: identifier)
                         .resizable()
                         .scaledToFit()
                         .frame(width: 440, height: 320)
                 }
 
             } else {
-                if isLoading {
+                if iGViewModel.isLoading {
                     loadingView
                 }
             }
@@ -125,32 +120,6 @@ private extension ContentView {
             Text("Your image is generating...")
                 .font(.title3)
                 .foregroundColor(Color("TextColor"))
-        }
-    }
-
-    private func sendRequest(prompText: String) {
-        Task {
-            do {
-                let response = try await ImageGenerator.shared.generateImage(withPrompt: prompText, apiKey: Credentials.apiKey)
-
-                if let url = response.data.map(\.url).first {
-                    let (data, _) = try await URLSession.shared.data(from: url)
-
-                    if data.isEmpty {
-                        hasError = true
-                        errorMsg = "No data was fetched, please retry again!"
-                    }
-
-                    image = UIImage(data: data)
-                    isLoading = false
-                    buttonText = "Regenerate"
-                }
-            } catch {
-                hasError = true
-                errorMsg = error.localizedDescription
-                isLoading = false
-                buttonText = "Regenerate"
-            }
         }
     }
 }

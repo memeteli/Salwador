@@ -18,14 +18,8 @@ class ImageGenerator {
             throw ImageError.badURL
         }
 
-        let params: [String: Any] = [
-            "prompt": prompt,
-            "n": 1,
-            "size": "1024x1024",
-            "user": sessionID,
-        ]
-
-        let data: Data = try JSONSerialization.data(withJSONObject: params)
+        let requestBody = ImageGenerationRequest(promp: prompt, userID: sessionID, imageSize: "1024x102", numberOfImage: 1)
+        let data = try JSONEncoder().encode(requestBody)
 
         var request = URLRequest(url: url)
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
