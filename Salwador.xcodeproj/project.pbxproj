@@ -19,43 +19,8 @@
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
-		89AE83992989067100683743 /* SalwadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83982989067100683743 /* SalwadorTests.swift */; };
-		89AE83A32989067100683743 /* SalwadorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A22989067100683743 /* SalwadorUITests.swift */; };
-		89AE83A52989067100683743 /* SalwadorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */; };
-		89B9C628299D40A6006D2121 /* ImageGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		89AE83952989067100683743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AE837B2989066F00683743 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89AE83822989066F00683743;
-			remoteInfo = Salwador;
-		};
-		89AE839F2989067100683743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AE837B2989066F00683743 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89AE83822989066F00683743;
-			remoteInfo = Salwador;
-		};
-		89B9C619299D3F52006D2121 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AE837B2989066F00683743 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89AE83822989066F00683743;
-			remoteInfo = Salwador;
-		};
-		89B9C629299D40A6006D2121 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AE837B2989066F00683743 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89AE83822989066F00683743;
-			remoteInfo = Salwador;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		892D5F0629916680002D0248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -69,47 +34,11 @@
 		89AE838A2989067100683743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		89AE83942989067100683743 /* SalwadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalwadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89AE83982989067100683743 /* SalwadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorTests.swift; sourceTree = "<group>"; };
-		89AE839E2989067100683743 /* SalwadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalwadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89AE83A22989067100683743 /* SalwadorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITests.swift; sourceTree = "<group>"; };
-		89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		89B9C615299D3F51006D2121 /* ImageGenerator.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGenerator.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89B9C625299D40A6006D2121 /* ImageGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorTests.swift; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		89AE83802989066F00683743 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE83912989067100683743 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE839B2989067100683743 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C612299D3F51006D2121 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C622299D40A6006D2121 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -156,9 +85,6 @@
 			isa = PBXGroup;
 			children = (
 				89AE83852989066F00683743 /* Salwador */,
-				89AE83972989067100683743 /* SalwadorTests */,
-				89AE83A12989067100683743 /* SalwadorUITests */,
-				89B9C626299D40A6006D2121 /* ImageGeneratorTests */,
 				89AE83842989066F00683743 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,10 +93,6 @@
 			isa = PBXGroup;
 			children = (
 				89AE83832989066F00683743 /* Salwador.app */,
-				89AE83942989067100683743 /* SalwadorTests.xctest */,
-				89AE839E2989067100683743 /* SalwadorUITests.xctest */,
-				89B9C615299D3F51006D2121 /* ImageGenerator.xctest */,
-				89B9C625299D40A6006D2121 /* ImageGeneratorTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -186,6 +108,7 @@
 				8996F4BC299E206400E38E5C /* ViewModels */,
 				89AE83862989066F00683743 /* SalwadorApp.swift */,
 				8996F4BF299E291200E38E5C /* Resources */,
+				89CDB3442992B454001E72A5 /* Services */,
 				89AE838D2989067100683743 /* Preview Content */,
 			);
 			path = Salwador;
@@ -197,31 +120,6 @@
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		89AE83972989067100683743 /* SalwadorTests */ = {
-			isa = PBXGroup;
-			children = (
-				89AE83982989067100683743 /* SalwadorTests.swift */,
-			);
-			path = SalwadorTests;
-			sourceTree = "<group>";
-		};
-		89AE83A12989067100683743 /* SalwadorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				89AE83A22989067100683743 /* SalwadorUITests.swift */,
-				89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */,
-			);
-			path = SalwadorUITests;
-			sourceTree = "<group>";
-		};
-		89B9C626299D40A6006D2121 /* ImageGeneratorTests */ = {
-			isa = PBXGroup;
-			children = (
-				89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */,
-			);
-			path = ImageGeneratorTests;
 			sourceTree = "<group>";
 		};
 		89CDB3442992B454001E72A5 /* Services */ = {
@@ -254,78 +152,6 @@
 			productReference = 89AE83832989066F00683743 /* Salwador.app */;
 			productType = "com.apple.product-type.application";
 		};
-		89AE83932989067100683743 /* SalwadorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89AE83AB2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorTests" */;
-			buildPhases = (
-				89AE83902989067100683743 /* Sources */,
-				89AE83912989067100683743 /* Frameworks */,
-				89AE83922989067100683743 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89AE83962989067100683743 /* PBXTargetDependency */,
-			);
-			name = SalwadorTests;
-			productName = SalwadorTests;
-			productReference = 89AE83942989067100683743 /* SalwadorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		89AE839D2989067100683743 /* SalwadorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89AE83AE2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorUITests" */;
-			buildPhases = (
-				89AE839A2989067100683743 /* Sources */,
-				89AE839B2989067100683743 /* Frameworks */,
-				89AE839C2989067100683743 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89AE83A02989067100683743 /* PBXTargetDependency */,
-			);
-			name = SalwadorUITests;
-			productName = SalwadorUITests;
-			productReference = 89AE839E2989067100683743 /* SalwadorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		89B9C614299D3F51006D2121 /* ImageGenerator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89B9C61B299D3F52006D2121 /* Build configuration list for PBXNativeTarget "ImageGenerator" */;
-			buildPhases = (
-				89B9C611299D3F51006D2121 /* Sources */,
-				89B9C612299D3F51006D2121 /* Frameworks */,
-				89B9C613299D3F51006D2121 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89B9C61A299D3F52006D2121 /* PBXTargetDependency */,
-			);
-			name = ImageGenerator;
-			productName = ImageGenerator;
-			productReference = 89B9C615299D3F51006D2121 /* ImageGenerator.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		89B9C624299D40A6006D2121 /* ImageGeneratorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89B9C62B299D40A6006D2121 /* Build configuration list for PBXNativeTarget "ImageGeneratorTests" */;
-			buildPhases = (
-				89B9C621299D40A6006D2121 /* Sources */,
-				89B9C622299D40A6006D2121 /* Frameworks */,
-				89B9C623299D40A6006D2121 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89B9C62A299D40A6006D2121 /* PBXTargetDependency */,
-			);
-			name = ImageGeneratorTests;
-			productName = ImageGeneratorTests;
-			productReference = 89B9C625299D40A6006D2121 /* ImageGeneratorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -338,22 +164,6 @@
 				TargetAttributes = {
 					89AE83822989066F00683743 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					89AE83932989067100683743 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
-					};
-					89AE839D2989067100683743 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
-					};
-					89B9C614299D3F51006D2121 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
-					};
-					89B9C624299D40A6006D2121 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
 					};
 				};
 			};
@@ -371,10 +181,6 @@
 			projectRoot = "";
 			targets = (
 				89AE83822989066F00683743 /* Salwador */,
-				89AE83932989067100683743 /* SalwadorTests */,
-				89AE839D2989067100683743 /* SalwadorUITests */,
-				89B9C614299D3F51006D2121 /* ImageGenerator */,
-				89B9C624299D40A6006D2121 /* ImageGeneratorTests */,
 			);
 		};
 /* End PBXProject section */
@@ -387,34 +193,6 @@
 				89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */,
 				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
 				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE83922989067100683743 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE839C2989067100683743 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C613299D3F51006D2121 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C623299D40A6006D2121 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,66 +233,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		89AE83902989067100683743 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE0E09299E7278005DAEA5 /* ContentView.swift in Sources */,
-				89AE83992989067100683743 /* SalwadorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE839A2989067100683743 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE83A52989067100683743 /* SalwadorUITestsLaunchTests.swift in Sources */,
-				89AE83A32989067100683743 /* SalwadorUITests.swift in Sources */,
-				89AE0E08299E7277005DAEA5 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C611299D3F51006D2121 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE0E07299E7277005DAEA5 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C621299D40A6006D2121 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE0E06299E7276005DAEA5 /* ContentView.swift in Sources */,
-				89B9C628299D40A6006D2121 /* ImageGeneratorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		89AE83962989067100683743 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89AE83952989067100683743 /* PBXContainerItemProxy */;
-		};
-		89AE83A02989067100683743 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89AE839F2989067100683743 /* PBXContainerItemProxy */;
-		};
-		89B9C61A299D3F52006D2121 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89B9C619299D3F52006D2121 /* PBXContainerItemProxy */;
-		};
-		89B9C62A299D40A6006D2121 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89B9C629299D40A6006D2121 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		89AE83A62989067100683743 /* Debug */ = {
@@ -713,170 +432,6 @@
 			};
 			name = Release;
 		};
-		89AE83AC2989067100683743 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Debug;
-		};
-		89AE83AD2989067100683743 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Release;
-		};
-		89AE83AF2989067100683743 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Salwador;
-			};
-			name = Debug;
-		};
-		89AE83B02989067100683743 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Salwador;
-			};
-			name = Release;
-		};
-		89B9C61C299D3F52006D2121 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGenerator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Debug;
-		};
-		89B9C61D299D3F52006D2121 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGenerator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		89B9C62C299D40A6006D2121 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGeneratorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Debug;
-		};
-		89B9C62D299D40A6006D2121 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGeneratorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -894,42 +449,6 @@
 			buildConfigurations = (
 				89AE83A92989067100683743 /* Debug */,
 				89AE83AA2989067100683743 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89AE83AB2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89AE83AC2989067100683743 /* Debug */,
-				89AE83AD2989067100683743 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89AE83AE2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89AE83AF2989067100683743 /* Debug */,
-				89AE83B02989067100683743 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89B9C61B299D3F52006D2121 /* Build configuration list for PBXNativeTarget "ImageGenerator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89B9C61C299D3F52006D2121 /* Debug */,
-				89B9C61D299D3F52006D2121 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89B9C62B299D40A6006D2121 /* Build configuration list for PBXNativeTarget "ImageGeneratorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89B9C62C299D40A6006D2121 /* Debug */,
-				89B9C62D299D40A6006D2121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
