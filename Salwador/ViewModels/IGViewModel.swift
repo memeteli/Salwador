@@ -17,32 +17,34 @@ extension ContentView {
         @Published var hasError: Bool = false
         @Published var errorMsg: String = ""
 
-        func sendRequest(prompText _: String) async {
-            var fileManager = FileManager(filename: "APIKey", filetype: "json")
-            fileManager.readFile()
+        func sendRequest(prompText: String) async {
+            let fileManager = FileManager(filename: "APIKey", filetype: "json")
 
-           do {
-               let response = try await ImageGenerator.shared.generateImage(withPrompt: prompText, apiKey: "")
+            let data = fileManager.readFile()
 
-               if let url = response.data.map(\.url).first {
-                   let (data, _) = try await URLSession.shared.data(from: url)
+            do {
+                let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
+                let response = try await ImageGenerator.shared.generateImage(withPrompt: prompText, apiKey: json.apikey)
 
-                   if data.isEmpty {
-                       hasError = true
-                       errorMsg = "No data was fetched, please retry again!"
-                   }
+                if let url = response.data.map(\.url).first {
+                    let (data, _) = try await URLSession.shared.data(from: url)
 
-                   image = UIImage(data: data)
-                   isLoading = false
-                   buttonText = "Regenerate"
-               }
-           } catch {
-               hasError = true
-               errorMsg = error.localizedDescription
-               isLoading = false
-               buttonText = "Regenerate"
-               print(error)
-           }
+                    if data.isEmpty {
+                        hasError = true
+                        errorMsg = "No data was fetched, please retry again!"
+                    }
+
+                    image = UIImage(data: data)
+                    isLoading = false
+                    buttonText = "Regenerate"
+                }
+            } catch {
+                hasError = true
+                errorMsg = error.localizedDescription
+                isLoading = false
+                buttonText = "Regenerate"
+                print(error)
+            }
         }
     }
 }

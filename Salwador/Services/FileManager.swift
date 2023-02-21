@@ -9,38 +9,32 @@ import Foundation
 
 class FileManager {
     let filename, filetype: String
-    let apikey:String
-    
+
     init(filename: String, filetype: String) {
         self.filename = filename
         self.filetype = filetype
     }
 
     func getFilePath(fileName: String, fileType: String) -> String {
-        Bundle.main.path(forResource: fileName, ofType: fileType) ?? "error"
+        Bundle.main.path(forResource: fileName, ofType: fileType) ?? ""
     }
 
     func getFileURL(filePath: String) -> URL {
         URL(fileURLWithPath: filePath)
     }
 
-    func readFile() -> AnyObject {
+    func readFile() -> Data? {
         let filepath = getFilePath(fileName: filename, fileType: filetype)
         let fileurl = getFileURL(filePath: filepath)
-        var data:Data = Data()
 
         do {
-            data = try Data(contentsOf: fileurl)
-            let jsonDecoder = JSONDecoder()
-
-            if filetype == "json" {
-               return try jsonDecoder.decode(APIJSONModel.self, from: data)
-            }
+            let data = try Data(contentsOf: fileurl)
+            return data
         } catch {
             print(error)
         }
-        
-        return data
+
+        return nil
     }
 
     func writeFile(data _: Data) {}
