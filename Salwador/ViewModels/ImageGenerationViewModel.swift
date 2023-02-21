@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension ContentView {
-    @MainActor class IGViewModel: ObservableObject {
+    @MainActor class ImageGenerationViewModel: ObservableObject {
         @Published var buttonText: String = "Ready?"
         @Published var imagePath: String = "salvador-man"
         @Published var image: UIImage? = nil

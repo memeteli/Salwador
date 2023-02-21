@@ -7,8 +7,8 @@
 
 import SwiftUI
 
-class ImageGenerator {
-    static let shared = ImageGenerator()
+class ImageGenerationService {
+    static let shared = ImageGenerationService()
     let sessionID = UUID().uuidString
 
     func generateImage(withPrompt prompt: String, apiKey: String) async throws -> ImageGenerationResponse {

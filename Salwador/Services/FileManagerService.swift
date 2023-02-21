@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FileManager {
+class FileManagerService {
     let filename, filetype: String
 
     init(filename: String, filetype: String) {

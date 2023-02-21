@@ -10,7 +10,7 @@ import UIKit
 
 struct ContentView: View {
     @State private var prompText: String = ""
-    @StateObject var iGViewModel = IGViewModel()
+    @StateObject var iGViewModel = ImageGenerationViewModel()
 
     var body: some View {
         ZStack {
