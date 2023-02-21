@@ -10,7 +10,7 @@ import UIKit
 
 struct ContentView: View {
     @State private var prompText: String = ""
-    @ObservedObject var iGViewModel = IGViewModel()
+    @StateObject var iGViewModel = IGViewModel()
 
     var body: some View {
         ZStack {
@@ -73,7 +73,9 @@ private extension ContentView {
         Button(iGViewModel.buttonText) {
             iGViewModel.buttonText = "Wait..."
             iGViewModel.isLoading = true
-            iGViewModel.sendRequest(prompText: prompText)
+            Task {
+                await iGViewModel.sendRequest(prompText: prompText)
+            }
         }
         .frame(width: 150, height: 50)
         .foregroundColor(Color("TextColor"))
