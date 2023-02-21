@@ -8,5 +8,5 @@
 import Foundation
 
 struct APIJSONModel: Codable {
-    let apikey:String
+    let apikey: String
 }

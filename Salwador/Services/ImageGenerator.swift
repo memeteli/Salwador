@@ -10,11 +10,8 @@ import SwiftUI
 class ImageGenerator {
     static let shared = ImageGenerator()
     let sessionID = UUID().uuidString
-    var apiKey = Credentials.apiKey
 
-    private init() {}
-
-    func generateImage(withPrompt prompt: String) async throws -> ImageGenerationResponse {
+    func generateImage(withPrompt prompt: String, apiKey: String) async throws -> ImageGenerationResponse {
         guard let url = URL(string: "https://api.openai.com/v1/images/generations") else {
             throw ImageError.badURL
         }

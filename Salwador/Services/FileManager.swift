@@ -8,46 +8,41 @@
 import Foundation
 
 class FileManager {
-    let filename, filetype:String
+    let filename, filetype: String
+    let apikey:String
     
     init(filename: String, filetype: String) {
         self.filename = filename
         self.filetype = filetype
     }
-    
-    func getFilePath(fileName:String, fileType:String) -> String? {
-        return Bundle.main.path(forResource: fileName, ofType: fileType)
+
+    func getFilePath(fileName: String, fileType: String) -> String {
+        Bundle.main.path(forResource: fileName, ofType: fileType) ?? "error"
     }
-    
-    func getFileURL(filePath:String) -> URL? {
-        return URL(fileURLWithPath: filePath)
+
+    func getFileURL(filePath: String) -> URL {
+        URL(fileURLWithPath: filePath)
     }
-    
-    func getFileData(fileURL: URL) -> Data? {
+
+    func readFile() -> AnyObject {
+        let filepath = getFilePath(fileName: filename, fileType: filetype)
+        let fileurl = getFileURL(filePath: filepath)
+        var data:Data = Data()
+
         do {
-           return try Data(contentsOf: fileURL)
-         } catch {
-             return Data(error.localizedDescription.utf8)
-         }
-    }
-    
-    func readFile() {
-        let filepath = getFilePath(fileName: filename, fileType: filetype )
-        let fileurl = getFileURL(filePath: filepath!)
-        let data = getFileData(fileURL: fileurl!)
-        
-        if(self.filetype == "json") {
-            do {
-                if let json = try JSONSerialization.jsonObject(with: data!, options: []) as? [String: Any] {
-                    if let apikey = json["apikey"] as? [String] {
-                        print(apikey)
-                    }
-                }
-            } catch let error as NSError {
-                print("Failed to load: \(error.localizedDescription)")
+            data = try Data(contentsOf: fileurl)
+            let jsonDecoder = JSONDecoder()
+
+            if filetype == "json" {
+               return try jsonDecoder.decode(APIJSONModel.self, from: data)
             }
+        } catch {
+            print(error)
         }
+        
+        return data
     }
-    //TODO: create write file function as well in the future
-    
+
+    func writeFile(data _: Data) {}
+    // TODO: create write file function as well in the future
 }
