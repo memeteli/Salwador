@@ -22,6 +22,5 @@ struct ImageGenerationRequest: Encodable {
         case imageSize = "size"
         case numberOfImage = "n"
         case prompt
-
     }
 }
