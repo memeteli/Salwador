@@ -13,7 +13,7 @@
 		894FD6FB29A4FD3F0078233F /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6FA29A4FD3F0078233F /* APIJSONModel.swift */; };
 		894FD6FD29A4FDDB0078233F /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 894FD6FC29A4FDDB0078233F /* APIKey.json */; };
 		89AE0E05299E6FBC005DAEA5 /* ImageGenerationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* ImageGenerationViewModel.swift */; };
-		89AE0E0A299E7279005DAEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
+		89AE0E0A299E7279005DAEA5 /* ImageGenerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ImageGenerationView.swift */; };
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
@@ -30,7 +30,7 @@
 		89AE0E04299E6FBC005DAEA5 /* ImageGenerationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerationViewModel.swift; sourceTree = "<group>"; };
 		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE83862989066F00683743 /* SalwadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorApp.swift; sourceTree = "<group>"; };
-		89AE83882989066F00683743 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 20; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 20; usesTabs = 0; };
+		89AE83882989066F00683743 /* ImageGenerationView.swift */ = {isa = PBXFileReference; indentWidth = 20; lastKnownFileType = sourcecode.swift; path = ImageGenerationView.swift; sourceTree = "<group>"; tabWidth = 20; usesTabs = 0; };
 		89AE838A2989067100683743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		8996F4BE299E208800E38E5C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				89AE83882989066F00683743 /* ContentView.swift */,
+				89AE83882989066F00683743 /* ImageGenerationView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,7 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				892D5F0829924C54002D0248 /* ImageGenerationService.swift in Sources */,
-				89AE0E0A299E7279005DAEA5 /* ContentView.swift in Sources */,
+				89AE0E0A299E7279005DAEA5 /* ImageGenerationView.swift in Sources */,
 				894FD6FB29A4FD3F0078233F /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
 				894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */,

@@ -37,6 +37,6 @@ class FileManagerService {
         return nil
     }
 
-    func writeFile(data _: Data) {}
+    func writeFile(data _: Data, filepath _: String) {}
     // TODO: create write file function as well in the future
 }

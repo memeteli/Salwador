@@ -8,9 +8,9 @@
 import SwiftUI
 import UIKit
 
-struct ContentView: View {
+struct ImageGenerationView: View {
     @State private var prompText: String = ""
-    @StateObject var iGViewModel = ImageGenerationViewModel()
+    @StateObject var viewModel = ImageGenerationViewModel()
 
     var body: some View {
         ZStack {
@@ -31,11 +31,11 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ImageGenerationView()
     }
 }
 
-private extension ContentView {
+private extension ImageGenerationView {
     var appNameView: some View {
         VStack {
             Text("Salvador")
@@ -70,11 +70,11 @@ private extension ContentView {
     }
 
     var submitButtonView: some View {
-        Button(iGViewModel.buttonText) {
-            iGViewModel.buttonText = "Wait..."
-            iGViewModel.isLoading = true
+        Button(viewModel.buttonText) {
+            viewModel.buttonText = "Wait..."
+            viewModel.isLoading = true
             Task {
-                await iGViewModel.sendRequest(prompText: prompText)
+                await viewModel.sendRequest(prompText: prompText)
             }
         }
         .frame(width: 150, height: 50)
@@ -85,21 +85,21 @@ private extension ContentView {
 
     var imageView: some View {
         VStack {
-            if iGViewModel.hasError {
+            if viewModel.hasError {
                 HStack {
                     Image(systemName: "bell")
                         .foregroundColor(.red)
                         .scaledToFit()
                         .frame(width: 48, height: 48)
-                    Text(iGViewModel.errorMsg)
+                    Text(viewModel.errorMsg)
                         .foregroundColor(Color("TextColor"))
                 }
-            } else if let identifier = iGViewModel.image {
-                if iGViewModel.isLoading {
+            } else if let identifier = viewModel.image {
+                if viewModel.isLoading {
                     loadingView
                 }
 
-                if !iGViewModel.isLoading {
+                if !viewModel.isLoading {
                     Image(uiImage: identifier)
                         .resizable()
                         .scaledToFit()
@@ -107,7 +107,7 @@ private extension ContentView {
                 }
 
             } else {
-                if iGViewModel.isLoading {
+                if viewModel.isLoading {
                     loadingView
                 }
             }

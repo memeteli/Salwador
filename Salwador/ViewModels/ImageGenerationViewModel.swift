@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension ContentView {
+extension ImageGenerationView {
     @MainActor class ImageGenerationViewModel: ObservableObject {
         @Published var buttonText: String = "Ready?"
         @Published var imagePath: String = "salvador-man"
