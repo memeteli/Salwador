@@ -105,6 +105,17 @@
                ReferencedContainer = "container:Salwador.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "897D8A4829A65FA800B6BE3E"
+               BuildableName = "UnitTestingSalwadorGenerateImageViewModel_Tests.xctest"
+               BlueprintName = "UnitTestingSalwadorGenerateImageViewModel_Tests"
+               ReferencedContainer = "container:Salwador.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
