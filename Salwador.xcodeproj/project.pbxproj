@@ -123,14 +123,14 @@
 			path = UnitTestingSalwadorGenerateImageViewModel_Tests;
 			sourceTree = "<group>";
 		};
-		8984FD6E29A644A800749ACD /* AppModels */ = {
+		8984FD6E29A644A800749ACD /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				8984FD7629A6457D00749ACD /* APIJSONModel.swift */,
 				8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */,
 				8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */,
 			);
-			path = AppModels;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		8984FD8D29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests */ = {
@@ -193,7 +193,7 @@
 			children = (
 				89AE838C2989067100683743 /* Salwador.entitlements */,
 				892D5F0629916680002D0248 /* Info.plist */,
-				8984FD6E29A644A800749ACD /* AppModels */,
+				8984FD6E29A644A800749ACD /* Models */,
 				8996F4BE299E208800E38E5C /* Views */,
 				8996F4BC299E206400E38E5C /* ViewModels */,
 				89AE83862989066F00683743 /* SalwadorApp.swift */,
