@@ -8,13 +8,6 @@
 import Foundation
 
 class FileManagerService {
-    let filename, filetype: String
-
-    init(filename: String, filetype: String) {
-        self.filename = filename
-        self.filetype = filetype
-    }
-
     func getFilePath(fileName: String, fileType: String) -> String {
         Bundle.main.path(forResource: fileName, ofType: fileType) ?? ""
     }
@@ -23,7 +16,7 @@ class FileManagerService {
         URL(fileURLWithPath: filePath)
     }
 
-    func readFile() -> Data? {
+    func readFile(filename: String, filetype: String) -> Data? {
         let filepath = getFilePath(fileName: filename, fileType: filetype)
         let fileurl = getFileURL(filePath: filepath)
 
