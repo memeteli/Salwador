@@ -12,7 +12,6 @@
 		894FD6FD29A4FDDB0078233F /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 894FD6FC29A4FDDB0078233F /* APIKey.json */; };
 		897D8A3F29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D8A3E29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests.swift */; };
 		897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */; };
-		897D8A5229A65FBA00B6BE3E /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		897D8A5329A65FC700B6BE3E /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
 		8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
 		8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
@@ -123,6 +122,24 @@
 			path = UnitTestingSalwadorGenerateImageViewModel_Tests;
 			sourceTree = "<group>";
 		};
+		897D8A5529A6646900B6BE3E /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				897D8A5629A6647D00B6BE3E /* GenerateImage */,
+				8996F4BC299E206400E38E5C /* GenerateSampleImage */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		897D8A5629A6647D00B6BE3E /* GenerateImage */ = {
+			isa = PBXGroup;
+			children = (
+				89AE83882989066F00683743 /* GenerateImageView.swift */,
+				89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */,
+			);
+			path = GenerateImage;
+			sourceTree = "<group>";
+		};
 		8984FD6E29A644A800749ACD /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -141,20 +158,11 @@
 			path = UnitTestingSalwadorFilemanager_Tests;
 			sourceTree = "<group>";
 		};
-		8996F4BC299E206400E38E5C /* ViewModels */ = {
+		8996F4BC299E206400E38E5C /* GenerateSampleImage */ = {
 			isa = PBXGroup;
 			children = (
-				89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */,
 			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		8996F4BE299E208800E38E5C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				89AE83882989066F00683743 /* GenerateImageView.swift */,
-			);
-			path = Views;
+			path = GenerateSampleImage;
 			sourceTree = "<group>";
 		};
 		8996F4BF299E291200E38E5C /* Resources */ = {
@@ -170,6 +178,9 @@
 			isa = PBXGroup;
 			children = (
 				89AE83852989066F00683743 /* Salwador */,
+				89AE838C2989067100683743 /* Salwador.entitlements */,
+				892D5F0629916680002D0248 /* Info.plist */,
+				89AE83862989066F00683743 /* SalwadorApp.swift */,
 				8984FD8D29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests */,
 				897D8A3D29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests */,
 				897D8A4A29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests */,
@@ -191,14 +202,10 @@
 		89AE83852989066F00683743 /* Salwador */ = {
 			isa = PBXGroup;
 			children = (
-				89AE838C2989067100683743 /* Salwador.entitlements */,
-				892D5F0629916680002D0248 /* Info.plist */,
-				8984FD6E29A644A800749ACD /* Models */,
-				8996F4BE299E208800E38E5C /* Views */,
-				8996F4BC299E206400E38E5C /* ViewModels */,
-				89AE83862989066F00683743 /* SalwadorApp.swift */,
-				8996F4BF299E291200E38E5C /* Resources */,
 				89CDB3442992B454001E72A5 /* Services */,
+				8984FD6E29A644A800749ACD /* Models */,
+				897D8A5529A6646900B6BE3E /* UIComponents */,
+				8996F4BF299E291200E38E5C /* Resources */,
 				89AE838D2989067100683743 /* Preview Content */,
 			);
 			path = Salwador;
@@ -416,7 +423,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */,
-				897D8A5229A65FBA00B6BE3E /* GenerateImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
