@@ -24,7 +24,7 @@ extension GenerateImageView {
 
             do {
                 let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
-                let response = try await ImageGenerationService.shared.generateImage(withPrompt: prompText, apiKey: json.apikey)
+                let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: json.apikey)
 
                 if let url = response.data.map(\.url).first {
                     let (data, _) = try await URLSession.shared.data(from: url)

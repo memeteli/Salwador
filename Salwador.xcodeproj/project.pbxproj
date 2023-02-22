@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		892D5F0829924C54002D0248 /* ImageGenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* ImageGenerationService.swift */; };
+		892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
 		894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
 		894FD6FD29A4FDDB0078233F /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 894FD6FC29A4FDDB0078233F /* APIKey.json */; };
-		898B43B229A643A200078128 /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B43B129A643A200078128 /* APIJSONModel.swift */; };
-		898B43B429A643AE00078128 /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B43B329A643AE00078128 /* ImageGenerationRequest.swift */; };
-		898B43B629A643D900078128 /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B43B529A643D900078128 /* ImageGenerationResponse.swift */; };
+		8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
+		8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
+		8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
 		89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* GenerateImageView.swift */; };
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
@@ -23,12 +23,12 @@
 
 /* Begin PBXFileReference section */
 		892D5F0629916680002D0248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		892D5F0729924C54002D0248 /* ImageGenerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerationService.swift; sourceTree = "<group>"; };
+		892D5F0729924C54002D0248 /* GenerateImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageService.swift; sourceTree = "<group>"; };
 		894FD6F829A4FB390078233F /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
 		894FD6FC29A4FDDB0078233F /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
-		898B43B129A643A200078128 /* APIJSONModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIJSONModel.swift; sourceTree = "<group>"; };
-		898B43B329A643AE00078128 /* ImageGenerationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerationRequest.swift; sourceTree = "<group>"; };
-		898B43B529A643D900078128 /* ImageGenerationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerationResponse.swift; sourceTree = "<group>"; };
+		8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationRequest.swift; path = Salwador/Models/ImageGenerationRequest.swift; sourceTree = SOURCE_ROOT; };
+		8984FD7629A6457D00749ACD /* APIJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIJSONModel.swift; path = Salwador/Models/APIJSONModel.swift; sourceTree = SOURCE_ROOT; };
+		8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationResponse.swift; path = Salwador/Models/ImageGenerationResponse.swift; sourceTree = SOURCE_ROOT; };
 		89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
 		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE83862989066F00683743 /* SalwadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorApp.swift; sourceTree = "<group>"; };
@@ -50,12 +50,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		898B43B729A6440D00078128 /* New Group */ = {
+		8984FD6E29A644A800749ACD /* New Group */ = {
 			isa = PBXGroup;
 			children = (
-				898B43B129A643A200078128 /* APIJSONModel.swift */,
-				898B43B329A643AE00078128 /* ImageGenerationRequest.swift */,
-				898B43B529A643D900078128 /* ImageGenerationResponse.swift */,
+				8984FD7629A6457D00749ACD /* APIJSONModel.swift */,
+				8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */,
+				8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */,
 			);
 			path = "New Group";
 			sourceTree = "<group>";
@@ -105,8 +105,8 @@
 			isa = PBXGroup;
 			children = (
 				89AE838C2989067100683743 /* Salwador.entitlements */,
-				898B43B729A6440D00078128 /* New Group */,
 				892D5F0629916680002D0248 /* Info.plist */,
+				8984FD6E29A644A800749ACD /* New Group */,
 				8996F4BE299E208800E38E5C /* Views */,
 				8996F4BC299E206400E38E5C /* ViewModels */,
 				89AE83862989066F00683743 /* SalwadorApp.swift */,
@@ -129,7 +129,7 @@
 		89CDB3442992B454001E72A5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				892D5F0729924C54002D0248 /* ImageGenerationService.swift */,
+				892D5F0729924C54002D0248 /* GenerateImageService.swift */,
 				894FD6F829A4FB390078233F /* FileManagerService.swift */,
 			);
 			path = Services;
@@ -229,13 +229,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				892D5F0829924C54002D0248 /* ImageGenerationService.swift in Sources */,
-				898B43B229A643A200078128 /* APIJSONModel.swift in Sources */,
-				898B43B429A643AE00078128 /* ImageGenerationRequest.swift in Sources */,
+				892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */,
 				89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */,
+				8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */,
+				8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
-				898B43B629A643D900078128 /* ImageGenerationResponse.swift in Sources */,
 				894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */,
+				8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */,
 				89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
