@@ -42,7 +42,7 @@ final class UnitTestingSalwadorFilemanager_Tests: XCTestCase {
         XCTAssertFalse(fileURL.pathComponents.contains(fileName))
     }
 
-    func test_UnitTestingSalwadorFileManagerService_readFile_ValidFilePath_shouldReturnNil() {
+    func test_UnitTestingSalwadorFileManagerService_readFile_ValidFilePath_shouldReturnValidData() {
         let data = fm.readFile(fileName: "APIKey", fileType: "json")
         XCTAssertNotEqual(data, nil)
         XCTAssertFalse(data!.isEmpty)
