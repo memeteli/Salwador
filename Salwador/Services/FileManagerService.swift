@@ -16,8 +16,8 @@ class FileManagerService {
         URL(fileURLWithPath: filePath)
     }
 
-    func readFile(filename: String, filetype: String) -> Data? {
-        let filepath = getFilePath(fileName: filename, fileType: filetype)
+    func readFile(fileName: String, fileType: String) -> Data? {
+        let filepath = getFilePath(fileName: fileName, fileType: fileType)
         let fileurl = getFileURL(filePath: filepath)
 
         do {
@@ -29,7 +29,4 @@ class FileManagerService {
 
         return nil
     }
-
-    func writeFile(data _: Data, filepath _: String) {}
-    // TODO: create write file function as well in the future
 }

@@ -20,7 +20,7 @@ extension GenerateImageView {
         func sendRequest(prompText: String) async {
             let fileManager = FileManagerService()
 
-            let data = fileManager.readFile(filename: "APIKey", filetype: "json")
+            let data = fileManager.readFile(fileName: "APIKey", fileType: "json")
 
             do {
                 let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
