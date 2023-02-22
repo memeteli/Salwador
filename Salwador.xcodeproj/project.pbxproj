@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
 		894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
-		894FD6FD29A4FDDB0078233F /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 894FD6FC29A4FDDB0078233F /* APIKey.json */; };
 		897D8A3F29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D8A3E29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests.swift */; };
 		897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */; };
 		897D8A5329A65FC700B6BE3E /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
@@ -24,6 +23,7 @@
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
+		89F7C06029A665700028DFCB /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F7C05F29A665700028DFCB /* APIKey.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +54,6 @@
 		892D5F0629916680002D0248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892D5F0729924C54002D0248 /* GenerateImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageService.swift; sourceTree = "<group>"; };
 		894FD6F829A4FB390078233F /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
-		894FD6FC29A4FDDB0078233F /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
 		897D8A3C29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSalwadorGenerateImageService_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897D8A3E29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingSalwadorGenerateImageService_Tests.swift; sourceTree = "<group>"; };
 		897D8A4929A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSalwadorGenerateImageViewModel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +71,7 @@
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		89F7C05F29A665700028DFCB /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,8 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				89AE83852989066F00683743 /* Salwador */,
-				89AE838C2989067100683743 /* Salwador.entitlements */,
-				892D5F0629916680002D0248 /* Info.plist */,
 				89AE83862989066F00683743 /* SalwadorApp.swift */,
 				8984FD8D29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests */,
 				897D8A3D29A65F0200B6BE3E /* UnitTestingSalwadorGenerateImageService_Tests */,
@@ -202,6 +200,8 @@
 		89AE83852989066F00683743 /* Salwador */ = {
 			isa = PBXGroup;
 			children = (
+				89AE838C2989067100683743 /* Salwador.entitlements */,
+				892D5F0629916680002D0248 /* Info.plist */,
 				89CDB3442992B454001E72A5 /* Services */,
 				8984FD6E29A644A800749ACD /* Models */,
 				897D8A5529A6646900B6BE3E /* UIComponents */,
@@ -215,7 +215,7 @@
 			isa = PBXGroup;
 			children = (
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
-				894FD6FC29A4FDDB0078233F /* APIKey.json */,
+				89F7C05F29A665700028DFCB /* APIKey.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -380,7 +380,7 @@
 			files = (
 				89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */,
 				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
-				894FD6FD29A4FDDB0078233F /* APIKey.json in Resources */,
+				89F7C06029A665700028DFCB /* APIKey.json in Resources */,
 				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

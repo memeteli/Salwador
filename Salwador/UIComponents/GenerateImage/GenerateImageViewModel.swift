@@ -19,12 +19,12 @@ extension GenerateImageView {
 
         func sendRequest(prompText: String) async {
             let fileManager = FileManagerService()
-
             let data = fileManager.readFile(fileName: "APIKey", fileType: "json")
 
             do {
                 let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
                 let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: json.apikey)
+                print(json.apikey)
 
                 if let url = response.data.map(\.url).first {
                     let (data, _) = try await URLSession.shared.data(from: url)
