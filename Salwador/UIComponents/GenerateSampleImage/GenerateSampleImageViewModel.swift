@@ -9,6 +9,7 @@ import UIKit
 
 @MainActor class GenerateSampleImageViewModel: ObservableObject {
     @Published var imagePath: String = "salvador-man"
+    @Published var buttonText: String = "Try another one"
     @Published var image: UIImage? = nil
     @Published var isLoading: Bool = false
     @Published var hasError: Bool = false
@@ -17,7 +18,7 @@ import UIKit
 
     let fileManager = FileManagerService()
 
-    func sendRequest(prompText _: String) async {
+    func sendRequest() async {
         do {
             let api_data = fileManager.readFile(fileName: apiKeyFileName, fileType: "json")
             let data = fileManager.readFile(fileName: "Prompts", fileType: "json")
@@ -38,12 +39,13 @@ import UIKit
 
                 image = UIImage(data: data)
                 isLoading = false
+                buttonText = "Try another one..."
             }
         } catch {
             hasError = true
             errorMsg = error.localizedDescription
-
             isLoading = false
+            buttonText = "Try again..."
         }
     }
 }
