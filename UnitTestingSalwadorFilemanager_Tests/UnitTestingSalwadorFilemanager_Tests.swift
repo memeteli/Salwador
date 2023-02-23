@@ -10,7 +10,7 @@ import XCTest
 final class UnitTestingSalwadorFilemanager_Tests: XCTestCase {
     // Configurations
     private let fileName = "APIKey.json"
-    private let fm = FileManagerService()
+    private var fm = FileManagerService()
 
     let valid_filepath = FileManagerService().getFilePath(fileName: "APIKey", fileType: "json")
     let not_valid_filepath = FileManagerService().getFilePath(fileName: "NoExistingJSONFile", fileType: "json")

@@ -8,43 +8,42 @@
 import Foundation
 import UIKit
 
-extension GenerateImageView {
-    @MainActor class GenerateImageViewModel: ObservableObject {
-        @Published var buttonText: String = "Ready?"
-        @Published var imagePath: String = "salvador-man"
-        @Published var image: UIImage? = nil
-        @Published var isLoading: Bool = false
-        @Published var hasError: Bool = false
-        @Published var errorMsg: String = ""
+@MainActor class GenerateImageViewModel: ObservableObject {
+    @Published var buttonText: String = "Ready?"
+    @Published var imagePath: String = "salvador-man"
+    @Published var image: UIImage? = nil
+    @Published var isLoading: Bool = false
+    @Published var hasError: Bool = false
+    @Published var errorMsg: String = ""
+    @Published var apiKeyFileName: String = ""
 
-        func sendRequest(prompText: String) async {
-            let fileManager = FileManagerService()
-            let data = fileManager.readFile(fileName: "APIKey", fileType: "json")
+    let fileManager = FileManagerService()
 
-            do {
-                let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
-                let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: json.apikey)
-                print(json.apikey)
+    func sendRequest(prompText: String) async {
+        let data = fileManager.readFile(fileName: apiKeyFileName, fileType: "json")
 
-                if let url = response.data.map(\.url).first {
-                    let (data, _) = try await URLSession.shared.data(from: url)
+        do {
+            let json = try JSONDecoder().decode(APIJSONModel.self, from: data)
+            let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: json.apikey)
 
-                    if data.isEmpty {
-                        hasError = true
-                        errorMsg = "No data was fetched, please retry again!"
-                    }
+            if let url = response.data.map(\.url).first {
+                let (data, _) = try await URLSession.shared.data(from: url)
 
-                    image = UIImage(data: data)
-                    isLoading = false
-                    buttonText = "Regenerate"
+                if data.isEmpty {
+                    hasError = true
+                    errorMsg = "No data was fetched, please retry again!"
                 }
-            } catch {
-                hasError = true
-                errorMsg = error.localizedDescription
+
+                image = UIImage(data: data)
                 isLoading = false
                 buttonText = "Regenerate"
-                print(error)
             }
+        } catch {
+            hasError = true
+            errorMsg = error.localizedDescription
+            isLoading = false
+            buttonText = "Regenerate"
+            print(error)
         }
     }
 }

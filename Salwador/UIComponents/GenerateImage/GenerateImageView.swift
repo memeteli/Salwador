@@ -73,6 +73,8 @@ private extension GenerateImageView {
         Button(viewModel.buttonText) {
             viewModel.buttonText = "Wait..."
             viewModel.isLoading = true
+            viewModel.apiKeyFileName = "APIKey"
+
             Task {
                 await viewModel.sendRequest(prompText: prompText)
             }

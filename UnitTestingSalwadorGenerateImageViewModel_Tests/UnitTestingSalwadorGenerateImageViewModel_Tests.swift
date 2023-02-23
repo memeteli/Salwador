@@ -6,13 +6,25 @@
 //
 
 import XCTest
+@testable import Salwador
 
-final class UnitTestingSalwadorGenerateImageViewModel_Tests: XCTestCase {
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+@MainActor class UnitTestingSalwadorGenerateImageViewModel_Tests: XCTestCase {
+    private var vm: GenerateImageViewModel!
+    private let samplePrompt = "Two programmers are fighting over which programming language is the best"
+
+    @MainActor override func setUpWithError() throws {
+        vm = GenerateImageViewModel()
     }
 
     override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+//        vm = nil
+    }
+
+    func test_UnitTestingSalwadorGenerateImageViewModel_ShouldReturnErrorWithNoValidAPIKey() {
+        vm.apiKeyFileName = "APIKey"
+        Task {
+            await vm.sendRequest(prompText: samplePrompt)
+        }
+        XCTAssertTrue(vm.hasError)
     }
 }
