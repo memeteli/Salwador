@@ -79,6 +79,7 @@ private extension GenerateImageView {
                 await viewModel.sendRequest(prompText: prompText)
             }
         }
+        .disabled(viewModel.isLoading)
         .frame(width: 150, height: 50)
         .foregroundColor(Color("TextColor"))
         .background(Color("OrangeColor"))
