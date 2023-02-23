@@ -11,7 +11,7 @@ import SwiftUI
 struct SalwadorApp: App {
     var body: some Scene {
         WindowGroup {
-            GenerateImageView()
+            GenerateSampleImageView()
         }
     }
 }

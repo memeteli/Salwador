@@ -29,6 +29,9 @@
 		89F7C06829A66EF70028DFCB /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
 		89F7C06929A66EF90028DFCB /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
 		89F7C06D29A773E10028DFCB /* Prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F7C06C29A773E10028DFCB /* Prompts.json */; };
+		89F7C06F29A777470028DFCB /* SamplePromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C06E29A777470028DFCB /* SamplePromptModel.swift */; };
+		89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */; };
+		89F7C07329A799E80028DFCB /* GenerateSampleImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07229A799E80028DFCB /* GenerateSampleImageViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +72,9 @@
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		89F7C05F29A665700028DFCB /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
 		89F7C06C29A773E10028DFCB /* Prompts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Prompts.json; sourceTree = "<group>"; };
+		89F7C06E29A777470028DFCB /* SamplePromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptModel.swift; sourceTree = "<group>"; };
+		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
+		89F7C07229A799E80028DFCB /* GenerateSampleImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +134,7 @@
 				8984FD7629A6457D00749ACD /* APIJSONModel.swift */,
 				8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */,
 				8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */,
+				89F7C06E29A777470028DFCB /* SamplePromptModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -143,6 +150,8 @@
 		8996F4BC299E206400E38E5C /* GenerateSampleImage */ = {
 			isa = PBXGroup;
 			children = (
+				89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */,
+				89F7C07229A799E80028DFCB /* GenerateSampleImageViewModel.swift */,
 			);
 			path = GenerateSampleImage;
 			sourceTree = "<group>";
@@ -393,9 +402,12 @@
 				8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */,
 				8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
+				89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */,
 				894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */,
 				8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */,
 				89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */,
+				89F7C06F29A777470028DFCB /* SamplePromptModel.swift in Sources */,
+				89F7C07329A799E80028DFCB /* GenerateSampleImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
