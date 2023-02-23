@@ -16,9 +16,8 @@ struct GenerateSampleImageView: View {
         ZStack {
             Color("BackgroundColor")
             VStack {
-                Spacer()
                 imageView
-                Spacer()
+                retryButtonView
             }
 
             if viewModel.isPopListShown {
