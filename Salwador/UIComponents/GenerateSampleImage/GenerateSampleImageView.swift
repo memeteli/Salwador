@@ -8,21 +8,20 @@ import SwiftUI
 import UIKit
 
 struct GenerateSampleImageView: View {
-    @State private var prompText: String = "two mango"
     @StateObject var viewModel = GenerateSampleImageViewModel()
 
     var body: some View {
         ZStack {
             VStack {
-                Spacer()
                 imageView
-                Spacer()
+                retryButtonView
             }
         }
         .background(Color("BackgroundColor"))
         .task {
+            viewModel.isLoading = true
             Task {
-                await viewModel.sendRequest(prompText: prompText)
+                await viewModel.sendRequest()
             }
         }
     }
@@ -55,7 +54,7 @@ private extension GenerateSampleImageView {
                     Image(uiImage: identifier)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 440, height: 320)
+                        .frame(width: 440, height: 440)
                 }
 
             } else {
@@ -64,6 +63,23 @@ private extension GenerateSampleImageView {
                 }
             }
         }
+    }
+
+    var retryButtonView: some View {
+        Button(viewModel.buttonText) {
+            viewModel.buttonText = "Wait..."
+            viewModel.isLoading = true
+            viewModel.apiKeyFileName = "APIKey"
+
+            Task {
+                await viewModel.sendRequest()
+            }
+        }
+        .disabled(viewModel.isLoading)
+        .frame(width: 150, height: 50)
+        .foregroundColor(Color("TextColor"))
+        .background(Color("OrangeColor"))
+        .cornerRadius(10)
     }
 
     var loadingView: some View {
