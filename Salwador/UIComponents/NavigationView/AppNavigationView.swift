@@ -11,13 +11,15 @@ struct AppNavigationView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                Color("BackgroundColor")
-                VStack {
-                    Spacer()
-                    appNameView
-                    Spacer()
-                    navigationLinksView
-                    Spacer()
+                ScrollView(.vertical, showsIndicators: false) {
+                    Color("BackgroundColor")
+                    VStack {
+                        Spacer()
+                        appNameView
+                        Spacer()
+                        navigationLinksView
+                        Spacer()
+                    }
                 }
             }
             .background(Color("BackgroundColor"))
