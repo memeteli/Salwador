@@ -32,6 +32,7 @@
 		89F7C06F29A777470028DFCB /* SamplePromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C06E29A777470028DFCB /* SamplePromptModel.swift */; };
 		89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */; };
 		89F7C07329A799E80028DFCB /* GenerateSampleImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07229A799E80028DFCB /* GenerateSampleImageViewModel.swift */; };
+		89F7C07529A90F6C0028DFCB /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		89F7C06E29A777470028DFCB /* SamplePromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptModel.swift; sourceTree = "<group>"; };
 		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
 		89F7C07229A799E80028DFCB /* GenerateSampleImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageViewModel.swift; sourceTree = "<group>"; };
+		89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 			children = (
 				897D8A5629A6647D00B6BE3E /* GenerateImage */,
 				8996F4BC299E206400E38E5C /* GenerateSampleImage */,
+				89F7C07629A90F700028DFCB /* NavigationView */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -217,6 +220,14 @@
 				894FD6F829A4FB390078233F /* FileManagerService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		89F7C07629A90F700028DFCB /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */,
+			);
+			path = NavigationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,6 +410,7 @@
 			files = (
 				892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */,
 				89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */,
+				89F7C07529A90F6C0028DFCB /* AppNavigationView.swift in Sources */,
 				8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */,
 				8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
