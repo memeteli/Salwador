@@ -15,16 +15,12 @@ import UIKit
     @Published var isLoading: Bool = false
     @Published var hasError: Bool = false
     @Published var errorMsg: String = ""
-    @Published var apiKeyFileName: String = ""
 
     let fileManager = FileManagerService()
 
     func sendRequest(prompText: String) async {
-        let data = fileManager.readFile(fileName: apiKeyFileName, fileType: "json")
-
         do {
-            let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
-            let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: json.apikey)
+            let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: fileManager.getApiKey())
 
             if let url = response.data.map(\.url).first {
                 let (data, _) = try await URLSession.shared.data(from: url)
