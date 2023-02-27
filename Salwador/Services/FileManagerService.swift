@@ -29,4 +29,14 @@ class FileManagerService {
 
         return nil
     }
+
+    func getApiKey() -> String {
+        let data = readFile(fileName: "APIKey", fileType: "json")
+        do {
+            let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
+            return json.apikey
+        } catch {
+            return ""
+        }
+    }
 }

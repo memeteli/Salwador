@@ -12,6 +12,8 @@ struct GenerateImageView: View {
     @State private var prompText: String = ""
     @State private var isPopL: String = ""
     @StateObject var viewModel = GenerateImageViewModel()
+    @State var isPopListShown: Bool = false
+    @State var generatedImage = UIImage()
 
     var body: some View {
         ZStack {
@@ -61,7 +63,6 @@ private extension GenerateImageView {
         Button(viewModel.buttonText) {
             viewModel.buttonText = "Wait..."
             viewModel.isLoading = true
-            viewModel.apiKeyFileName = "APIKey"
 
             Task {
                 await viewModel.sendRequest(prompText: prompText)
@@ -109,9 +110,89 @@ private extension GenerateImageView {
         VStack {
             ProgressView()
                 .foregroundColor(.white)
-            Text("Your image is generating...")
+            Text("Your image is being generated...")
                 .font(.title3)
                 .foregroundColor(Color("TextColor"))
         }
+    }
+
+    var PopList: some View {
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                VStack {
+                    HStack {
+                        Button {
+                            withAnimation {
+                                UIImageWriteToSavedPhotosAlbum(generatedImage, nil, nil, nil)
+                                isPopListShown = false
+                            }
+                        }
+                                    label: {
+                            Image(systemName: "square.and.arrow.down")
+                                .resizable()
+                                .frame(width: 22, height: 25)
+                                .foregroundColor(.white)
+                            Text("Save")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                        }
+                        Spacer()
+                    }
+                    .padding(.leading)
+
+                    Divider()
+
+                    HStack {
+                        let photo = Photo(image: Image(uiImage: generatedImage))
+
+                        ShareLink(
+                            item: photo.image,
+                            preview: SharePreview(
+                                "Hey, check it out! I've created an AI-Image via Salwador App...",
+                                image: photo.image
+                            )
+                        ) {
+                            HStack {
+                                Image(systemName: "square.and.arrow.up")
+                                    .resizable().frame(width: 22, height: 25).foregroundColor(.white)
+
+                                Text("Share")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                            }
+                        }
+                        .labelStyle(.titleAndIcon)
+                        .imageScale(.large)
+                        .symbolVariant(.fill)
+                        .foregroundColor(.white)
+                        Spacer()
+                    }
+                    .padding(.leading)
+                }
+                .padding(10)
+                .background(.pink)
+                .cornerRadius(10)
+
+                ZStack {
+                    Button {
+                        withAnimation {
+                            isPopListShown = false
+                        }
+                    } label: {
+                        HStack {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .frame(width: 15, height: 15)
+                                .foregroundColor(.pink)
+                                .padding(10)
+                        }
+                    }
+                }
+                .background(.white)
+                .clipShape(Circle())
+            }
+        }
+        .padding(.top)
+        .frame(width: 200, height: 190)
     }
 }
