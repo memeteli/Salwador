@@ -24,6 +24,7 @@ struct AppNavigationView: View {
             }
             .background(Color("BackgroundColor"))
         }
+        .background(Color("BackgroundColor"))
     }
 }
 

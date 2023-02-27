@@ -27,7 +27,6 @@ struct GenerateSampleImageView: View {
                 }
             }
         }
-        .edgesIgnoringSafeArea(.all)
         .background(Color("BackgroundColor"))
         .navigationTitle("Salwador")
         .toolbar {
