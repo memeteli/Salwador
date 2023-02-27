@@ -177,12 +177,12 @@ private extension GenerateSampleImageView {
                             Image(systemName: "xmark")
                                 .resizable()
                                 .frame(width: 15, height: 15)
-                                .foregroundColor(.white)
+                                .foregroundColor(.pink)
                                 .padding(10)
                         }
                     }
                 }
-                .background(.black)
+                .background(.white)
                 .clipShape(Circle())
             }
         }
