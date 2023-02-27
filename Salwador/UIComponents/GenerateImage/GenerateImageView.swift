@@ -15,7 +15,6 @@ struct GenerateImageView: View {
     var body: some View {
         ZStack {
             VStack {
-                appNameView
                 Spacer()
                 textEditorView
                 submitButtonView
@@ -25,7 +24,15 @@ struct GenerateImageView: View {
                 Spacer()
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .background(Color("BackgroundColor"))
+        .navigationTitle("Salwador")
+        .toolbarColorScheme(.dark, for: .navigationBar)
+        .toolbarBackground(
+            Color.pink,
+            for: .navigationBar
+        )
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
@@ -36,25 +43,6 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 private extension GenerateImageView {
-    var appNameView: some View {
-        VStack {
-            Text("Salvador")
-                .foregroundColor(Color("TextColor"))
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.top, 30)
-
-            Image("salvador-icon")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 100)
-
-            Text("Your AI Image Generator")
-                .foregroundColor(Color("TextColor"))
-                .font(.footnote)
-        }
-    }
-
     var textEditorView: some View {
         ZStack {
             TextEditor(
@@ -81,8 +69,8 @@ private extension GenerateImageView {
         }
         .disabled(viewModel.isLoading)
         .frame(width: 150, height: 50)
-        .foregroundColor(Color("TextColor"))
-        .background(Color("OrangeColor"))
+        .foregroundColor(.white)
+        .background(.pink)
         .cornerRadius(10)
     }
 

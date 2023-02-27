@@ -13,11 +13,33 @@ struct GenerateSampleImageView: View {
     var body: some View {
         ZStack {
             VStack {
+                Spacer()
                 imageView
-                retryButtonView
+                Spacer()
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .background(Color("BackgroundColor"))
+        .navigationTitle("Salwador")
+        .toolbar {
+            Button {
+                viewModel.buttonText = "Wait..."
+                viewModel.isLoading = true
+                viewModel.apiKeyFileName = "APIKey"
+
+                Task {
+                    await viewModel.sendRequest()
+                }
+            } label: {
+                Image(systemName: "shuffle")
+            }
+        }
+        .toolbarColorScheme(.dark, for: .navigationBar)
+        .toolbarBackground(
+            Color.pink,
+            for: .navigationBar
+        )
+        .toolbarBackground(.visible, for: .navigationBar)
         .task {
             viewModel.isLoading = true
             Task {
@@ -63,23 +85,6 @@ private extension GenerateSampleImageView {
                 }
             }
         }
-    }
-
-    var retryButtonView: some View {
-        Button(viewModel.buttonText) {
-            viewModel.buttonText = "Wait..."
-            viewModel.isLoading = true
-            viewModel.apiKeyFileName = "APIKey"
-
-            Task {
-                await viewModel.sendRequest()
-            }
-        }
-        .disabled(viewModel.isLoading)
-        .frame(width: 150, height: 50)
-        .foregroundColor(Color("TextColor"))
-        .background(Color("OrangeColor"))
-        .cornerRadius(10)
     }
 
     var loadingView: some View {
