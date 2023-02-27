@@ -18,14 +18,13 @@ struct GenerateImageView: View {
                 Spacer()
                 textEditorView
                 submitButtonView
-                    .padding(10)
                 Spacer()
                 imageView
                 Spacer()
             }
+            .background(Color("BackgroundColor"))
         }
         .edgesIgnoringSafeArea(.all)
-        .background(Color("BackgroundColor"))
         .navigationTitle("Salwador")
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(
@@ -108,8 +107,7 @@ private extension GenerateImageView {
     var loadingView: some View {
         VStack {
             ProgressView()
-                .background(Color("TextColor"))
-                .foregroundColor(Color("TextColor"))
+                .foregroundColor(.white)
             Text("Your image is generating...")
                 .font(.title3)
                 .foregroundColor(Color("TextColor"))

@@ -9,36 +9,19 @@ import SwiftUI
 
 struct AppNavigationView: View {
     var body: some View {
-        NavigationView {
-            ZStack {
+        ZStack {
+            Color("BackgroundColor")
+            NavigationView {
                 VStack {
-                    appNameView
-
                     Spacer()
-
-                    NavigationLink(destination: GenerateImageView()) {
-                        Text("Create your own AI Image")
-                    }
-                    .frame(width: 275, height: 75)
-                    .foregroundColor(.white)
-                    .background(.pink)
-                    .cornerRadius(10)
-                    .padding(40)
-
-                    NavigationLink(destination: GenerateSampleImageView()) {
-                        Text("Get inspired from others")
-                    }
-                    .frame(width: 275, height: 75)
-                    .foregroundColor(.white)
-                    .background(.pink)
-                    .cornerRadius(10)
-
+                    appNameView
+                    Spacer()
+                    navigationLinksView
                     Spacer()
                 }
-                .edgesIgnoringSafeArea(.all)
-                .background(Color("BackgroundColor"))
             }
         }
+        .background(Color("BackgroundColor"))
     }
 }
 
@@ -64,5 +47,26 @@ var appNameView: some View {
         Text("Your AI Image Generator")
             .foregroundColor(Color("TextColor"))
             .font(.footnote)
+    }
+}
+
+var navigationLinksView: some View {
+    VStack {
+        NavigationLink(destination: GenerateImageView()) {
+            Text("Create your own AI Image")
+        }
+        .frame(width: 275, height: 75)
+        .foregroundColor(.white)
+        .background(.pink)
+        .cornerRadius(10)
+        .padding(40)
+
+        NavigationLink(destination: GenerateSampleImageView()) {
+            Text("Get inspired from others")
+        }
+        .frame(width: 275, height: 75)
+        .foregroundColor(.white)
+        .background(.pink)
+        .cornerRadius(10)
     }
 }
