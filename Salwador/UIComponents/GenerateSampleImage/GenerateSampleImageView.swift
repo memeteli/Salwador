@@ -9,12 +9,24 @@ import UIKit
 
 struct GenerateSampleImageView: View {
     @StateObject var viewModel = GenerateSampleImageViewModel()
+    @State var show: Bool = false
 
     var body: some View {
         ZStack {
             Color("BackgroundColor")
             VStack {
                 Spacer()
+                if self.show {
+                    GeometryReader {
+                        _ in
+                        VStack {
+                            PopList
+                        }
+                        .background(Color.black.opacity(0.5)
+                            .edgesIgnoringSafeArea(.all))
+                    }
+                }
+
                 imageView
                 Spacer()
             }
@@ -77,6 +89,20 @@ private extension GenerateSampleImageView {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 440, height: 440)
+                        .onLongPressGesture(minimumDuration: 1) {
+                            print("Long pressed!")
+                            self.show.toggle()
+                        }
+                    Button {
+                        UIImageWriteToSavedPhotosAlbum(identifier, nil, nil, nil)
+                    } label: {
+                        HStack {
+                            Image(systemName: "photo.on.rectangle.angled")
+                            Text("Save to Photos")
+                        }
+                        .font(.title2)
+                        .foregroundColor(.pink)
+                    }
                 }
 
             } else {
@@ -92,9 +118,68 @@ private extension GenerateSampleImageView {
             ProgressView()
                 .foregroundColor(.white)
 
-            Text("Your image is generating...")
+            Text("Sample image is generating...")
                 .font(.title3)
                 .foregroundColor(Color("TextColor"))
         }
+    }
+
+    var PopList: some View {
+        ScrollView(.vertical, showsIndicators: false) {
+            VStack {
+                VStack {
+                    HStack {
+                        Image(systemName: "photo.on.rectangle.angled")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(.white)
+                        Text("Save")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+
+                        Spacer()
+                    }
+                    .padding(.leading)
+
+                    Divider()
+
+                    HStack {
+                        Image(systemName: "photo.on.rectangle.angled")
+                            .resizable()
+                            .frame(width: 25, height: 25)
+                            .foregroundColor(.white)
+                        Text("Share")
+                            .fontWeight(.bold)
+                            .foregroundColor(.white)
+                        Spacer()
+                    }
+                    .padding(.leading)
+                }
+                .padding(10)
+                .background(.pink)
+                .cornerRadius(10)
+
+                ZStack {
+                    Button {
+                        withAnimation {
+                            self.show.toggle()
+                        }
+                        print("show", self.show)
+                    } label: {
+                        HStack {
+                            Image(systemName: "xmark")
+                                .resizable()
+                                .frame(width: 15, height: 15)
+                                .foregroundColor(.white)
+                                .padding(10)
+                        }
+                    }
+                }
+                .background(.black)
+                .clipShape(Circle())
+            }
+        }
+        .padding(.top)
+        .frame(width: 200, height: 190)
     }
 }

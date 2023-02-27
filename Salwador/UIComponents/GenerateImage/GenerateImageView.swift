@@ -10,6 +10,7 @@ import UIKit
 
 struct GenerateImageView: View {
     @State private var prompText: String = ""
+    @State private var isPopL: String = ""
     @StateObject var viewModel = GenerateImageViewModel()
 
     var body: some View {
