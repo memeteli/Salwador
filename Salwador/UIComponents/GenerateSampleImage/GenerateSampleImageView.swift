@@ -12,13 +12,13 @@ struct GenerateSampleImageView: View {
 
     var body: some View {
         ZStack {
+            Color("BackgroundColor")
             VStack {
                 Spacer()
                 imageView
                 Spacer()
             }
         }
-        .edgesIgnoringSafeArea(.all)
         .background(Color("BackgroundColor"))
         .navigationTitle("Salwador")
         .toolbar {
@@ -90,8 +90,8 @@ private extension GenerateSampleImageView {
     var loadingView: some View {
         VStack {
             ProgressView()
-                .background(Color("TextColor"))
-                .foregroundColor(Color("TextColor"))
+                .foregroundColor(.white)
+
             Text("Your image is generating...")
                 .font(.title3)
                 .foregroundColor(Color("TextColor"))
