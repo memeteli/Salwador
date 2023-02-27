@@ -193,14 +193,14 @@ private extension GenerateSampleImageView {
                     HStack {
                         Button {
                             withAnimation {
-                                UIImageWriteToSavedPhotosAlbum(imageIdentifier, nil, nil, nil)
+                                UIImageWriteToSavedPhotosAlbum(generatedImage, nil, nil, nil)
                                 isPopListShown = false
                             }
                         }
                     label: {
-                            Image(systemName: "arrow.down.app")
+                            Image(systemName: "square.and.arrow.down")
                                 .resizable()
-                                .frame(width: 25, height: 25)
+                                .frame(width: 22, height: 25)
                                 .foregroundColor(.white)
                             Text("Save")
                                 .fontWeight(.bold)
@@ -213,20 +213,28 @@ private extension GenerateSampleImageView {
                     Divider()
 
                     HStack {
-                        Button {
-                            // TODO: here is for logic for sharing code
-                            print("Image is being shared....")
-                            isPopListShown = false
+                        let photo = Photo(image: Image(uiImage: generatedImage))
+
+                        ShareLink(
+                            item: photo.image,
+                            preview: SharePreview(
+                                "Hey, check it out! I've created an AI-Image via Salwador App...",
+                                image: photo.image
+                            )
+                        ) {
+                            HStack {
+                                Image(systemName: "square.and.arrow.up")
+                                    .resizable().frame(width: 22, height: 25).foregroundColor(.white)
+
+                                Text("Share")
+                                    .fontWeight(.bold)
+                                    .foregroundColor(.white)
+                            }
                         }
-                    label: {
-                            Image(systemName: "arrow.up.square")
-                                .resizable()
-                                .frame(width: 25, height: 25)
-                                .foregroundColor(.white)
-                            Text("Share")
-                                .fontWeight(.bold)
-                                .foregroundColor(.white)
-                        }
+                        .labelStyle(.titleAndIcon)
+                        .imageScale(.large)
+                        .symbolVariant(.fill)
+                        .foregroundColor(.white)
                         Spacer()
                     }
                     .padding(.leading)
@@ -238,9 +246,8 @@ private extension GenerateSampleImageView {
                 ZStack {
                     Button {
                         withAnimation {
-                            isPopListShown = true
+                            isPopListShown = false
                         }
-                        print("isPopListShown", isPopListShown)
                     } label: {
                         HStack {
                             Image(systemName: "xmark")
