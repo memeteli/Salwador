@@ -16,8 +16,9 @@ struct GenerateSampleImageView: View {
         ZStack {
             Color("BackgroundColor")
             VStack {
+                Spacer()
                 imageView
-                retryButtonView
+                Spacer()
             }
 
             if viewModel.isPopListShown {
@@ -26,6 +27,7 @@ struct GenerateSampleImageView: View {
                 }
             }
         }
+        .edgesIgnoringSafeArea(.all)
         .background(Color("BackgroundColor"))
         .navigationTitle("Salwador")
         .toolbar {
