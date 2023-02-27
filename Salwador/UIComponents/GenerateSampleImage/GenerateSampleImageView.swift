@@ -17,17 +17,6 @@ struct GenerateSampleImageView: View {
             Color("BackgroundColor")
             VStack {
                 Spacer()
-                if self.show {
-                    GeometryReader {
-                        _ in
-                        VStack {
-                            PopList
-                        }
-                        .background(Color.black.opacity(0.5)
-                            .edgesIgnoringSafeArea(.all))
-                    }
-                }
-
                 imageView
                 Spacer()
             }
@@ -202,14 +191,21 @@ private extension GenerateSampleImageView {
             VStack {
                 VStack {
                     HStack {
-                        Image(systemName: "photo.on.rectangle.angled")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .foregroundColor(.white)
-                        Text("Save")
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
-
+                        Button {
+                            withAnimation {
+                                UIImageWriteToSavedPhotosAlbum(imageIdentifier, nil, nil, nil)
+                                isPopListShown = false
+                            }
+                        }
+                    label: {
+                            Image(systemName: "arrow.down.app")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.white)
+                            Text("Save")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                        }
                         Spacer()
                     }
                     .padding(.leading)
@@ -217,13 +213,20 @@ private extension GenerateSampleImageView {
                     Divider()
 
                     HStack {
-                        Image(systemName: "photo.on.rectangle.angled")
-                            .resizable()
-                            .frame(width: 25, height: 25)
-                            .foregroundColor(.white)
-                        Text("Share")
-                            .fontWeight(.bold)
-                            .foregroundColor(.white)
+                        Button {
+                            // TODO: here is for logic for sharing code
+                            print("Image is being shared....")
+                            isPopListShown = false
+                        }
+                    label: {
+                            Image(systemName: "arrow.up.square")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                                .foregroundColor(.white)
+                            Text("Share")
+                                .fontWeight(.bold)
+                                .foregroundColor(.white)
+                        }
                         Spacer()
                     }
                     .padding(.leading)
@@ -235,9 +238,9 @@ private extension GenerateSampleImageView {
                 ZStack {
                     Button {
                         withAnimation {
-                            self.show.toggle()
+                            isPopListShown = true
                         }
-                        print("show", self.show)
+                        print("isPopListShown", isPopListShown)
                     } label: {
                         HStack {
                             Image(systemName: "xmark")
