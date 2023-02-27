@@ -9,9 +9,9 @@ import SwiftUI
 
 struct AppNavigationView: View {
     var body: some View {
-        ZStack {
-            Color("BackgroundColor")
-            NavigationView {
+        NavigationView {
+            ZStack {
+                Color("BackgroundColor")
                 VStack {
                     Spacer()
                     appNameView
@@ -20,8 +20,8 @@ struct AppNavigationView: View {
                     Spacer()
                 }
             }
+            .background(Color("BackgroundColor"))
         }
-        .background(Color("BackgroundColor"))
     }
 }
 
@@ -38,12 +38,12 @@ var appNameView: some View {
             .font(.title)
             .fontWeight(.bold)
             .padding(.top, 30)
-
+        
         Image("salvador-icon")
             .resizable()
             .scaledToFit()
             .frame(width: 200, height: 100)
-
+        
         Text("Your AI Image Generator")
             .foregroundColor(Color("TextColor"))
             .font(.footnote)
@@ -60,7 +60,7 @@ var navigationLinksView: some View {
         .background(.pink)
         .cornerRadius(10)
         .padding(40)
-
+        
         NavigationLink(destination: GenerateSampleImageView()) {
             Text("Get inspired from others")
         }
