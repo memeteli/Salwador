@@ -59,7 +59,7 @@ var navigationLinksView: some View {
         }
         .frame(width: 275, height: 75)
         .foregroundColor(.white)
-        .background(.pink)
+        .background(Color("OrangeColor"))
         .cornerRadius(10)
         .padding(40)
 
@@ -68,7 +68,7 @@ var navigationLinksView: some View {
         }
         .frame(width: 275, height: 75)
         .foregroundColor(.white)
-        .background(.pink)
+        .background(Color("OrangeColor"))
         .cornerRadius(10)
     }
 }
