@@ -22,16 +22,22 @@ struct GenerateImageView: View {
                 textEditorView
                 submitButtonView
                 Spacer()
+
                 imageView
                 Spacer()
             }
             .background(Color("BackgroundColor"))
+            if isPopListShown {
+                ZStack(alignment: .bottom) {
+                    PopList
+                }
+            }
         }
         .edgesIgnoringSafeArea(.all)
         .navigationTitle("Salwador")
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(
-            Color.pink,
+            Color("OrangeColor"),
             for: .navigationBar
         )
         .toolbarBackground(.visible, for: .navigationBar)
@@ -63,6 +69,9 @@ private extension GenerateImageView {
         Button(viewModel.buttonText) {
             viewModel.buttonText = "Wait..."
             viewModel.isLoading = true
+            withAnimation {
+                isPopListShown = false
+            }
 
             Task {
                 await viewModel.sendRequest(prompText: prompText)
@@ -71,7 +80,7 @@ private extension GenerateImageView {
         .disabled(viewModel.isLoading)
         .frame(width: 150, height: 50)
         .foregroundColor(.white)
-        .background(.pink)
+        .background(Color("OrangeColor"))
         .cornerRadius(10)
     }
 
@@ -96,6 +105,13 @@ private extension GenerateImageView {
                         .resizable()
                         .scaledToFit()
                         .frame(width: 440, height: 320)
+                        .onLongPressGesture(minimumDuration: 0.5) {
+                            print("Long pressed!")
+                            withAnimation {
+                                generatedImage = identifier
+                                isPopListShown = true
+                            }
+                        }
                 }
 
             } else {
@@ -127,7 +143,7 @@ private extension GenerateImageView {
                                 isPopListShown = false
                             }
                         }
-                                    label: {
+                    label: {
                             Image(systemName: "square.and.arrow.down")
                                 .resizable()
                                 .frame(width: 22, height: 25)
@@ -170,7 +186,8 @@ private extension GenerateImageView {
                     .padding(.leading)
                 }
                 .padding(10)
-                .background(.pink)
+                .background(Color("OrangeColor")
+                )
                 .cornerRadius(10)
 
                 ZStack {
@@ -183,7 +200,8 @@ private extension GenerateImageView {
                             Image(systemName: "xmark")
                                 .resizable()
                                 .frame(width: 15, height: 15)
-                                .foregroundColor(.pink)
+                                .foregroundColor(Color("OrangeColor")
+                                )
                                 .padding(10)
                         }
                     }

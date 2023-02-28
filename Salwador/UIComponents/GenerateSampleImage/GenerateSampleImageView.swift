@@ -48,8 +48,7 @@ struct GenerateSampleImageView: View {
         }
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(
-            Color.pink,
-            for: .navigationBar
+            Color("OrangeColor"), for: .navigationBar
         )
         .toolbarBackground(.visible, for: .navigationBar)
         .task {
@@ -171,7 +170,8 @@ private extension GenerateSampleImageView {
                     .padding(.leading)
                 }
                 .padding(10)
-                .background(.pink)
+                .background(Color("OrangeColor")
+                )
                 .cornerRadius(10)
 
                 ZStack {
@@ -184,7 +184,8 @@ private extension GenerateSampleImageView {
                             Image(systemName: "xmark")
                                 .resizable()
                                 .frame(width: 15, height: 15)
-                                .foregroundColor(.pink)
+                                .foregroundColor(Color("OrangeColor")
+                                )
                                 .padding(10)
                         }
                     }
