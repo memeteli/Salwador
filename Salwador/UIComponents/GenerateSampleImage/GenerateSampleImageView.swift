@@ -194,7 +194,7 @@ private extension GenerateSampleImageView {
                         Button {
                             withAnimation {
                                 UIImageWriteToSavedPhotosAlbum(generatedImage, nil, nil, nil)
-                                isPopListShown = false
+                                viewModel.isPopListShown = false
                             }
                         }
                     label: {
@@ -247,7 +247,7 @@ private extension GenerateSampleImageView {
                 ZStack {
                     Button {
                         withAnimation {
-                            isPopListShown = false
+                            viewModel.isPopListShown = false
                         }
                     } label: {
                         HStack {

@@ -21,7 +21,6 @@ struct GenerateImageView: View {
                 textEditorView
                 submitButtonView
                 Spacer()
-
                 imageView
                 Spacer()
             }
