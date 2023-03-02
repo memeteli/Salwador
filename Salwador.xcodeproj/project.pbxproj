@@ -24,15 +24,15 @@
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
+		89AEFA3E29B0D896004C3625 /* Prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 89AEFA3C29B0D896004C3625 /* Prompts.json */; };
+		89AEFA3F29B0D896004C3625 /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89AEFA3D29B0D896004C3625 /* APIKey.json */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
-		89F7C06029A665700028DFCB /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F7C05F29A665700028DFCB /* APIKey.json */; };
 		89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
 		89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
 		89F7C06729A66E700028DFCB /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
 		89F7C06829A66EF70028DFCB /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
 		89F7C06929A66EF90028DFCB /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
-		89F7C06D29A773E10028DFCB /* Prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F7C06C29A773E10028DFCB /* Prompts.json */; };
 		89F7C06F29A777470028DFCB /* SamplePromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C06E29A777470028DFCB /* SamplePromptModel.swift */; };
 		89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */; };
 		89F7C07529A90F6C0028DFCB /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */; };
@@ -77,9 +77,9 @@
 		89AE838A2989067100683743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		89AEFA3C29B0D896004C3625 /* Prompts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Prompts.json; sourceTree = "<group>"; };
+		89AEFA3D29B0D896004C3625 /* APIKey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		89F7C05F29A665700028DFCB /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
-		89F7C06C29A773E10028DFCB /* Prompts.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Prompts.json; sourceTree = "<group>"; };
 		89F7C06E29A777470028DFCB /* SamplePromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptModel.swift; sourceTree = "<group>"; };
 		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
 		89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; usesTabs = 0; };
@@ -223,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
-				89F7C05F29A665700028DFCB /* APIKey.json */,
-				89F7C06C29A773E10028DFCB /* Prompts.json */,
+				89AEFA3D29B0D896004C3625 /* APIKey.json */,
+				89AEFA3C29B0D896004C3625 /* Prompts.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -366,10 +366,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89F7C06D29A773E10028DFCB /* Prompts.json in Resources */,
 				89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */,
+				89AEFA3F29B0D896004C3625 /* APIKey.json in Resources */,
+				89AEFA3E29B0D896004C3625 /* Prompts.json in Resources */,
 				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
-				89F7C06029A665700028DFCB /* APIKey.json in Resources */,
 				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
