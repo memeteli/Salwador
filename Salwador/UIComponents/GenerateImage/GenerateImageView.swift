@@ -16,29 +16,31 @@ struct GenerateImageView: View {
 
     var body: some View {
         ZStack {
-            VStack {
-                Spacer()
-                textEditorView
-                submitButtonView
-                Spacer()
-                imageView
-                Spacer()
-            }
-            .background(Color("BackgroundColor"))
-            if viewModel.isPopListShown {
-                ZStack(alignment: .bottom) {
-                    PopList
+            ScrollView(.vertical, showsIndicators: false) {
+                VStack {
+                    Spacer()
+                    textEditorView
+                    submitButtonView
+                    Spacer()
+                    imageView
+                    Spacer()
+                }
+                .background(Color("BackgroundColor"))
+                if viewModel.isPopListShown {
+                    ZStack(alignment: .bottom) {
+                        PopList
+                    }
                 }
             }
+            .edgesIgnoringSafeArea(.all)
+            .navigationTitle("Salwador")
+            .toolbarColorScheme(.dark, for: .navigationBar)
+            .toolbarBackground(
+                Color("OrangeColor"),
+                for: .navigationBar
+            )
+            .toolbarBackground(.visible, for: .navigationBar)
         }
-        .edgesIgnoringSafeArea(.all)
-        .navigationTitle("Salwador")
-        .toolbarColorScheme(.dark, for: .navigationBar)
-        .toolbarBackground(
-            Color("OrangeColor"),
-            for: .navigationBar
-        )
-        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
