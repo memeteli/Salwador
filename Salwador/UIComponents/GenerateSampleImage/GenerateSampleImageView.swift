@@ -9,7 +9,6 @@ import UIKit
 
 struct GenerateSampleImageView: View {
     @StateObject var viewModel = GenerateImageViewModel()
-    @State var isPopListShown: Bool = false
     @State var generatedImage = UIImage()
     let promptGenerator = SamplePromptGenerationService()
 
@@ -22,7 +21,7 @@ struct GenerateSampleImageView: View {
                 Spacer()
             }
 
-            if isPopListShown {
+            if viewModel.isPopListShown {
                 ZStack {
                     PopList
                 }
@@ -35,7 +34,7 @@ struct GenerateSampleImageView: View {
                 viewModel.buttonText = "Wait..."
                 viewModel.isLoading = true
                 withAnimation {
-                    isPopListShown = false
+                    viewModel.isPopListShown = false
                 }
 
                 Task {
@@ -92,7 +91,7 @@ private extension GenerateSampleImageView {
                             print("Long pressed!")
                             withAnimation {
                                 generatedImage = identifier
-                                isPopListShown = true
+                                viewModel.isPopListShown = true
                             }
                         }
                 }
@@ -105,17 +104,6 @@ private extension GenerateSampleImageView {
         }
     }
 
-    var loadingView: some View {
-        VStack {
-            ProgressView()
-                .foregroundColor(.white)
-
-            Text("Sample image is being generated...")
-                .font(.title3)
-                .foregroundColor(Color("TextColor"))
-        }
-    }
-
     var PopList: some View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
@@ -124,7 +112,7 @@ private extension GenerateSampleImageView {
                         Button {
                             withAnimation {
                                 UIImageWriteToSavedPhotosAlbum(generatedImage, nil, nil, nil)
-                                isPopListShown = false
+                                viewModel.isPopListShown = false
                             }
                         }
                     label: {
@@ -177,7 +165,7 @@ private extension GenerateSampleImageView {
                 ZStack {
                     Button {
                         withAnimation {
-                            isPopListShown = false
+                            viewModel.isPopListShown = false
                         }
                     } label: {
                         HStack {
