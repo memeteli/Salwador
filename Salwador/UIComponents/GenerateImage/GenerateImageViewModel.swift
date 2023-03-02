@@ -21,25 +21,48 @@ import UIKit
 
     func sendRequest(prompText: String) async {
         do {
+            handleViewState(state: requestState.loading)
+
             let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: fileManager.getApiKey())
 
             if let url = response.data.map(\.url).first {
                 let (data, _) = try await URLSession.shared.data(from: url)
 
-                if data.isEmpty {
-                    hasError = true
-                    errorMsg = "No data was fetched, please retry again!"
-                }
-
                 image = UIImage(data: data)
-                isLoading = false
-                buttonText = "Regenerate"
+
+                handleViewState(state: requestState.loaded)
             }
         } catch {
-            hasError = true
-            errorMsg = error.localizedDescription
-            isLoading = false
+            handleViewState(state: requestState.failed)
+        }
+    }
+
+    enum requestState {
+        case loading
+        case loaded
+        case failed
+    }
+
+    func handleViewState(state: requestState) {
+        switch state {
+        case .loading:
+            buttonText = "Loading..."
+            hasError = false
+            isLoading = true
+            return
+            
+        case .loaded:
             buttonText = "Regenerate"
+            hasError = false
+            isLoading = false
+            return
+            
+        case .failed:
+            buttonText = "Retry"
+            errorMsg = "No data was fetched, please retry again!"
+            hasError = true
+            isLoading = false
+            return
         }
     }
 }
