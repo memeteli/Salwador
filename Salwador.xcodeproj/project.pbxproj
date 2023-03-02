@@ -465,10 +465,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorGenerateImageViewModel-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -484,10 +486,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorGenerateImageViewModel-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -504,10 +508,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorFilemanager-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -523,10 +529,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorFilemanager-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -662,7 +670,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
-				DEVELOPMENT_TEAM = B5U3HK8MWP;
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Salwador/Info.plist;
@@ -685,7 +693,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.salvador.ali;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -706,7 +714,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
-				DEVELOPMENT_TEAM = B5U3HK8MWP;
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Salwador/Info.plist;
@@ -729,7 +737,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.salvador.ali;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
