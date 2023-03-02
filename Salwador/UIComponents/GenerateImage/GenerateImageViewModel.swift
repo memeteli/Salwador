@@ -15,6 +15,7 @@ import UIKit
     @Published var isLoading: Bool = false
     @Published var hasError: Bool = false
     @Published var errorMsg: String = ""
+    @Published var isPopListShown: Bool = false
 
     let fileManager = FileManagerService()
 
@@ -39,7 +40,6 @@ import UIKit
             errorMsg = error.localizedDescription
             isLoading = false
             buttonText = "Regenerate"
-            print(error)
         }
     }
 }
