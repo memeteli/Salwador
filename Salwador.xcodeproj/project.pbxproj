@@ -7,48 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		892D5F0829924C54002D0248 /* ImageGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* ImageGenerator.swift */; };
-		892D5F0F299269F4002D0248 /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0E299269F4002D0248 /* ImageGenerationResponse.swift */; };
-		8987198E29929A3100678E85 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8987198D29929A3100678E85 /* Credentials.swift */; };
-		89AE0E05299E6FBC005DAEA5 /* IGViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* IGViewModel.swift */; };
-		89AE0E06299E7276005DAEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
-		89AE0E07299E7277005DAEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
-		89AE0E08299E7277005DAEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
-		89AE0E09299E7278005DAEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
-		89AE0E0A299E7279005DAEA5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* ContentView.swift */; };
+		892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
+		894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
+		897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */; };
+		8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
+		8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
+		8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
+		8984FD8F29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD8E29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift */; };
+		8984FD9529A6488C00749ACD /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
+		89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
+		89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* GenerateImageView.swift */; };
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
-		89AE83992989067100683743 /* SalwadorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83982989067100683743 /* SalwadorTests.swift */; };
-		89AE83A32989067100683743 /* SalwadorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A22989067100683743 /* SalwadorUITests.swift */; };
-		89AE83A52989067100683743 /* SalwadorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */; };
-		89B9C628299D40A6006D2121 /* ImageGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
+		89F7C06029A665700028DFCB /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F7C05F29A665700028DFCB /* APIKey.json */; };
+		89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
+		89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
+		89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
+		89F7C06729A66E700028DFCB /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
+		89F7C06829A66EF70028DFCB /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
+		89F7C06929A66EF90028DFCB /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		89AE83952989067100683743 /* PBXContainerItemProxy */ = {
+		897D8A4D29A65FA800B6BE3E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 89AE837B2989066F00683743 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 89AE83822989066F00683743;
 			remoteInfo = Salwador;
 		};
-		89AE839F2989067100683743 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AE837B2989066F00683743 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89AE83822989066F00683743;
-			remoteInfo = Salwador;
-		};
-		89B9C619299D3F52006D2121 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 89AE837B2989066F00683743 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 89AE83822989066F00683743;
-			remoteInfo = Salwador;
-		};
-		89B9C629299D40A6006D2121 /* PBXContainerItemProxy */ = {
+		8984FD9029A647E600749ACD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 89AE837B2989066F00683743 /* Project object */;
 			proxyType = 1;
@@ -59,57 +49,42 @@
 
 /* Begin PBXFileReference section */
 		892D5F0629916680002D0248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		892D5F0729924C54002D0248 /* ImageGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerator.swift; sourceTree = "<group>"; };
-		892D5F0E299269F4002D0248 /* ImageGenerationResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGenerationResponse.swift; sourceTree = "<group>"; };
-		8987198D29929A3100678E85 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
-		89AE0E04299E6FBC005DAEA5 /* IGViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IGViewModel.swift; sourceTree = "<group>"; };
+		892D5F0729924C54002D0248 /* GenerateImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageService.swift; sourceTree = "<group>"; };
+		894FD6F829A4FB390078233F /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
+		897D8A4929A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSalwadorGenerateImageViewModel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingSalwadorGenerateImageViewModel_Tests.swift; sourceTree = "<group>"; };
+		8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationRequest.swift; path = Salwador/Models/ImageGenerationRequest.swift; sourceTree = SOURCE_ROOT; };
+		8984FD7629A6457D00749ACD /* APIJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIJSONModel.swift; path = Salwador/Models/APIJSONModel.swift; sourceTree = SOURCE_ROOT; };
+		8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationResponse.swift; path = Salwador/Models/ImageGenerationResponse.swift; sourceTree = SOURCE_ROOT; };
+		8984FD8C29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSalwadorFilemanager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8984FD8E29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingSalwadorFilemanager_Tests.swift; sourceTree = "<group>"; };
+		89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
 		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE83862989066F00683743 /* SalwadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorApp.swift; sourceTree = "<group>"; };
-		89AE83882989066F00683743 /* ContentView.swift */ = {isa = PBXFileReference; indentWidth = 20; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; tabWidth = 20; usesTabs = 0; };
+		89AE83882989066F00683743 /* GenerateImageView.swift */ = {isa = PBXFileReference; indentWidth = 20; lastKnownFileType = sourcecode.swift; path = GenerateImageView.swift; sourceTree = "<group>"; tabWidth = 20; usesTabs = 0; };
 		89AE838A2989067100683743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		89AE83942989067100683743 /* SalwadorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalwadorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89AE83982989067100683743 /* SalwadorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorTests.swift; sourceTree = "<group>"; };
-		89AE839E2989067100683743 /* SalwadorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SalwadorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89AE83A22989067100683743 /* SalwadorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITests.swift; sourceTree = "<group>"; };
-		89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		89B9C615299D3F51006D2121 /* ImageGenerator.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGenerator.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89B9C625299D40A6006D2121 /* ImageGeneratorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageGeneratorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageGeneratorTests.swift; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		89F7C05F29A665700028DFCB /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		897D8A4629A65FA800B6BE3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8984FD8929A647E600749ACD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89AE83802989066F00683743 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE83912989067100683743 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE839B2989067100683743 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C612299D3F51006D2121 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C622299D40A6006D2121 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -119,28 +94,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		8996F4BC299E206400E38E5C /* ViewModels */ = {
+		897D8A4A29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				89AE0E04299E6FBC005DAEA5 /* IGViewModel.swift */,
+				897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */,
 			);
-			path = ViewModels;
+			path = UnitTestingSalwadorGenerateImageViewModel_Tests;
 			sourceTree = "<group>";
 		};
-		8996F4BD299E207500E38E5C /*  Models */ = {
+		897D8A5529A6646900B6BE3E /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
-				892D5F0E299269F4002D0248 /* ImageGenerationResponse.swift */,
+				897D8A5629A6647D00B6BE3E /* GenerateImage */,
+				8996F4BC299E206400E38E5C /* GenerateSampleImage */,
 			);
-			path = " Models";
+			path = UIComponents;
 			sourceTree = "<group>";
 		};
-		8996F4BE299E208800E38E5C /* Views */ = {
+		897D8A5629A6647D00B6BE3E /* GenerateImage */ = {
 			isa = PBXGroup;
 			children = (
-				89AE83882989066F00683743 /* ContentView.swift */,
+				89AE83882989066F00683743 /* GenerateImageView.swift */,
+				89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */,
 			);
-			path = Views;
+			path = GenerateImage;
+			sourceTree = "<group>";
+		};
+		8984FD6E29A644A800749ACD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8984FD7629A6457D00749ACD /* APIJSONModel.swift */,
+				8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */,
+				8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8984FD8D29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				8984FD8E29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift */,
+			);
+			path = UnitTestingSalwadorFilemanager_Tests;
+			sourceTree = "<group>";
+		};
+		8996F4BC299E206400E38E5C /* GenerateSampleImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GenerateSampleImage;
 			sourceTree = "<group>";
 		};
 		8996F4BF299E291200E38E5C /* Resources */ = {
@@ -156,9 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				89AE83852989066F00683743 /* Salwador */,
-				89AE83972989067100683743 /* SalwadorTests */,
-				89AE83A12989067100683743 /* SalwadorUITests */,
-				89B9C626299D40A6006D2121 /* ImageGeneratorTests */,
+				89AE83862989066F00683743 /* SalwadorApp.swift */,
+				8984FD8D29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests */,
+				897D8A4A29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests */,
 				89AE83842989066F00683743 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -167,10 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				89AE83832989066F00683743 /* Salwador.app */,
-				89AE83942989067100683743 /* SalwadorTests.xctest */,
-				89AE839E2989067100683743 /* SalwadorUITests.xctest */,
-				89B9C615299D3F51006D2121 /* ImageGenerator.xctest */,
-				89B9C625299D40A6006D2121 /* ImageGeneratorTests.xctest */,
+				8984FD8C29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.xctest */,
+				897D8A4929A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -181,10 +181,8 @@
 				89AE838C2989067100683743 /* Salwador.entitlements */,
 				892D5F0629916680002D0248 /* Info.plist */,
 				89CDB3442992B454001E72A5 /* Services */,
-				8996F4BE299E208800E38E5C /* Views */,
-				8996F4BD299E207500E38E5C /*  Models */,
-				8996F4BC299E206400E38E5C /* ViewModels */,
-				89AE83862989066F00683743 /* SalwadorApp.swift */,
+				8984FD6E29A644A800749ACD /* Models */,
+				897D8A5529A6646900B6BE3E /* UIComponents */,
 				8996F4BF299E291200E38E5C /* Resources */,
 				89AE838D2989067100683743 /* Preview Content */,
 			);
@@ -195,40 +193,16 @@
 			isa = PBXGroup;
 			children = (
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
+				89F7C05F29A665700028DFCB /* APIKey.json */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		89AE83972989067100683743 /* SalwadorTests */ = {
-			isa = PBXGroup;
-			children = (
-				89AE83982989067100683743 /* SalwadorTests.swift */,
-			);
-			path = SalwadorTests;
-			sourceTree = "<group>";
-		};
-		89AE83A12989067100683743 /* SalwadorUITests */ = {
-			isa = PBXGroup;
-			children = (
-				89AE83A22989067100683743 /* SalwadorUITests.swift */,
-				89AE83A42989067100683743 /* SalwadorUITestsLaunchTests.swift */,
-			);
-			path = SalwadorUITests;
-			sourceTree = "<group>";
-		};
-		89B9C626299D40A6006D2121 /* ImageGeneratorTests */ = {
-			isa = PBXGroup;
-			children = (
-				89B9C627299D40A6006D2121 /* ImageGeneratorTests.swift */,
-			);
-			path = ImageGeneratorTests;
 			sourceTree = "<group>";
 		};
 		89CDB3442992B454001E72A5 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				892D5F0729924C54002D0248 /* ImageGenerator.swift */,
-				8987198D29929A3100678E85 /* Credentials.swift */,
+				892D5F0729924C54002D0248 /* GenerateImageService.swift */,
+				894FD6F829A4FB390078233F /* FileManagerService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -236,6 +210,42 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		897D8A4829A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897D8A4F29A65FA800B6BE3E /* Build configuration list for PBXNativeTarget "UnitTestingSalwadorGenerateImageViewModel_Tests" */;
+			buildPhases = (
+				897D8A4529A65FA800B6BE3E /* Sources */,
+				897D8A4629A65FA800B6BE3E /* Frameworks */,
+				897D8A4729A65FA800B6BE3E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				897D8A4E29A65FA800B6BE3E /* PBXTargetDependency */,
+			);
+			name = UnitTestingSalwadorGenerateImageViewModel_Tests;
+			productName = UnitTestingSalwadorGenerateImageViewModel_Tests;
+			productReference = 897D8A4929A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		8984FD8B29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8984FD9229A647E600749ACD /* Build configuration list for PBXNativeTarget "UnitTestingSalwadorFilemanager_Tests" */;
+			buildPhases = (
+				8984FD8829A647E600749ACD /* Sources */,
+				8984FD8929A647E600749ACD /* Frameworks */,
+				8984FD8A29A647E600749ACD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8984FD9129A647E600749ACD /* PBXTargetDependency */,
+			);
+			name = UnitTestingSalwadorFilemanager_Tests;
+			productName = UnitTestingSalwadorFilemanager_Tests;
+			productReference = 8984FD8C29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		89AE83822989066F00683743 /* Salwador */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 89AE83A82989067100683743 /* Build configuration list for PBXNativeTarget "Salwador" */;
@@ -254,78 +264,6 @@
 			productReference = 89AE83832989066F00683743 /* Salwador.app */;
 			productType = "com.apple.product-type.application";
 		};
-		89AE83932989067100683743 /* SalwadorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89AE83AB2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorTests" */;
-			buildPhases = (
-				89AE83902989067100683743 /* Sources */,
-				89AE83912989067100683743 /* Frameworks */,
-				89AE83922989067100683743 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89AE83962989067100683743 /* PBXTargetDependency */,
-			);
-			name = SalwadorTests;
-			productName = SalwadorTests;
-			productReference = 89AE83942989067100683743 /* SalwadorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		89AE839D2989067100683743 /* SalwadorUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89AE83AE2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorUITests" */;
-			buildPhases = (
-				89AE839A2989067100683743 /* Sources */,
-				89AE839B2989067100683743 /* Frameworks */,
-				89AE839C2989067100683743 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89AE83A02989067100683743 /* PBXTargetDependency */,
-			);
-			name = SalwadorUITests;
-			productName = SalwadorUITests;
-			productReference = 89AE839E2989067100683743 /* SalwadorUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		89B9C614299D3F51006D2121 /* ImageGenerator */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89B9C61B299D3F52006D2121 /* Build configuration list for PBXNativeTarget "ImageGenerator" */;
-			buildPhases = (
-				89B9C611299D3F51006D2121 /* Sources */,
-				89B9C612299D3F51006D2121 /* Frameworks */,
-				89B9C613299D3F51006D2121 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89B9C61A299D3F52006D2121 /* PBXTargetDependency */,
-			);
-			name = ImageGenerator;
-			productName = ImageGenerator;
-			productReference = 89B9C615299D3F51006D2121 /* ImageGenerator.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		89B9C624299D40A6006D2121 /* ImageGeneratorTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 89B9C62B299D40A6006D2121 /* Build configuration list for PBXNativeTarget "ImageGeneratorTests" */;
-			buildPhases = (
-				89B9C621299D40A6006D2121 /* Sources */,
-				89B9C622299D40A6006D2121 /* Frameworks */,
-				89B9C623299D40A6006D2121 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				89B9C62A299D40A6006D2121 /* PBXTargetDependency */,
-			);
-			name = ImageGeneratorTests;
-			productName = ImageGeneratorTests;
-			productReference = 89B9C625299D40A6006D2121 /* ImageGeneratorTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -336,24 +274,16 @@
 				LastSwiftUpdateCheck = 1420;
 				LastUpgradeCheck = 1420;
 				TargetAttributes = {
+					897D8A4829A65FA800B6BE3E = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 89AE83822989066F00683743;
+					};
+					8984FD8B29A647E600749ACD = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = 89AE83822989066F00683743;
+					};
 					89AE83822989066F00683743 = {
 						CreatedOnToolsVersion = 14.2;
-					};
-					89AE83932989067100683743 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
-					};
-					89AE839D2989067100683743 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
-					};
-					89B9C614299D3F51006D2121 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
-					};
-					89B9C624299D40A6006D2121 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 89AE83822989066F00683743;
 					};
 				};
 			};
@@ -371,50 +301,35 @@
 			projectRoot = "";
 			targets = (
 				89AE83822989066F00683743 /* Salwador */,
-				89AE83932989067100683743 /* SalwadorTests */,
-				89AE839D2989067100683743 /* SalwadorUITests */,
-				89B9C614299D3F51006D2121 /* ImageGenerator */,
-				89B9C624299D40A6006D2121 /* ImageGeneratorTests */,
+				8984FD8B29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests */,
+				897D8A4829A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		897D8A4729A65FA800B6BE3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8984FD8A29A647E600749ACD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89AE83812989066F00683743 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */,
 				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
+				89F7C06029A665700028DFCB /* APIKey.json in Resources */,
 				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE83922989067100683743 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE839C2989067100683743 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C613299D3F51006D2121 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C623299D40A6006D2121 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,81 +357,138 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		897D8A4529A65FA800B6BE3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */,
+				89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */,
+				89F7C06929A66EF90028DFCB /* ImageGenerationResponse.swift in Sources */,
+				89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */,
+				89F7C06829A66EF70028DFCB /* ImageGenerationRequest.swift in Sources */,
+				89F7C06729A66E700028DFCB /* GenerateImageService.swift in Sources */,
+				89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8984FD8829A647E600749ACD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8984FD8F29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift in Sources */,
+				8984FD9529A6488C00749ACD /* FileManagerService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		89AE837F2989066F00683743 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8987198E29929A3100678E85 /* Credentials.swift in Sources */,
-				892D5F0829924C54002D0248 /* ImageGenerator.swift in Sources */,
-				89AE0E0A299E7279005DAEA5 /* ContentView.swift in Sources */,
+				892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */,
+				89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */,
+				8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */,
+				8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
-				89AE0E05299E6FBC005DAEA5 /* IGViewModel.swift in Sources */,
-				892D5F0F299269F4002D0248 /* ImageGenerationResponse.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE83902989067100683743 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE0E09299E7278005DAEA5 /* ContentView.swift in Sources */,
-				89AE83992989067100683743 /* SalwadorTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89AE839A2989067100683743 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE83A52989067100683743 /* SalwadorUITestsLaunchTests.swift in Sources */,
-				89AE83A32989067100683743 /* SalwadorUITests.swift in Sources */,
-				89AE0E08299E7277005DAEA5 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C611299D3F51006D2121 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE0E07299E7277005DAEA5 /* ContentView.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89B9C621299D40A6006D2121 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				89AE0E06299E7276005DAEA5 /* ContentView.swift in Sources */,
-				89B9C628299D40A6006D2121 /* ImageGeneratorTests.swift in Sources */,
+				894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */,
+				8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */,
+				89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		89AE83962989067100683743 /* PBXTargetDependency */ = {
+		897D8A4E29A65FA800B6BE3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89AE83952989067100683743 /* PBXContainerItemProxy */;
+			targetProxy = 897D8A4D29A65FA800B6BE3E /* PBXContainerItemProxy */;
 		};
-		89AE83A02989067100683743 /* PBXTargetDependency */ = {
+		8984FD9129A647E600749ACD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89AE839F2989067100683743 /* PBXContainerItemProxy */;
-		};
-		89B9C61A299D3F52006D2121 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89B9C619299D3F52006D2121 /* PBXContainerItemProxy */;
-		};
-		89B9C62A299D40A6006D2121 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 89AE83822989066F00683743 /* Salwador */;
-			targetProxy = 89B9C629299D40A6006D2121 /* PBXContainerItemProxy */;
+			targetProxy = 8984FD9029A647E600749ACD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		897D8A5029A65FA800B6BE3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorGenerateImageViewModel-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
+			};
+			name = Debug;
+		};
+		897D8A5129A65FA800B6BE3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorGenerateImageViewModel-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8984FD9329A647E600749ACD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorFilemanager-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
+			};
+			name = Debug;
+		};
+		8984FD9429A647E600749ACD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorFilemanager-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		89AE83A62989067100683743 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -713,173 +685,27 @@
 			};
 			name = Release;
 		};
-		89AE83AC2989067100683743 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Debug;
-		};
-		89AE83AD2989067100683743 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Release;
-		};
-		89AE83AF2989067100683743 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Salwador;
-			};
-			name = Debug;
-		};
-		89AE83B02989067100683743 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MACOSX_DEPLOYMENT_TARGET = 12.6;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.SalwadorUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Salwador;
-			};
-			name = Release;
-		};
-		89B9C61C299D3F52006D2121 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGenerator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Debug;
-		};
-		89B9C61D299D3F52006D2121 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGenerator;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		89B9C62C299D40A6006D2121 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGeneratorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-			};
-			name = Debug;
-		};
-		89B9C62D299D40A6006D2121 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.ImageGeneratorTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Salwador.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Salwador";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		897D8A4F29A65FA800B6BE3E /* Build configuration list for PBXNativeTarget "UnitTestingSalwadorGenerateImageViewModel_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897D8A5029A65FA800B6BE3E /* Debug */,
+				897D8A5129A65FA800B6BE3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8984FD9229A647E600749ACD /* Build configuration list for PBXNativeTarget "UnitTestingSalwadorFilemanager_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8984FD9329A647E600749ACD /* Debug */,
+				8984FD9429A647E600749ACD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		89AE837E2989066F00683743 /* Build configuration list for PBXProject "Salwador" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -894,42 +720,6 @@
 			buildConfigurations = (
 				89AE83A92989067100683743 /* Debug */,
 				89AE83AA2989067100683743 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89AE83AB2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89AE83AC2989067100683743 /* Debug */,
-				89AE83AD2989067100683743 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89AE83AE2989067100683743 /* Build configuration list for PBXNativeTarget "SalwadorUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89AE83AF2989067100683743 /* Debug */,
-				89AE83B02989067100683743 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89B9C61B299D3F52006D2121 /* Build configuration list for PBXNativeTarget "ImageGenerator" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89B9C61C299D3F52006D2121 /* Debug */,
-				89B9C61D299D3F52006D2121 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		89B9C62B299D40A6006D2121 /* Build configuration list for PBXNativeTarget "ImageGeneratorTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				89B9C62C299D40A6006D2121 /* Debug */,
-				89B9C62D299D40A6006D2121 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
