@@ -12,8 +12,6 @@
 			<true/>
 			<key>NSThirdPartyExceptionRequiresForwardSecrecy</key>
 			<false/>
-			<key>stackoverflow.com</key>
-			<dict/>
 		</dict>
 	</dict>
 	<key>UIApplicationSceneManifest</key>
