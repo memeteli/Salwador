@@ -18,6 +18,7 @@
 		89A7E5D729ACF65100A25AAF /* SamplePromptGenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5D629ACF65100A25AAF /* SamplePromptGenerationService.swift */; };
 		89A7E5D929ACFB7800A25AAF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5D829ACFB7800A25AAF /* Photo.swift */; };
 		89A7E5DB29ACFC7400A25AAF /* PopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5DA29ACFC7400A25AAF /* PopListView.swift */; };
+		89A7E5DE29B0998000A25AAF /* GenerateImageView+LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5DD29B0998000A25AAF /* GenerateImageView+LoadingView.swift */; };
 		89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* GenerateImageView.swift */; };
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
@@ -68,6 +69,7 @@
 		89A7E5D629ACF65100A25AAF /* SamplePromptGenerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptGenerationService.swift; sourceTree = "<group>"; };
 		89A7E5D829ACFB7800A25AAF /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		89A7E5DA29ACFC7400A25AAF /* PopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopListView.swift; sourceTree = "<group>"; };
+		89A7E5DD29B0998000A25AAF /* GenerateImageView+LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+LoadingView.swift"; sourceTree = "<group>"; };
 		89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
 		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE83862989066F00683743 /* SalwadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorApp.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				89AE83882989066F00683743 /* GenerateImageView.swift */,
+				89A7E5DD29B0998000A25AAF /* GenerateImageView+LoadingView.swift */,
 				89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */,
 			);
 			path = GenerateImage;
@@ -426,6 +429,7 @@
 				892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */,
 				89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */,
 				89F7C07529A90F6C0028DFCB /* AppNavigationView.swift in Sources */,
+				89A7E5DE29B0998000A25AAF /* GenerateImageView+LoadingView.swift in Sources */,
 				8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */,
 				8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
@@ -654,13 +658,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Salwador/Salwador.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Salwador/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -678,7 +685,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.Salwador;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
@@ -695,13 +702,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Salwador/Salwador.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Salwador/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -719,7 +729,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.Salwador;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
