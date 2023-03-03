@@ -25,7 +25,6 @@ DerivedData/
 *.perspectivev3
 !default.perspectivev3
 *.DS_Store
-*.xcconfig
 
 ## Obj-C/Swift specific
 *.hmap
@@ -97,4 +96,7 @@ iOSInjectionProject/
 # Personal Data
 .swiftformat
 .swiftlint.yml
+./Salwador/Preview Content/APIKey.json
+Salwador/Preview Content/APIKey.json
+Salwador/Preview Content/Config.xcconfig
 Salwador/Preview Content/Config.xcconfig

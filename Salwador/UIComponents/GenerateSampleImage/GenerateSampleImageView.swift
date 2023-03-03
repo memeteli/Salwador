@@ -88,7 +88,6 @@ private extension GenerateSampleImageView {
                         .scaledToFit()
                         .frame(width: 440, height: 440)
                         .onLongPressGesture(minimumDuration: 0.5) {
-                            print("Long pressed!")
                             withAnimation {
                                 generatedImage = identifier
                                 viewModel.isPopListShown = true

@@ -26,6 +26,7 @@
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
 		89AEFA3E29B0D896004C3625 /* Prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 89AEFA3C29B0D896004C3625 /* Prompts.json */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
+		89E01FC329B22E5A00DF0135 /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89E01FC229B22E5A00DF0135 /* APIKey.json */; };
 		89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
 		89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
@@ -78,7 +79,7 @@
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89AEFA3C29B0D896004C3625 /* Prompts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Prompts.json; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		89E01FBF29B223EB00DF0135 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
+		89E01FC229B22E5A00DF0135 /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = APIKey.json; path = ../UIComponents/APIKey.json; sourceTree = "<group>"; };
 		89F7C06E29A777470028DFCB /* SamplePromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptModel.swift; sourceTree = "<group>"; };
 		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
 		89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; usesTabs = 0; };
@@ -222,8 +223,8 @@
 			isa = PBXGroup;
 			children = (
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
+				89E01FC229B22E5A00DF0135 /* APIKey.json */,
 				89AEFA3C29B0D896004C3625 /* Prompts.json */,
-				89E01FBF29B223EB00DF0135 /* Config.xcconfig */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -366,6 +367,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */,
+				89E01FC329B22E5A00DF0135 /* APIKey.json in Resources */,
 				89AEFA3E29B0D896004C3625 /* Prompts.json in Resources */,
 				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
 				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
@@ -459,7 +461,6 @@
 /* Begin XCBuildConfiguration section */
 		897D8A5029A65FA800B6BE3E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E01FBF29B223EB00DF0135 /* Config.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -481,7 +482,6 @@
 		};
 		897D8A5129A65FA800B6BE3E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E01FBF29B223EB00DF0135 /* Config.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -504,7 +504,6 @@
 		};
 		8984FD9329A647E600749ACD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E01FBF29B223EB00DF0135 /* Config.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -526,7 +525,6 @@
 		};
 		8984FD9429A647E600749ACD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E01FBF29B223EB00DF0135 /* Config.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -663,7 +661,6 @@
 		};
 		89AE83A92989067100683743 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E01FBF29B223EB00DF0135 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -710,7 +707,6 @@
 		};
 		89AE83AA2989067100683743 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 89E01FBF29B223EB00DF0135 /* Config.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

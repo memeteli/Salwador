@@ -31,6 +31,8 @@ class FileManagerService {
     }
 
     func getApiKey() -> String {
-        return Bundle.main.infoDictionary?["API_KEY"] as! String
+        let data = readFile(fileName: "APIKey", fileType: "json")
+        let decodedData = Data(base64Encoded: data!)!
+        return String(data: decodedData, encoding: .utf8)!
     }
 }
