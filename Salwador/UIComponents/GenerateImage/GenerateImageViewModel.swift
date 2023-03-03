@@ -50,13 +50,13 @@ import UIKit
             hasError = false
             isLoading = true
             return
-            
+
         case .loaded:
             buttonText = "Regenerate"
             hasError = false
             isLoading = false
             return
-            
+
         case .failed:
             buttonText = "Retry"
             errorMsg = "No data was fetched, please retry again!"
