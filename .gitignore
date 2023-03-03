@@ -96,3 +96,4 @@ iOSInjectionProject/
 # Personal Data
 .swiftformat
 .swiftlint.yml
+*.xcconfig

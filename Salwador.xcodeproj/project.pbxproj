@@ -80,6 +80,7 @@
 		89AEFA3C29B0D896004C3625 /* Prompts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Prompts.json; sourceTree = "<group>"; };
 		89AEFA3D29B0D896004C3625 /* APIKey.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
+		89E01FBF29B223EB00DF0135 /* Config.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Config.xcconfig; sourceTree = "<group>"; };
 		89F7C06E29A777470028DFCB /* SamplePromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptModel.swift; sourceTree = "<group>"; };
 		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
 		89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; usesTabs = 0; };
@@ -225,6 +226,7 @@
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
 				89AEFA3D29B0D896004C3625 /* APIKey.json */,
 				89AEFA3C29B0D896004C3625 /* Prompts.json */,
+				89E01FBF29B223EB00DF0135 /* Config.xcconfig */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
