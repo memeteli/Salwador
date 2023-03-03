@@ -31,8 +31,19 @@ class FileManagerService {
     }
 
     func getApiKey() -> String {
+        var key = ""
+
         let data = readFile(fileName: "APIKey", fileType: "json")
-        let decodedData = Data(base64Encoded: data!)!
-        return String(data: decodedData, encoding: .utf8)!
+        do {
+            let json = try JSONDecoder().decode(APIJSONModel.self, from: data!)
+
+            if let decodedData = Data(base64Encoded: json.apikey) {
+                key = String(data: decodedData, encoding: .utf8)!
+            }
+
+        } catch {
+            print(error.localizedDescription)
+        }
+        return key
     }
 }
