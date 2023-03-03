@@ -24,7 +24,6 @@
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
-		89AEFA3E29B0D896004C3625 /* Prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 89AEFA3C29B0D896004C3625 /* Prompts.json */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
 		89E01FC729B2319700DF0135 /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89E01FC629B2319700DF0135 /* APIKey.json */; };
 		89E01FC829B23B5C00DF0135 /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
@@ -34,7 +33,6 @@
 		89F7C06729A66E700028DFCB /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
 		89F7C06829A66EF70028DFCB /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
 		89F7C06929A66EF90028DFCB /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
-		89F7C06F29A777470028DFCB /* SamplePromptModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C06E29A777470028DFCB /* SamplePromptModel.swift */; };
 		89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */; };
 		89F7C07529A90F6C0028DFCB /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */; };
 /* End PBXBuildFile section */
@@ -78,10 +76,8 @@
 		89AE838A2989067100683743 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		89AEFA3C29B0D896004C3625 /* Prompts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Prompts.json; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		89E01FC629B2319700DF0135 /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
-		89F7C06E29A777470028DFCB /* SamplePromptModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptModel.swift; sourceTree = "<group>"; };
 		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
 		89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
@@ -147,7 +143,6 @@
 				8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */,
 				8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */,
 				89A7E5D829ACFB7800A25AAF /* Photo.swift */,
-				89F7C06E29A777470028DFCB /* SamplePromptModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -224,7 +219,6 @@
 			isa = PBXGroup;
 			children = (
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
-				89AEFA3C29B0D896004C3625 /* Prompts.json */,
 				89E01FC629B2319700DF0135 /* APIKey.json */,
 			);
 			path = "Preview Content";
@@ -369,7 +363,6 @@
 			files = (
 				89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */,
 				89E01FC729B2319700DF0135 /* APIKey.json in Resources */,
-				89AEFA3E29B0D896004C3625 /* Prompts.json in Resources */,
 				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
 				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
 			);
@@ -441,7 +434,6 @@
 				89A7E5DB29ACFC7400A25AAF /* PopListView.swift in Sources */,
 				8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */,
 				89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */,
-				89F7C06F29A777470028DFCB /* SamplePromptModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
