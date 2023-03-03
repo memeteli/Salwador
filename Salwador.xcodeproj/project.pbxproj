@@ -27,6 +27,7 @@
 		89AEFA3E29B0D896004C3625 /* Prompts.json in Resources */ = {isa = PBXBuildFile; fileRef = 89AEFA3C29B0D896004C3625 /* Prompts.json */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
 		89E01FC729B2319700DF0135 /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89E01FC629B2319700DF0135 /* APIKey.json */; };
+		89E01FC829B23B5C00DF0135 /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
 		89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
 		89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
@@ -418,6 +419,7 @@
 			files = (
 				8984FD8F29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift in Sources */,
 				8984FD9529A6488C00749ACD /* FileManagerService.swift in Sources */,
+				89E01FC829B23B5C00DF0135 /* APIJSONModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

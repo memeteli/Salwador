@@ -21,7 +21,6 @@ import XCTest
     }
 
     func test_UnitTestingSalwadorGenerateImageViewModel_ShouldReturnErrorWithNoValidAPIKey() {
-        vm.apiKeyFileName = "APIKey"
         Task {
             await vm.sendRequest(prompText: samplePrompt)
         }
