@@ -96,7 +96,4 @@ iOSInjectionProject/
 # Personal Data
 .swiftformat
 .swiftlint.yml
-./Salwador/Preview Content/APIKey.json
-Salwador/Preview Content/APIKey.json
-Salwador/Preview Content/Config.xcconfig
-Salwador/Preview Content/Config.xcconfig
+
