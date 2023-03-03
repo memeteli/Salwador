@@ -97,3 +97,4 @@ iOSInjectionProject/
 .swiftformat
 .swiftlint.yml
 *.xcconfig
+Salwador/Preview Content/Config.xcconfig
