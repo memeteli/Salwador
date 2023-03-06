@@ -19,7 +19,6 @@ struct GenerateImageView: View {
             VStack {
                 Spacer()
                 textEditorView
-                submitButtonView
                 Spacer()
                 imageView
                 Spacer()
@@ -50,15 +49,16 @@ struct ContentView_Previews: PreviewProvider {
 
 private extension GenerateImageView {
     var textEditorView: some View {
-        ZStack {
-            TextEditor(
-                text: $prompText)
-                .font(.title2)
-                .frame(minWidth: 320, idealWidth: 500, maxWidth: .infinity, minHeight: 100, idealHeight: 200, maxHeight: .infinity)
-                .scaledToFit()
-                .border(Color(.black), width: 1)
-                .padding(10)
+        VStack {
+            TextField("Enter your prompt...", text: $prompText).font(.title2)
+                .frame(width: 320, height: 40)
+                .border(Color("OrangeColor"), width: 1)
+                .padding(20)
                 .cornerRadius(10)
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.default)
+
+            submitButtonView
         }
         .background(Color("BackgroundColor"))
     }
@@ -67,8 +67,10 @@ private extension GenerateImageView {
         Button(viewModel.buttonText) {
             viewModel.buttonText = "Wait..."
             viewModel.isLoading = true
+
             withAnimation {
                 viewModel.isPopListShown = false
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
             }
 
             Task {
