@@ -106,7 +106,7 @@ private extension GenerateImageView {
     var imageView: some View {
         VStack {
             if viewModel.hasError {
-                                Spacer()
+                Spacer()
 
                 HStack {
                     Image(systemName: "bell")
@@ -116,7 +116,7 @@ private extension GenerateImageView {
                     Text(viewModel.errorMsg)
                         .foregroundColor(Color("TextColor"))
                 }
-                                Spacer()
+                Spacer()
 
                 closeButton
             } else if let identifier = viewModel.image {
@@ -125,6 +125,8 @@ private extension GenerateImageView {
                 }
 
                 if !viewModel.isLoading {
+                    Spacer()
+
                     Image(uiImage: identifier)
                         .resizable()
                         .scaledToFit()
@@ -135,7 +137,7 @@ private extension GenerateImageView {
                                 viewModel.isPopListShown = true
                             }
                         }
-                                    Spacer()
+                    Spacer()
                     closeButton
                 }
 
