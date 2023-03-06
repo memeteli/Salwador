@@ -167,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */,
+				89E01FC629B2319700DF0135 /* APIKey.json */,
 				89AE838A2989067100683743 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -219,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
-				89E01FC629B2319700DF0135 /* APIKey.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
