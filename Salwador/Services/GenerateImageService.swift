@@ -16,6 +16,9 @@ class GenerateImageService {
             throw ImageError.badURL
         }
 
+        guard prompt != "" else {
+            throw ImageError.emptyPrompt
+        }
         let requestBody = ImageGenerationRequest(prompt: prompt, userID: sessionID, imageSize: "1024x1024", numberOfImage: 1)
 
         let data = try JSONEncoder().encode(requestBody)
@@ -34,5 +37,5 @@ class GenerateImageService {
 }
 
 enum ImageError: Error {
-    case inValidPrompt, badURL
+    case emptyPrompt, badURL
 }

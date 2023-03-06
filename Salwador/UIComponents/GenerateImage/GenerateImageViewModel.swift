@@ -21,7 +21,7 @@ import UIKit
 
     func sendRequest(prompText: String) async {
         do {
-            handleViewState(state: requestState.loading)
+            handleViewState(state: requestState.loading, errMessage: "")
 
             let response = try await GenerateImageService.shared.generateImage(withPrompt: prompText, apiKey: fileManager.getApiKey())
 
@@ -30,10 +30,22 @@ import UIKit
 
                 image = UIImage(data: data)
 
-                handleViewState(state: requestState.loaded)
+                handleViewState(state: requestState.loaded, errMessage: "")
             }
+        } catch FileManagerError.noAPIKeyFound {
+            handleViewState(state: requestState.failed, errMessage: "No API Key was found, please try again!")
+        } catch FileManagerError.invalidFilePath {
+            handleViewState(state: requestState.failed, errMessage: "Invalid file path, please try again!")
+        } catch FileManagerError.noFileFound {
+            handleViewState(state: requestState.failed, errMessage: "No file was found, please try again!")
+        } catch FileManagerError.failedReadingFileContent {
+            handleViewState(state: requestState.failed, errMessage: "Failed to read file, please try again!")
+        } catch ImageError.badURL {
+            handleViewState(state: requestState.failed, errMessage: "URL is not valid, please try again!")
+        } catch ImageError.emptyPrompt {
+            handleViewState(state: requestState.failed, errMessage: "Prompt is empty, please enter some text and try again!")
         } catch {
-            handleViewState(state: requestState.failed)
+            handleViewState(state: requestState.failed, errMessage: error.localizedDescription)
         }
     }
 
@@ -43,7 +55,7 @@ import UIKit
         case failed
     }
 
-    func handleViewState(state: requestState) {
+    func handleViewState(state: requestState, errMessage: String) {
         switch state {
         case .loading:
             buttonText = "Loading..."
@@ -59,7 +71,7 @@ import UIKit
 
         case .failed:
             buttonText = "Retry"
-            errorMsg = "No data was fetched, please retry again!"
+            errorMsg = errMessage
             hasError = true
             isLoading = false
             return

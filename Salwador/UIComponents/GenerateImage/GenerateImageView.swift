@@ -24,11 +24,6 @@ struct GenerateImageView: View {
                 submitButtonView
                 Spacer()
             }
-            if viewModel.isPopListShown {
-                ZStack(alignment: .bottom) {
-                    PopList
-                }
-            }
         }
         .background(Color("BackgroundColor"))
         .navigationTitle("Salwador")
@@ -90,6 +85,7 @@ private extension GenerateImageView {
             Button {
                 withAnimation {
                     showingPopover = false
+                    viewModel.isPopListShown = false
                 }
             } label: {
                 HStack {
@@ -116,6 +112,7 @@ private extension GenerateImageView {
                     Text(viewModel.errorMsg)
                         .foregroundColor(Color("TextColor"))
                 }
+
                 Spacer()
 
                 closeButton
@@ -138,6 +135,13 @@ private extension GenerateImageView {
                             }
                         }
                     Spacer()
+
+                    if viewModel.isPopListShown {
+                        ZStack(alignment: .bottom) {
+                            PopList
+                        }
+                    }
+
                     closeButton
                 }
 
