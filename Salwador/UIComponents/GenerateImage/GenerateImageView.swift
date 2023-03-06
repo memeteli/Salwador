@@ -21,7 +21,6 @@ struct GenerateImageView: View {
             VStack {
                 Spacer()
                 textEditorView
-                Spacer()
                 submitButtonView
                 Spacer()
             }
@@ -94,31 +93,32 @@ private extension GenerateImageView {
                 }
             } label: {
                 HStack {
-                    Image(systemName: "xmark")
+                    Image(systemName: "arrowtriangle.down")
                         .resizable()
                         .frame(width: 15, height: 15)
-                        .foregroundColor(.white)
+                        .foregroundColor(Color("TextColor"))
                         .padding(10)
                 }
             }
         }
-        .background(Color("OrangeColor"))
-        .clipShape(Circle())
     }
 
     var imageView: some View {
         VStack {
             if viewModel.hasError {
-                                HStack {
-                                                    Image(systemName: "bell")
-                                                                        .foregroundColor(.red)
-                                                                        .scaledToFit()
-                                                                        .frame(width: 48, height: 48)
-                                                    Text(viewModel.errorMsg)
-                                                                        .foregroundColor(Color("TextColor"))
-                                                    
-                                }
-                                closeButton
+                                Spacer()
+
+                HStack {
+                    Image(systemName: "bell")
+                        .foregroundColor(.red)
+                        .scaledToFit()
+                        .frame(width: 48, height: 48)
+                    Text(viewModel.errorMsg)
+                        .foregroundColor(Color("TextColor"))
+                }
+                                Spacer()
+
+                closeButton
             } else if let identifier = viewModel.image {
                 if viewModel.isLoading {
                     loadingView
@@ -130,13 +130,13 @@ private extension GenerateImageView {
                         .scaledToFit()
                         .frame(width: 440, height: 440)
                         .onLongPressGesture(minimumDuration: 0.5) {
-                            print("Long pressed!")
                             withAnimation {
                                 generatedImage = identifier
                                 viewModel.isPopListShown = true
                             }
                         }
-                                    closeButton
+                                    Spacer()
+                    closeButton
                 }
 
             } else {
@@ -144,8 +144,6 @@ private extension GenerateImageView {
                     loadingView
                 }
             }
-
         }
-        .frame(height: 600)
     }
 }
