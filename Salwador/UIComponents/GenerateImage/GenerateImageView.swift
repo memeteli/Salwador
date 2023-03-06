@@ -13,15 +13,15 @@ struct GenerateImageView: View {
     @State private var isPopL: String = ""
     @StateObject var viewModel = GenerateImageViewModel()
     @State var generatedImage = UIImage()
+    @State private var showingPopover = false
 
     var body: some View {
         ZStack {
-                            Color("BackgroundColor")
+            Color("BackgroundColor")
             VStack {
                 Spacer()
                 textEditorView
                 Spacer()
-                imageView
                 submitButtonView
                 Spacer()
             }
@@ -39,7 +39,6 @@ struct GenerateImageView: View {
             for: .navigationBar
         )
         .toolbarBackground(.visible, for: .navigationBar)
-
     }
 }
 
@@ -66,6 +65,7 @@ private extension GenerateImageView {
         Button(viewModel.buttonText) {
             viewModel.buttonText = "Wait..."
             viewModel.isLoading = true
+            showingPopover = true
 
             withAnimation {
                 viewModel.isPopListShown = false
@@ -81,19 +81,44 @@ private extension GenerateImageView {
         .foregroundColor(.white)
         .background(Color("OrangeColor"))
         .cornerRadius(10)
+        .popover(isPresented: $showingPopover) {
+            imageView
+        }
+    }
+
+    var closeButton: some View {
+        ZStack {
+            Button {
+                withAnimation {
+                    showingPopover = false
+                }
+            } label: {
+                HStack {
+                    Image(systemName: "xmark")
+                        .resizable()
+                        .frame(width: 15, height: 15)
+                        .foregroundColor(.white)
+                        .padding(10)
+                }
+            }
+        }
+        .background(Color("OrangeColor"))
+        .clipShape(Circle())
     }
 
     var imageView: some View {
         VStack {
             if viewModel.hasError {
-                HStack {
-                    Image(systemName: "bell")
-                        .foregroundColor(.red)
-                        .scaledToFit()
-                        .frame(width: 48, height: 48)
-                    Text(viewModel.errorMsg)
-                        .foregroundColor(Color("TextColor"))
-                }
+                                HStack {
+                                                    Image(systemName: "bell")
+                                                                        .foregroundColor(.red)
+                                                                        .scaledToFit()
+                                                                        .frame(width: 48, height: 48)
+                                                    Text(viewModel.errorMsg)
+                                                                        .foregroundColor(Color("TextColor"))
+                                                    
+                                }
+                                closeButton
             } else if let identifier = viewModel.image {
                 if viewModel.isLoading {
                     loadingView
@@ -103,7 +128,7 @@ private extension GenerateImageView {
                     Image(uiImage: identifier)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 440, height: 320)
+                        .frame(width: 440, height: 440)
                         .onLongPressGesture(minimumDuration: 0.5) {
                             print("Long pressed!")
                             withAnimation {
@@ -111,6 +136,7 @@ private extension GenerateImageView {
                                 viewModel.isPopListShown = true
                             }
                         }
+                                    closeButton
                 }
 
             } else {
@@ -118,6 +144,8 @@ private extension GenerateImageView {
                     loadingView
                 }
             }
+
         }
+        .frame(height: 600)
     }
 }
