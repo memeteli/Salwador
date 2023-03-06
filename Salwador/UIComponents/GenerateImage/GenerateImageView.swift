@@ -16,21 +16,22 @@ struct GenerateImageView: View {
 
     var body: some View {
         ZStack {
+                            Color("BackgroundColor")
             VStack {
                 Spacer()
                 textEditorView
                 Spacer()
                 imageView
+                submitButtonView
                 Spacer()
             }
-            .background(Color("BackgroundColor"))
             if viewModel.isPopListShown {
                 ZStack(alignment: .bottom) {
                     PopList
                 }
             }
         }
-        .edgesIgnoringSafeArea(.all)
+        .background(Color("BackgroundColor"))
         .navigationTitle("Salwador")
         .toolbarColorScheme(.dark, for: .navigationBar)
         .toolbarBackground(
@@ -38,6 +39,7 @@ struct GenerateImageView: View {
             for: .navigationBar
         )
         .toolbarBackground(.visible, for: .navigationBar)
+
     }
 }
 
@@ -49,7 +51,7 @@ struct ContentView_Previews: PreviewProvider {
 
 private extension GenerateImageView {
     var textEditorView: some View {
-        VStack {
+        ZStack {
             TextField("Enter your prompt...", text: $prompText).font(.title2)
                 .frame(width: 320, height: 40)
                 .border(Color("OrangeColor"), width: 1)
@@ -57,10 +59,7 @@ private extension GenerateImageView {
                 .cornerRadius(10)
                 .textFieldStyle(.roundedBorder)
                 .keyboardType(.default)
-
-            submitButtonView
         }
-        .background(Color("BackgroundColor"))
     }
 
     var submitButtonView: some View {
