@@ -15,6 +15,9 @@ struct GenerateImageView: View {
     @State var generatedImage = UIImage()
     @State private var showingPopover = false
 
+    @AppStorage("darkModeEnabled") private var darkModeEnabled = false
+    @AppStorage("systemSchemaEnabled") private var systemSchemaEnabled = false
+
     var body: some View {
         ZStack {
             Color("BackgroundColor")
