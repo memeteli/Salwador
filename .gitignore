@@ -24,6 +24,7 @@ DerivedData/
 !default.mode2v3
 *.perspectivev3
 !default.perspectivev3
+*.DS_Store
 
 ## Obj-C/Swift specific
 *.hmap
@@ -95,4 +96,4 @@ iOSInjectionProject/
 # Personal Data
 .swiftformat
 .swiftlint.yml
-Salwador/Preview Content/APIKey.json
+

@@ -10,22 +10,29 @@ import UIKit
 
 struct GenerateImageView: View {
     @State private var prompText: String = ""
+    @State private var isPopL: String = ""
     @StateObject var viewModel = GenerateImageViewModel()
+    @State var generatedImage = UIImage()
+    @State private var showingPopover = false
 
     var body: some View {
         ZStack {
+            Color("BackgroundColor")
             VStack {
-                appNameView
                 Spacer()
                 textEditorView
                 submitButtonView
-                    .padding(10)
-                Spacer()
-                imageView
                 Spacer()
             }
         }
         .background(Color("BackgroundColor"))
+        .navigationTitle("Salwador")
+        .toolbarColorScheme(.dark, for: .navigationBar)
+        .toolbarBackground(
+            Color("OrangeColor"),
+            for: .navigationBar
+        )
+        .toolbarBackground(.visible, for: .navigationBar)
     }
 }
 
@@ -36,58 +43,73 @@ struct ContentView_Previews: PreviewProvider {
 }
 
 private extension GenerateImageView {
-    var appNameView: some View {
-        VStack {
-            Text("Salvador")
-                .foregroundColor(Color("TextColor"))
-                .font(.title)
-                .fontWeight(.bold)
-                .padding(.top, 30)
-
-            Image("salvador-icon")
-                .resizable()
-                .scaledToFit()
-                .frame(width: 200, height: 100)
-
-            Text("Your AI Image Generator")
-                .foregroundColor(Color("TextColor"))
-                .font(.footnote)
-        }
-    }
-
     var textEditorView: some View {
         ZStack {
-            TextEditor(
-                text: $prompText)
-                .font(.title2)
-                .frame(minWidth: 320, idealWidth: 500, maxWidth: .infinity, minHeight: 100, idealHeight: 200, maxHeight: .infinity)
-                .scaledToFit()
-                .border(Color(.black), width: 1)
-                .padding(10)
+            TextField("Enter your prompt...", text: $prompText).font(.title2)
+                .frame(width: 320, height: 40)
+                .border(Color("OrangeColor"), width: 1)
+                .padding(20)
                 .cornerRadius(10)
+                .textFieldStyle(.roundedBorder)
+                .keyboardType(.default)
         }
-        .background(Color("BackgroundColor"))
     }
 
     var submitButtonView: some View {
         Button(viewModel.buttonText) {
             viewModel.buttonText = "Wait..."
             viewModel.isLoading = true
-            viewModel.apiKeyFileName = "APIKey"
+            showingPopover = true
+
+            withAnimation {
+                viewModel.isPopListShown = false
+                UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+            }
 
             Task {
                 await viewModel.sendRequest(prompText: prompText)
             }
         }
+        .disabled(viewModel.isLoading)
         .frame(width: 150, height: 50)
-        .foregroundColor(Color("TextColor"))
+        .foregroundColor(.white)
         .background(Color("OrangeColor"))
         .cornerRadius(10)
+        .popover(isPresented: $showingPopover) {
+            imageView
+        }
+    }
+
+    var closeButton: some View {
+        ZStack {
+            Button {
+                withAnimation {
+                    showingPopover = false
+                    viewModel.isPopListShown = false
+                }
+            } label: {
+                HStack {
+                    Image(systemName: "arrowtriangle.down")
+                        .resizable()
+                        .frame(width: 15, height: 15)
+                        .foregroundColor(Color("TextColor"))
+                        .padding(10)
+                }
+            }
+        }
+    }
+
+    var popListView: some View {
+        ZStack(alignment: .bottom) {
+            PopList
+        }
     }
 
     var imageView: some View {
         VStack {
             if viewModel.hasError {
+                Spacer()
+
                 HStack {
                     Image(systemName: "bell")
                         .foregroundColor(.red)
@@ -96,16 +118,36 @@ private extension GenerateImageView {
                     Text(viewModel.errorMsg)
                         .foregroundColor(Color("TextColor"))
                 }
+
+                Spacer()
+
+                closeButton
             } else if let identifier = viewModel.image {
                 if viewModel.isLoading {
                     loadingView
                 }
 
                 if !viewModel.isLoading {
+                    Spacer()
+
                     Image(uiImage: identifier)
                         .resizable()
                         .scaledToFit()
-                        .frame(width: 440, height: 320)
+                        .frame(width: 440, height: 440)
+                        .onLongPressGesture(minimumDuration: 0.5) {
+                            withAnimation {
+                                generatedImage = identifier
+                                viewModel.isPopListShown = true
+                            }
+                        }
+
+                    Spacer()
+
+                    if viewModel.isPopListShown {
+                        popListView
+                    }
+
+                    closeButton
                 }
 
             } else {
@@ -113,17 +155,6 @@ private extension GenerateImageView {
                     loadingView
                 }
             }
-        }
-    }
-
-    var loadingView: some View {
-        VStack {
-            ProgressView()
-                .background(Color("TextColor"))
-                .foregroundColor(Color("TextColor"))
-            Text("Your image is generating...")
-                .font(.title3)
-                .foregroundColor(Color("TextColor"))
         }
     }
 }
