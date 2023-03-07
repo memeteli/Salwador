@@ -33,7 +33,10 @@ struct SettingsView: View {
                 }
 
                 Section {
-                    Label("Find me on Github", systemImage: "link")
+                    HStack {
+                        Image(systemName: "link")
+                        Link("Find me on Github", destination: URL(string: "https://github.com/memeteli/Salwador")!)
+                    }
                 }
             }
             .navigationBarTitle(Text("Settings"))
