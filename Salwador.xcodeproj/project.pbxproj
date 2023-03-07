@@ -10,24 +10,31 @@
 		892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
 		894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
 		897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */; };
-		8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
+		8984FD7829A6457D00749ACD /* ImageGenerationRequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequestPayload.swift */; };
 		8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
-		8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
+		8984FD7A29A6457D00749ACD /* ImageGenerationResponsePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponsePayload.swift */; };
 		8984FD8F29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD8E29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift */; };
 		8984FD9529A6488C00749ACD /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
+		89A7E5D729ACF65100A25AAF /* SamplePromptGenerationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5D629ACF65100A25AAF /* SamplePromptGenerationService.swift */; };
+		89A7E5D929ACFB7800A25AAF /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5D829ACFB7800A25AAF /* Photo.swift */; };
+		89A7E5DB29ACFC7400A25AAF /* PopListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5DA29ACFC7400A25AAF /* PopListView.swift */; };
+		89A7E5DE29B0998000A25AAF /* GenerateImageView+LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A7E5DD29B0998000A25AAF /* GenerateImageView+LoadingView.swift */; };
 		89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83882989066F00683743 /* GenerateImageView.swift */; };
 		89AE83872989066F00683743 /* SalwadorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE83862989066F00683743 /* SalwadorApp.swift */; };
 		89AE838B2989067100683743 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838A2989067100683743 /* Assets.xcassets */; };
 		89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89AE838E2989067100683743 /* Preview Assets.xcassets */; };
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
-		89F7C06029A665700028DFCB /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89F7C05F29A665700028DFCB /* APIKey.json */; };
+		89E01FC729B2319700DF0135 /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89E01FC629B2319700DF0135 /* APIKey.json */; };
+		89E01FC829B23B5C00DF0135 /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
 		89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
 		89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
 		89F7C06729A66E700028DFCB /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
-		89F7C06829A66EF70028DFCB /* ImageGenerationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */; };
-		89F7C06929A66EF90028DFCB /* ImageGenerationResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */; };
+		89F7C06829A66EF70028DFCB /* ImageGenerationRequestPayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7529A6457C00749ACD /* ImageGenerationRequestPayload.swift */; };
+		89F7C06929A66EF90028DFCB /* ImageGenerationResponsePayload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7729A6457D00749ACD /* ImageGenerationResponsePayload.swift */; };
+		89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */; };
+		89F7C07529A90F6C0028DFCB /* AppNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +60,15 @@
 		894FD6F829A4FB390078233F /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
 		897D8A4929A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSalwadorGenerateImageViewModel_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingSalwadorGenerateImageViewModel_Tests.swift; sourceTree = "<group>"; };
-		8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationRequest.swift; path = Salwador/Models/ImageGenerationRequest.swift; sourceTree = SOURCE_ROOT; };
+		8984FD7529A6457C00749ACD /* ImageGenerationRequestPayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationRequestPayload.swift; path = Salwador/Models/ImageGenerationRequestPayload.swift; sourceTree = SOURCE_ROOT; };
 		8984FD7629A6457D00749ACD /* APIJSONModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = APIJSONModel.swift; path = Salwador/Models/APIJSONModel.swift; sourceTree = SOURCE_ROOT; };
-		8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationResponse.swift; path = Salwador/Models/ImageGenerationResponse.swift; sourceTree = SOURCE_ROOT; };
+		8984FD7729A6457D00749ACD /* ImageGenerationResponsePayload.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageGenerationResponsePayload.swift; path = Salwador/Models/ImageGenerationResponsePayload.swift; sourceTree = SOURCE_ROOT; };
 		8984FD8C29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingSalwadorFilemanager_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8984FD8E29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingSalwadorFilemanager_Tests.swift; sourceTree = "<group>"; };
+		89A7E5D629ACF65100A25AAF /* SamplePromptGenerationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePromptGenerationService.swift; sourceTree = "<group>"; };
+		89A7E5D829ACFB7800A25AAF /* Photo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		89A7E5DA29ACFC7400A25AAF /* PopListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopListView.swift; sourceTree = "<group>"; };
+		89A7E5DD29B0998000A25AAF /* GenerateImageView+LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenerateImageView+LoadingView.swift"; sourceTree = "<group>"; };
 		89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageViewModel.swift; sourceTree = "<group>"; };
 		89AE83832989066F00683743 /* Salwador.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Salwador.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89AE83862989066F00683743 /* SalwadorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalwadorApp.swift; sourceTree = "<group>"; };
@@ -66,7 +77,9 @@
 		89AE838C2989067100683743 /* Salwador.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Salwador.entitlements; sourceTree = "<group>"; };
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
-		89F7C05F29A665700028DFCB /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
+		89E01FC629B2319700DF0135 /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
+		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
+		89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +120,8 @@
 			children = (
 				897D8A5629A6647D00B6BE3E /* GenerateImage */,
 				8996F4BC299E206400E38E5C /* GenerateSampleImage */,
+				89F7C07629A90F700028DFCB /* NavigationView */,
+				89A7E5DC29ACFC7C00A25AAF /* PopListView */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -115,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				89AE83882989066F00683743 /* GenerateImageView.swift */,
+				89A7E5DD29B0998000A25AAF /* GenerateImageView+LoadingView.swift */,
 				89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */,
 			);
 			path = GenerateImage;
@@ -124,8 +140,9 @@
 			isa = PBXGroup;
 			children = (
 				8984FD7629A6457D00749ACD /* APIJSONModel.swift */,
-				8984FD7529A6457C00749ACD /* ImageGenerationRequest.swift */,
-				8984FD7729A6457D00749ACD /* ImageGenerationResponse.swift */,
+				8984FD7529A6457C00749ACD /* ImageGenerationRequestPayload.swift */,
+				8984FD7729A6457D00749ACD /* ImageGenerationResponsePayload.swift */,
+				89A7E5D829ACFB7800A25AAF /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -141,6 +158,7 @@
 		8996F4BC299E206400E38E5C /* GenerateSampleImage */ = {
 			isa = PBXGroup;
 			children = (
+				89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */,
 			);
 			path = GenerateSampleImage;
 			sourceTree = "<group>";
@@ -149,9 +167,18 @@
 			isa = PBXGroup;
 			children = (
 				89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */,
+				89E01FC629B2319700DF0135 /* APIKey.json */,
 				89AE838A2989067100683743 /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		89A7E5DC29ACFC7C00A25AAF /* PopListView */ = {
+			isa = PBXGroup;
+			children = (
+				89A7E5DA29ACFC7400A25AAF /* PopListView.swift */,
+			);
+			path = PopListView;
 			sourceTree = "<group>";
 		};
 		89AE837A2989066F00683743 = {
@@ -193,7 +220,6 @@
 			isa = PBXGroup;
 			children = (
 				89AE838E2989067100683743 /* Preview Assets.xcassets */,
-				89F7C05F29A665700028DFCB /* APIKey.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -203,8 +229,17 @@
 			children = (
 				892D5F0729924C54002D0248 /* GenerateImageService.swift */,
 				894FD6F829A4FB390078233F /* FileManagerService.swift */,
+				89A7E5D629ACF65100A25AAF /* SamplePromptGenerationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		89F7C07629A90F700028DFCB /* NavigationView */ = {
+			isa = PBXGroup;
+			children = (
+				89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */,
+			);
+			path = NavigationView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,8 +362,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */,
+				89E01FC729B2319700DF0135 /* APIKey.json in Resources */,
 				89AE838F2989067100683743 /* Preview Assets.xcassets in Resources */,
-				89F7C06029A665700028DFCB /* APIKey.json in Resources */,
 				89AE838B2989067100683743 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,9 +398,9 @@
 			files = (
 				897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */,
 				89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */,
-				89F7C06929A66EF90028DFCB /* ImageGenerationResponse.swift in Sources */,
+				89F7C06929A66EF90028DFCB /* ImageGenerationResponsePayload.swift in Sources */,
 				89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */,
-				89F7C06829A66EF70028DFCB /* ImageGenerationRequest.swift in Sources */,
+				89F7C06829A66EF70028DFCB /* ImageGenerationRequestPayload.swift in Sources */,
 				89F7C06729A66E700028DFCB /* GenerateImageService.swift in Sources */,
 				89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */,
 			);
@@ -377,6 +412,7 @@
 			files = (
 				8984FD8F29A647E600749ACD /* UnitTestingSalwadorFilemanager_Tests.swift in Sources */,
 				8984FD9529A6488C00749ACD /* FileManagerService.swift in Sources */,
+				89E01FC829B23B5C00DF0135 /* APIJSONModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,13 +420,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89A7E5D929ACFB7800A25AAF /* Photo.swift in Sources */,
 				892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */,
 				89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */,
-				8984FD7829A6457D00749ACD /* ImageGenerationRequest.swift in Sources */,
+				89F7C07529A90F6C0028DFCB /* AppNavigationView.swift in Sources */,
+				89A7E5DE29B0998000A25AAF /* GenerateImageView+LoadingView.swift in Sources */,
+				8984FD7829A6457D00749ACD /* ImageGenerationRequestPayload.swift in Sources */,
 				8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
+				89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */,
 				894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */,
-				8984FD7A29A6457D00749ACD /* ImageGenerationResponse.swift in Sources */,
+				89A7E5D729ACF65100A25AAF /* SamplePromptGenerationService.swift in Sources */,
+				89A7E5DB29ACFC7400A25AAF /* PopListView.swift in Sources */,
+				8984FD7A29A6457D00749ACD /* ImageGenerationResponsePayload.swift in Sources */,
 				89AE0E05299E6FBC005DAEA5 /* GenerateImageViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,10 +459,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorGenerateImageViewModel-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -436,10 +480,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorGenerateImageViewModel-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -456,10 +502,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorFilemanager-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -475,10 +523,12 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = B5U3HK8MWP;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.diconium.UnitTestingSalwadorFilemanager-Tests";
+				"PRODUCT_BUNDLE_IDENTIFIER[sdk=iphoneos*]" = "com.diconium.salvador.ali--com.diconium.salvador.ali--com.diconium.salvador.ali--";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_EMIT_LOC_STRINGS = NO;
@@ -610,13 +660,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Salwador/Salwador.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Salwador/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -625,19 +678,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.Salwador;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.salvador.ali;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -651,13 +706,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = Salwador/Salwador.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Salwador/Preview Content\"";
+				DEVELOPMENT_TEAM = H7856N8BHP;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Salwador/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.lifestyle";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -666,19 +724,21 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
 				INFOPLIST_KEY_UIRequiresFullScreen = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 12.6;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.Salwador;
+				PRODUCT_BUNDLE_IDENTIFIER = com.diconium.salvador.ali;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

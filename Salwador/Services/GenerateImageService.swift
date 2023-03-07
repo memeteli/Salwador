@@ -11,12 +11,16 @@ class GenerateImageService {
     static let shared = GenerateImageService()
     let sessionID = UUID().uuidString
 
-    func generateImage(withPrompt prompt: String, apiKey: String) async throws -> ImageGenerationResponse {
+    func generateImage(withPrompt prompt: String, apiKey: String) async throws -> ImageGenerationResponsePayload {
         guard let url = URL(string: "https://api.openai.com/v1/images/generations") else {
             throw ImageError.badURL
         }
 
-        let requestBody = ImageGenerationRequest(prompt: prompt, userID: sessionID, imageSize: "1024x1024", numberOfImage: 1)
+        guard prompt != "" else {
+            throw ImageError.emptyPrompt
+        }
+
+        let requestBody = ImageGenerationRequestPayload(prompt: prompt, userID: sessionID, imageSize: "1024x1024", numberOfImage: 1)
 
         let data = try JSONEncoder().encode(requestBody)
 
@@ -27,12 +31,12 @@ class GenerateImageService {
         request.httpBody = data
 
         let (response, _) = try await URLSession.shared.data(for: request)
-        let result = try JSONDecoder().decode(ImageGenerationResponse.self, from: response)
+        let result = try JSONDecoder().decode(ImageGenerationResponsePayload.self, from: response)
 
         return result
     }
 }
 
 enum ImageError: Error {
-    case inValidPrompt, badURL
+    case emptyPrompt, badURL
 }
