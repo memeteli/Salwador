@@ -8,10 +8,13 @@
 import SwiftUI
 
 struct AppNavigationView: View {
+    @AppStorage("darkModeEnabled") private var darkModeEnabled = false
+    @AppStorage("systemSchemaEnabled") private var systemSchemaEnabled = false
+
     var body: some View {
         NavigationView {
-            ZStack {
-                ScrollView(.vertical, showsIndicators: false) {
+            TabView {
+                ZStack {
                     Color("BackgroundColor")
                     VStack {
                         Spacer()
@@ -21,8 +24,22 @@ struct AppNavigationView: View {
                         Spacer()
                     }
                 }
+
+                .foregroundColor(.white)
+                .cornerRadius(10)
+                .padding(40)
+                .tabItem {
+                    Image(systemName: "newspaper")
+                    Text("Home")
+                }
+
+                SettingsView(darkModeEnabled: $darkModeEnabled, systemSchemaEnabled: $systemSchemaEnabled)
+                    .tabItem {
+                        Image(systemName: "gearshape")
+                        Text("Settings")
+                    }
             }
-            .background(Color("BackgroundColor"))
+            .accentColor(Color("OrangeColor"))
         }
     }
 }
