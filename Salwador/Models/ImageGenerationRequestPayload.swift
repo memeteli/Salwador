@@ -1,7 +1,7 @@
 // Created by Ailiniyazi Maimaiti on 31.01.23.
 import Foundation
 
-struct ImageGenerationRequest: Encodable {
+struct ImageGenerationRequestPayload: Encodable {
     let prompt: String
     let userID: String
     let imageSize: String

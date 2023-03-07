@@ -98,13 +98,12 @@ private extension GenerateImageView {
             }
         }
     }
-                    
-                    var popListView: some View {
-                                        ZStack(alignment: .bottom) {
-                                            PopList
-                                        }
-                    }
-                    
+
+    var popListView: some View {
+        ZStack(alignment: .bottom) {
+            PopList
+        }
+    }
 
     var imageView: some View {
         VStack {
@@ -141,11 +140,11 @@ private extension GenerateImageView {
                                 viewModel.isPopListShown = true
                             }
                         }
-                                    
+
                     Spacer()
 
                     if viewModel.isPopListShown {
-                                        popListView
+                        popListView
                     }
 
                     closeButton
