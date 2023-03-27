@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		890AD9AD29B795E5007E3159 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 890AD9AC29B795E5007E3159 /* ThemeManager.swift */; };
 		892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892D5F0729924C54002D0248 /* GenerateImageService.swift */; };
 		894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
 		897D8A4C29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897D8A4B29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests.swift */; };
@@ -27,6 +28,7 @@
 		89CDB3462993DAE9001E72A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */; };
 		89E01FC729B2319700DF0135 /* APIKey.json in Resources */ = {isa = PBXBuildFile; fileRef = 89E01FC629B2319700DF0135 /* APIKey.json */; };
 		89E01FC829B23B5C00DF0135 /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
+		89F3DBBD29B767CC00CE8CDB /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89F3DBBC29B767CC00CE8CDB /* SettingsView.swift */; };
 		89F7C06429A66BE30028DFCB /* GenerateImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AE0E04299E6FBC005DAEA5 /* GenerateImageViewModel.swift */; };
 		89F7C06529A66E580028DFCB /* APIJSONModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8984FD7629A6457D00749ACD /* APIJSONModel.swift */; };
 		89F7C06629A66E5D0028DFCB /* FileManagerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894FD6F829A4FB390078233F /* FileManagerService.swift */; };
@@ -55,6 +57,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		890AD9AC29B795E5007E3159 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		892D5F0629916680002D0248 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		892D5F0729924C54002D0248 /* GenerateImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateImageService.swift; sourceTree = "<group>"; };
 		894FD6F829A4FB390078233F /* FileManagerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManagerService.swift; sourceTree = "<group>"; };
@@ -78,6 +81,7 @@
 		89AE838E2989067100683743 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		89CDB3452993DAE9001E72A5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Salwador/Resources/LaunchScreen.storyboard; sourceTree = SOURCE_ROOT; };
 		89E01FC629B2319700DF0135 /* APIKey.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = APIKey.json; sourceTree = "<group>"; };
+		89F3DBBC29B767CC00CE8CDB /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		89F7C07029A799DC0028DFCB /* GenerateSampleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateSampleImageView.swift; sourceTree = "<group>"; };
 		89F7C07429A90F6C0028DFCB /* AppNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppNavigationView.swift; sourceTree = "<group>"; usesTabs = 0; };
 /* End PBXFileReference section */
@@ -107,6 +111,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		890AD9AB29B795DB007E3159 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				890AD9AC29B795E5007E3159 /* ThemeManager.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
 		897D8A4A29A65FA800B6BE3E /* UnitTestingSalwadorGenerateImageViewModel_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +134,7 @@
 				8996F4BC299E206400E38E5C /* GenerateSampleImage */,
 				89F7C07629A90F700028DFCB /* NavigationView */,
 				89A7E5DC29ACFC7C00A25AAF /* PopListView */,
+				89F3DBBE29B767D200CE8CDB /* SettingsView */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -207,6 +220,7 @@
 			children = (
 				89AE838C2989067100683743 /* Salwador.entitlements */,
 				892D5F0629916680002D0248 /* Info.plist */,
+				890AD9AB29B795DB007E3159 /* Theme */,
 				89CDB3442992B454001E72A5 /* Services */,
 				8984FD6E29A644A800749ACD /* Models */,
 				897D8A5529A6646900B6BE3E /* UIComponents */,
@@ -232,6 +246,14 @@
 				89A7E5D629ACF65100A25AAF /* SamplePromptGenerationService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		89F3DBBE29B767D200CE8CDB /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				89F3DBBC29B767CC00CE8CDB /* SettingsView.swift */,
+			);
+			path = SettingsView;
 			sourceTree = "<group>";
 		};
 		89F7C07629A90F700028DFCB /* NavigationView */ = {
@@ -420,6 +442,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89F3DBBD29B767CC00CE8CDB /* SettingsView.swift in Sources */,
 				89A7E5D929ACFB7800A25AAF /* Photo.swift in Sources */,
 				892D5F0829924C54002D0248 /* GenerateImageService.swift in Sources */,
 				89AE0E0A299E7279005DAEA5 /* GenerateImageView.swift in Sources */,
@@ -429,6 +452,7 @@
 				8984FD7929A6457D00749ACD /* APIJSONModel.swift in Sources */,
 				89AE83872989066F00683743 /* SalwadorApp.swift in Sources */,
 				89F7C07129A799DC0028DFCB /* GenerateSampleImageView.swift in Sources */,
+				890AD9AD29B795E5007E3159 /* ThemeManager.swift in Sources */,
 				894FD6F929A4FB390078233F /* FileManagerService.swift in Sources */,
 				89A7E5D729ACF65100A25AAF /* SamplePromptGenerationService.swift in Sources */,
 				89A7E5DB29ACFC7400A25AAF /* PopListView.swift in Sources */,
